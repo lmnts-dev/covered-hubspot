@@ -110,9 +110,6 @@ table {
   /* Null tables spaces */
   border-collapse: collapse; }
 
-body {
-  padding-bottom: 80px; }
-
 .border-spacing-top {
   margin-top: 40px; }
 
@@ -129,10 +126,10 @@ a {
     color: #14c3fc; }
 
 .bg-green {
-  background-color: #5ec1a4; }
+  background-color: #3FC8A5; }
 
 .bg-med-green {
-  background-color: #5ec1a4; }
+  background-color: #3FC8A5; }
 
 .bg-blue {
   background-color: #14c3fc; }
@@ -159,7 +156,7 @@ a {
   color: #178968; }
 
 .txt-clr-green {
-  color: #5ec1a4; }
+  color: #3FC8A5; }
 
 .txt-clr-blue {
   color: #14c3fc; }
@@ -235,9 +232,6 @@ p {
   letter-spacing: .5px;
   font-size: 12px;
   margin-bottom: 40px; }
-
-.txt-sm-p {
-  font-size: 10px; }
 
 .lmnt-col {
   max-width: 100%;

@@ -1,15 +1,38 @@
+{% if include.quote == "1" %}
+  {% assign logo = site.data.contact.quote_1_logo %}
+  {% assign premium = site.data.contact.quote_1_premium %}
+  {% assign dwelling = site.data.contact.quote_1_dwelling %}
+  {% assign deductible = site.data.contact.quote_1_deductible %}
+{% endif %}
+
+{% if include.quote == "2" %}
+  {% assign logo = site.data.contact.quote_2_logo %}
+  {% assign premium = site.data.contact.quote_2_premium %}
+  {% assign dwelling = site.data.contact.quote_2_dwelling %}
+  {% assign deductible = site.data.contact.quote_2_deductible %}
+{% endif %}
+
+{% if include.quote == "3" %}
+  {% assign logo = site.data.contact.quote_3_logo %}
+  {% assign premium = site.data.contact.quote_3_premium %}
+  {% assign dwelling = site.data.contact.quote_3_dwelling %}
+  {% assign deductible = site.data.contact.quote_3_deductible %}
+{% endif %}
+
+{% assign website = site.data.contact.website %}
+
 <!-- quote card // -->
 <td class="lmnt-col-{{ include.width }} quote-card" width="{{ include.width }}%">
   <table border="0" cellpadding="0" cellspacing="0" width="100%">
 
     <tr class="card-row card-row-top">
       <td class="card-inner">
-        <img src="/assets/carrier-{{ site.data.contact.quote_1_logo | downcase }}-logo.png" class="card-logo">
+        <img src="/assets/carrier-{{ logo | downcase }}-logo.png" class="card-logo">
         <div class="line-title">
           Annual Premium
         </div>
         <div class="featured-number">
-          {{ site.data.contact.quote_1_premium }}
+          {{ premium }}
         </div>
       </td>
     </tr>
@@ -20,7 +43,7 @@
           Dwelling
         </div>
         <div class="line-number">
-          {{ site.data.contact.quote_1_dwelling }}
+          {{ dwelling }}
         </div>
       </td>
     </tr>
@@ -31,18 +54,7 @@
           Deductible
         </div>
         <div class="line-number">
-          {{ site.data.contact.quote_1_deductible }}
-        </div>
-      </td>
-    </tr>
-
-    <tr class="card-row">
-      <td class="card-inner">
-        <div class="line-title">
-          Dwelling
-        </div>
-        <div class="line-number">
-          {{ site.data.contact.quote_1_dwelling }}
+          {{ deductible }}
         </div>
       </td>
     </tr>
@@ -53,7 +65,7 @@
             txt="More details"
             bg="#14c3fc"
             txt-clr="#ffffff"
-            url="#"
+            url=website
             width="100px"
         %}
       </td>
