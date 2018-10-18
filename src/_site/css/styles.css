@@ -131,6 +131,9 @@ a {
 .bg-green {
   background-color: #5ec1a4; }
 
+.bg-med-green {
+  background-color: #5ec1a4; }
+
 .bg-blue {
   background-color: #14c3fc; }
 
@@ -151,6 +154,9 @@ a {
 
 .txt-clr-med-green {
   color: #3FC8A5; }
+
+.txt-clr-dark-green {
+  color: #178968; }
 
 .txt-clr-green {
   color: #5ec1a4; }
