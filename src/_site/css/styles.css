@@ -111,7 +111,6 @@ table {
   border-collapse: collapse; }
 
 body {
-<<<<<<< HEAD
   padding-bottom: 80px; }
 
 .border-spacing-top {
@@ -121,8 +120,6 @@ body {
   margin-bottom: 20px; }
 
 body {
-=======
->>>>>>> 633457befd1b3c559c474d9b8519b9228647b055
   background-color: #f4f4f4;
   color: #385259; }
 
@@ -132,6 +129,9 @@ a {
     color: #14c3fc; }
 
 .bg-green {
+  background-color: #5ec1a4; }
+
+.bg-med-green {
   background-color: #5ec1a4; }
 
 .bg-blue {
@@ -154,6 +154,9 @@ a {
 
 .txt-clr-med-green {
   color: #3FC8A5; }
+
+.txt-clr-dark-green {
+  color: #178968; }
 
 .txt-clr-green {
   color: #5ec1a4; }
@@ -219,7 +222,6 @@ p {
 .txt-lg-p {
   font-size: 16px; }
 
-<<<<<<< HEAD
 .txt-med-p {
   font-size: 14px; }
 
@@ -233,10 +235,9 @@ p {
   letter-spacing: .5px;
   font-size: 12px;
   margin-bottom: 40px; }
-=======
+
 .txt-sm-p {
   font-size: 10px; }
->>>>>>> 633457befd1b3c559c474d9b8519b9228647b055
 
 .lmnt-col {
   max-width: 100%;
