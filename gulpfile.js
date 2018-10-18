@@ -2,7 +2,6 @@ var gulp = require("gulp");
 var inlineCss = require("gulp-inline-css");
 var run = require("gulp-run");
 var notify = require("gulp-notify");
-var browserSync = require("browser-sync").create();
 
 // inliner task
 gulp.task("inline", function() {
@@ -18,25 +17,24 @@ gulp.task("watch", function() {
 });
 
 // serve & compile jekyll
-gulp.task("serve", function() {
+gulp.task("jekyll", function() {
   var shellCommand = "cd src && bundle exec jekyll serve";
   return gulp
     .src("")
     .pipe(run(shellCommand))
-    .pipe(notify({ message: "🍕 uninlined server running at localhost:4000" }));
+    .pipe(notify({ message: "👁 uninlined server running at localhost:4000" }));
 });
 
-// use default task to launch Browsersync and watch JS files
-gulp.task("default", ["serve", "watch"], function() {
+// use default task to launch simpleHTTP
+gulp.task("serve", function() {
   // serve files from inlined src folder
-  browserSync.init({
-    server: {
-      baseDir: "./build/",
-      port: 8080
-    }
-  });
-  // add browserSync.reload to the tasks array to make
-  // all browsers reload after tasks are complete.
-  gulp.watch("./build/*.html", browserSync.reload());
-  gulp.pipe(notify({ message: "✅ inlined server running at localhost:8080" }));
+  var shellCommand = "cd build && python -m SimpleHTTPServer 8080";
+  return gulp
+    .src("")
+    .pipe(run(shellCommand))
+    .pipe(notify({ message: "👉 all systems are go" }))
+    .pipe(notify({ message: "✅ inlined server running from /build/ at localhost:8080" }));
 });
+
+// run all of the above
+gulp.task("default", ["serve", "jekyll", "watch"]);
