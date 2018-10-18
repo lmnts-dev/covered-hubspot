@@ -1,7 +1,36 @@
 {
-  "name": "Peter",
-  "address": "2946 S Bannock Street",
-  "city": "Englewood",
-  "state": "CO",
-  "zip": "80110"
+  "firstname": "Peter",
+  "lastname": "Laxalt",
+  "property_address": "2946 S Bannock Street",
+  "property_city": "Englewood",
+  "property_state": "CO",
+  "property_zipcode": "80110",
+  "current_carrier": "Chase",
+
+  "quote_1_carrier": "Travelers",
+  "quote_1_logo": "Travelers",
+  "quote_1_deductible": "$1,322",
+  "quote_1_premium": "$1,000",
+  "quote_1_dwelling": "$209,800",
+  "quote_1_savings": "$239",
+  "quote_1_savings_pct": "65%",
+  "quote_1_score": "4.2"
+  
+  "quote_2_carrier": "Nationwide",
+  "quote_2_logo": "Nationwide",
+  "quote_2_deductible": "$1,322",
+  "quote_2_premium": "$1,000",
+  "quote_2_dwelling": "$209,800",
+  "quote_2_savings": "$239",
+  "quote_2_savings_pct": "65%",
+  "quote_2_score": "4.2"
+
+  "quote_3_carrier": "Progressive",
+  "quote_3_logo": "Progressive",
+  "quote_3_deductible": "$1,322",
+  "quote_3_premium": "$1,000",
+  "quote_3_dwelling": "$209,800",
+  "quote_3_savings": "$239",
+  "quote_3_savings_pct": "65%",
+  "quote_3_score": "4.2"
 }
