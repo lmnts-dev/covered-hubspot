@@ -157,6 +157,8 @@ body {
   max-width: 100%;
   width: 100%;
   margin: 0 auto; }
+  .row .inner {
+    padding: 0 20px; }
 
 .section {
   max-width: 550px;
@@ -165,8 +167,7 @@ body {
 
 .logo-header {
   background-color: #ffffff;
-  margin-top: 40px;
-  padding: 20px;
+  margin: 40px 0;
   width: 100%;
   text-align: center; }
   .logo-header .lmnt-col-50 {
