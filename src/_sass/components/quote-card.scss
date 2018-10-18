@@ -1,0 +1,12 @@
+.quote-card {
+  background-color: $clr-snow;
+  padding: 5px;
+  .card-row {
+    padding: $base/2;
+    background-color: $clr-white;
+    border-radius: 5px;
+  }
+  .card-inner {
+    padding: $base/2;
+  }
+}
