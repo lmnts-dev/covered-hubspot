@@ -1,0 +1,37 @@
+// page-culture.scss
+
+.culture-box-hero {
+  background:url('../images/team/team-full.jpg');
+  background-size:cover;
+  background-position:center center;
+  background-repeat:no-repeat;
+  color:$white;
+}
+
+.culture-box-matt {
+  background:url('../images/team/matt-profile.jpg');
+  background-size:cover;
+  background-position:center left;
+  background-repeat:no-repeat;
+}
+
+.culture-box-binh {
+  background:url('../images/team/binh-profile.jpg');
+  background-size:cover;
+  background-position:center left;
+  background-repeat:no-repeat;
+}
+
+.culture-box-pete {
+  background: url('../images/pete-poster.jpg') no-repeat;
+  background-size:cover;
+  background-position:center left;
+  background-repeat:no-repeat;
+}
+
+.culture-box-jonas {
+  background:url('../images/team/jonas-profile.jpg');
+  background-size:cover;
+  background-position:center left;
+  background-repeat:no-repeat;
+}

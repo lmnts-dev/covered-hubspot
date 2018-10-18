@@ -1,0 +1,41 @@
+
+body {
+  font-family:$fnt-body;
+  color:$clr-main;
+  margin:0;
+  padding:0;
+  -webkit-overflow-scrolling: touch;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizelegibility;
+  @media (max-width:1024px) {
+    font-size:$bodytext-size-mobile;
+  }
+}
+
+::-webkit-scrollbar {
+    width: 0px;  /* remove scrollbar space */
+    background: transparent;  /* optional: just make scrollbar invisible */
+}
+/* optional: show position indicator in $lm-brown */
+::-webkit-scrollbar-thumb {
+    background: $lm-brown;
+}
+
+.logotype {
+  display:inline-block;
+  position:absolute;
+  top:$base;
+  left:$base;
+  position:absolute;
+  color:$lm-brown;
+  @extend .intro-head;
+  @media (max-width:1024px) {
+    font-size:(($smallhead-size)-2px);
+    letter-spacing:$smallhead-spacing;
+  }
+}
+
+.noscroll {
+  overflow:hidden;
+}

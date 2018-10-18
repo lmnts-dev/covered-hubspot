@@ -1,0 +1,140 @@
+$gutter-left: $lmnt-nav-size + ($base * 2);
+$gutter-right: $base/2;
+
+// 2018 home page
+.lmnt-partners-slide-wrap {
+  cursor: url($baseurl+"/assets/images/ico-circle-white.png") 15 15, crosshair;
+  a,
+  a:hover,
+  a:visited,
+  a:active {
+    cursor: url($baseurl+"/assets/images/ico-circle-white.png") 15 15, crosshair;
+  }
+
+  .lmnt-partners-slide-inner {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    flex-wrap: nowrap;
+    @media (max-width: $base-md) {
+      flex-wrap: wrap;
+      flex-direction: column-reverse !important;
+    }
+    .lmnt-partners-col {
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      width: 50%;
+      color: $clr-white;
+      @media (max-width: $base-md) {
+        width: 100%;
+        height: calc(100vh - 58px);
+        justify-content: center;
+        &:nth-child(even) {
+          @media (max-width: $base-md) {
+            display: none;
+          }
+        }
+      }
+      .lmnt-partners-col-inner {
+        background-color: $clr-main;
+        height: 100vh;
+        width: 100%;
+        padding: $gutter-left $gutter-left ($gutter-left + $base) $gutter-left;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        @media (max-width: $base-md) {
+          padding: 38px;
+        }
+        p,
+        h2,
+        span {
+          color: $clr-white;
+        }
+        h2 {
+          font-size: 3vw;
+          letter-spacing: -0.8px;
+          overflow: hidden;
+          line-height: 1.1;
+          letter-spacing: -2.24;
+          @media (max-width: $base-md) {
+            font-size: 10vw;
+          }
+          &.lmnt-partners-col-tint {
+            color: rgba($clr-white, 0.3);
+            padding-bottom: $base/2;
+          }
+          span {
+            display: block;
+            @include slide-up(1s);
+          }
+        }
+      }
+      .lmnt-partners-col-img-wrap {
+        background-color: $clr-main;
+        height: 100vh;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        @media (max-width: $base-md) {
+          display: none;
+        }
+        .lmnt-partners-col-img-row {
+          display: flex;
+          align-items: stretch;
+          height: 50%;
+          .lmnt-partners-img {
+            width: 50%;
+            height: 100%;
+            transition: all 2s ease;
+          }
+        }
+      }
+    }
+  }
+}
+
+.lmnt-partners-col-bottom {
+  @media (max-width: $base-md) {
+    padding-bottom: $base * 2;
+  }
+}
+
+.lmnt-partners-col-bottom,
+.lmnt-partners-col-top,
+.lmnt-partners-img {
+  opacity: 0;
+  @media (max-width: $base-md) {
+    opacity: 1;
+  }
+}
+
+.fp-slide {
+  &.active {
+    .lmnt-partners-col-bottom,
+    .lmnt-partners-col-top {
+      animation: fade-in-slide-up 1s 1;
+      animation-timing-function: ease-out;
+      animation-fill-mode: forwards;
+      -webkit-animation-fill-mode: forwards;
+    }
+
+    $delay-base: 0.5;
+    $delay-int: 0.2;
+
+    .lmnt-partners-col-bottom {
+      animation-delay: ($delay-base) s;
+    }
+
+    .lmnt-partners-col-top {
+      animation-delay: ($delay-base + ($delay-int)) + s;
+    }
+
+    .lmnt-partners-img {
+      opacity: 1;
+    }
+  }
+}

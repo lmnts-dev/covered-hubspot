@@ -1,0 +1,118 @@
+
+.lmnts-wrapper {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap:wrap;
+  box-sizing:border-box;
+  a {
+		position:relative;
+    color: $lm-peach;
+    &:hover, &:visited, &:active {
+      color: $lm-peach;
+    }
+		&:before, &:after {
+			content: '';
+			display: block;
+			position: absolute;
+			bottom: 0;
+			top:100%;
+			height: 1px;
+			width: 0;
+		}
+		&:before {
+			content:'';
+			position:absolute;
+			left: 0;
+			top:100%;
+			transition: width 0ms ease-in-out,border-bottom 1s ease-in-out;
+		}
+		&:after {
+			right: 0;
+			border-bottom: 1px solid $lm-peach;
+			transition: width 1s ease-in-out;
+		}
+		&:hover {
+			&:before {
+				width: 100%;
+				border-bottom: 1px solid $lm-peach;
+				transition: width 1s ease-in-out;
+			}
+			&:after {
+				width: 100%;
+				border-bottom: 1px solid transparent;
+				transition: width 0ms ease-in-out,border-bottom 0ms ease-in-out;
+			}
+		}
+	}
+  .content {
+    margin:0;
+  }
+  div[class^="col-"], div[class*=" col-"] {
+    float:none;
+  }
+  .article-box {
+    @media (max-width:1024px) {
+      padding:$indent $indent/2;
+    }
+
+  }
+}
+
+.lmnt-sticky {
+    display:flex !important;
+    flex-direction:row;
+    overflow:visible !important;
+    @media (max-width:676px) {
+      display:flex;
+      flex-direction:column !important;
+    }
+    &.lmnt-sticky-left {
+      flex-direction:row;
+      @media (max-width:676px) {
+        display:flex;
+        flex-direction:column !important;
+      }
+    }
+    &.lmnt-sticky-right {
+      flex-direction:row-reverse;
+      @media (max-width:676px) {
+        display:flex;
+        flex-direction:column !important;
+      }
+    }
+    .lmnt-sticky-text {
+      flex:1;
+      padding:$indent;
+      @media (max-width:676px) {
+        padding:$indent $indent/2;
+      }
+      .button-small-black {
+        margin-top:$base/2;
+      }
+      .lmnt-sticky-text-container {
+        position:sticky;
+        top:0px;
+        display:flex;
+        flex-direction:column;
+        height:100vh;
+        align-items:flex-start;
+        justify-content:center;
+        @media (max-width:676px) {
+          position:relative;
+          top:0px;
+          height:auto;
+        }
+      }
+    }
+    .lmnt-sticky-img {
+      flex:1;
+      text-align:center;
+      padding:$indent/2;
+    }
+}
