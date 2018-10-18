@@ -111,11 +111,46 @@ table {
   border-collapse: collapse; }
 
 body {
+  background-color: #F4F4F4; }
+
+.bg-green {
+  background-color: #5EC1A4; }
+
+.bg-blue {
+  background-color: #4BC5ED; }
+
+.bg-gunmetal {
+  background-color: #637479; }
+
+.bg-white {
+  background-color: #ffffff; }
+
+.bg-black {
+  background-color: #000000; }
+
+.bg-snow {
+  background-color: #F4F4F4; }
+
+body {
   font-family: "Helvetica", "Roboto", -apple-system, BlinkMacSystemFont, Roboto, Helvetica, Arial, sans-serif;
   font-size: 16px; }
 
+.lmnt-col {
+  max-width: 100%;
+  width: 100%; }
+
 .lmnt-col-50 {
+  max-width: 50%;
   width: 50%; }
+
+.lmnt-col-30 {
+  max-width: 30%;
+  width: 30%; }
+
+.row {
+  max-width: 100%;
+  width: 100%;
+  margin: 0 auto; }
 
 .section {
   max-width: 550px;
@@ -124,5 +159,9 @@ body {
 
 .logo-header {
   background-color: #ffffff;
+  margin-top: 40px;
   padding: 20px;
+  width: 100%;
   text-align: center; }
+  .logo-header .lmnt-col-50 {
+    text-align: center; }

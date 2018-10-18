@@ -1,5 +1,10 @@
 .logo-header {
-    background-color:$clr-white;
-    padding:$base/2;
-    text-align:center;
+  background-color: $clr-white;
+  margin-top: $base;
+  padding: $base/2;
+  width: 100%;
+  text-align: center;
+  .lmnt-col-50 {
+    text-align: center;
+  }
 }
