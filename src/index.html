@@ -16,7 +16,7 @@ layout: default
         {% include section.end %}
     {% include row.end %}
 
-    {% include row.start class="bg-snow" %}
+    {% include row.start class="bg-snow quotes-display" %}
         {% include section.start id="quotesDisplay" %}
             {% include double-headline.section
               headline-1="Just for you."
@@ -26,6 +26,16 @@ layout: default
               content="We’ve selected these quotes just for you, based on the most comprehensive coverage for your needs at the most competitive rates."
             %}
             {% include quotes.section %}
+        {% include section.end %}
+    {% include row.end %}
+
+    {% include row.start class="bg-snow quotes-display" %}
+        {% include section.start id="quotesDisplay" %}
+            {% include double-headline.section
+              headline-1="Only the best will do."
+              headline-2="Here's a few of our many carriers."
+            %}
+            {% include carriers.section %}
         {% include section.end %}
     {% include row.end %}
 
@@ -43,11 +53,9 @@ layout: default
 
     {% include row.start class="bg-med-green" %}
         {% include section.start id="footer" %}
-        
             {% include white-headline.section
                 headline-1="❤️ We’re here to help save you time and money."
             %}
-            
             {% include p.section
                 content="We represent the top national and regional insurance carriers so we can give you the best options. Our fantastic
                 licensed insurance agents have been hard at work fighting to get you the best value. Covered is an independent
@@ -55,12 +63,9 @@ layout: default
                 pain, which is why we’ve done the heavy lifting for you."
                 class="txt-clr-white border-spacing-bottom"
             %}
-
             {% include section.start id="signatureSection" %}
                 {% include signature.section %}
             {% include section.end %}
-
-
         {% include section.end %}
     {% include row.end %}
 

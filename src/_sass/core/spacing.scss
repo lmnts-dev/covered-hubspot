@@ -8,3 +8,7 @@ $base-max-width: 450px;
 .border-spacing-bottom {
     margin-bottom: $base / 2;
 }
+
+.bump-bottom-base {
+    padding-bottom: $base*2;
+}

@@ -116,6 +116,9 @@ table {
 .border-spacing-bottom {
   margin-bottom: 20px; }
 
+.bump-bottom-base {
+  padding-bottom: 80px; }
+
 body {
   background-color: #f4f4f4;
   color: #385259; }
@@ -267,14 +270,18 @@ p {
 
 .intro {
   background-color: #f4f4f4;
-  margin: 40px 0;
-  width: 100%; }
+  width: 100%;
+  margin: 40px 0; }
   .intro .content {
     padding-bottom: 40px;
     border-bottom: 1px solid #D0D0D0; }
 
-.quotes-wrapper {
-  background-color: #f4f4f4; }
+#quotesDisplay {
+  background-color: #f4f4f4;
+  margin: 0 0 40px 0; }
+  #quotesDisplay .disclaimer {
+    padding-bottom: 40px;
+    border-bottom: 1px solid #D0D0D0; }
 
 .quote-card {
   background-color: #f4f4f4;
@@ -311,7 +318,10 @@ p {
 #footer .signature {
   border-top: 1px solid #178968; }
 #footer .small-print {
-  margin-top: 40px; }
+  margin: 40px 0 80px 0; }
 #footer .signature-image img {
   width: 215px;
   height: 52px; }
+
+.carriers img {
+  margin: 20px 0; }
