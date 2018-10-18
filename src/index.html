@@ -29,7 +29,17 @@ layout: default
         {% include section.end %}
     {% include row.end %}
 
-    {% include footer-image.section %}
+    {% include row.start class="bg-snow" %}
+      {% include section.start id="footImageTop" %}
+        {% include footer-image-top.section %}
+      {% include section.end %}
+    {% include row.end %}
+
+    {% include row.start class="bg-med-green" %}
+      {% include section.start id="footImageTop" %}
+        {% include footer-image-bottom.section %}
+      {% include section.end %}
+    {% include row.end %}
 
     {% include row.start class="bg-med-green" %}
         {% include section.start id="footer" %}
