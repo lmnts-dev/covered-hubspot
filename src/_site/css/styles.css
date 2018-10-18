@@ -150,7 +150,7 @@ a {
   color: #FF0000; }
 
 .txt-clr-med-green {
-  color: #178968; }
+  color: #3FC8A5; }
 
 .txt-clr-green {
   color: #5ec1a4; }
@@ -224,7 +224,8 @@ p {
   margin-top: 80px;
   font-weight: 300;
   letter-spacing: .5px;
-  font-size: 12px; }
+  font-size: 12px;
+  margin-bottom: 40px; }
 
 .lmnt-col {
   max-width: 100%;
