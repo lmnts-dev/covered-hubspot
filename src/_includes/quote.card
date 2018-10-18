@@ -1,0 +1,5 @@
+<!-- quote card // -->
+<td class="lmnt-col-{{ include.width }} quote-column" width="{{ include.width }}%">
+  hi
+</td>
+<!-- // quote card -->
