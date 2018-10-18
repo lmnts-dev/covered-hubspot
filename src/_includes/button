@@ -1,0 +1,15 @@
+<!-- button // -->
+<div>
+  <!--[if mso]>
+  <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="{{ include.url }}" style="height:40px;v-text-anchor:middle;width:{{ include.width }};" arcsize="15%" stroke="f" fillcolor="{{ include.bg }}">
+    <w:anchorlock/>
+    <center>
+  <![endif]-->
+  <a href="{{ include.url }}" style="background-color:{{ include.bg }};border-radius:6px;color:{{ include.txt-clr }};display:inline-block;font-family:'Helvetica',sans-serif;font-size:13px;font-weight:bold;line-height:40px;text-align:center;text-decoration:none;width:{{ include.width }};-webkit-text-size-adjust:none;">{{
+    include.txt }}</a>
+  <!--[if mso]>
+    </center>
+  </v:roundrect>
+<![endif]-->
+</div>
+<!-- // button -->

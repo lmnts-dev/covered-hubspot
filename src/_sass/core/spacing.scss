@@ -1,2 +1,6 @@
 $base: 40px;
 $base-max-width: 450px;
+
+body {
+    padding-bottom: $base*2;
+}

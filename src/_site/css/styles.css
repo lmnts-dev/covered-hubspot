@@ -111,6 +111,9 @@ table {
   border-collapse: collapse; }
 
 body {
+  padding-bottom: 80px; }
+
+body {
   background-color: #f4f4f4;
   color: #385259; }
 
@@ -257,8 +260,30 @@ p {
     padding: 20px;
     background-color: #ffffff;
     border-radius: 5px; }
+    .quote-card .card-row .card-inner {
+      border-bottom: 1px solid #eaeaea; }
+    .quote-card .card-row.card-row-top .card-inner {
+      border-radius: 5px 5px 0px 0px; }
+    .quote-card .card-row.card-row-bottom .card-inner {
+      border-radius: 0px 0px 5px 5px;
+      border-bottom: none !important; }
   .quote-card .card-inner {
-    padding: 20px; }
+    padding: 20px;
+    text-align: center; }
+    .quote-card .card-inner .card-logo {
+      margin-bottom: 20px; }
+  .quote-card .line-title {
+    color: #385259;
+    text-align: center;
+    font-size: 12px; }
+  .quote-card .line-number {
+    color: #385259;
+    text-align: center;
+    font-size: 14px;
+    font-weight: bold; }
+  .quote-card .featured-number {
+    font-weight: bold;
+    font-size: 26px; }
 
 .signature {
   border-top: 1px solid #006382; }
