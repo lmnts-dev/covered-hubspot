@@ -123,10 +123,10 @@ a {
   background-color: #5ec1a4; }
 
 .bg-blue {
-  background-color: #4bc5ed; }
+  background-color: #14c3fc; }
 
 .bg-gunmetal {
-  background-color: #637479; }
+  background-color: #385259; }
 
 .bg-white {
   background-color: #ffffff; }
@@ -136,6 +136,24 @@ a {
 
 .bg-snow {
   background-color: #f4f4f4; }
+
+.txt-clr-green {
+  color: #5ec1a4; }
+
+.txt-clr-blue {
+  color: #14c3fc; }
+
+.txt-clr-gunmetal {
+  color: #385259; }
+
+.txt-clr-white {
+  color: #ffffff; }
+
+.txt-clr-black {
+  color: #000000; }
+
+.txt-clr-snow {
+  color: #f4f4f4; }
 
 body {
   font-family: "Helvetica", "Roboto", -apple-system, BlinkMacSystemFont, Roboto, Helvetica, Arial, sans-serif;
@@ -160,24 +178,20 @@ h6,
 h1,
 .txt-h1 {
   font-weight: bold;
-  color: #385259;
   font-size: 31px; }
 
 h2,
 .txt-h2 {
   font-weight: bold;
-  color: #385259;
   font-size: 25px; }
 
 h3,
 .txt-h3 {
   font-weight: bold;
-  color: #385259;
   font-size: 20px; }
 
 p {
   font-weight: light;
-  color: #385259;
   margin-bottom: 20px;
   font-size: 14px; }
 
@@ -204,7 +218,7 @@ p {
     padding: 0 20px; }
 
 .section {
-  max-width: 550px;
+  max-width: 450px;
   width: 100%;
   margin: 0 auto; }
 
@@ -220,3 +234,6 @@ p {
   background-color: #f4f4f4;
   margin: 40px 0;
   width: 100%; }
+  .intro .content {
+    padding-bottom: 40px;
+    border-bottom: 1px solid #D0D0D0; }

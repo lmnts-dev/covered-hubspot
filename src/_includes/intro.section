@@ -1,9 +1,9 @@
-<!-- logo-header // -->
+<!-- intro // -->
 <table border="0" cellpadding="0" cellspacing="0" class="intro" width="100%">
   <tr>
     <td class="lmnt-col content" width="100%">
       <h1>
-        Hello {{ site.data.customer.name }},
+        Hello {{ site.data.contact.name }},
       </h1>
       <p class="txt-lg-p">
         Your homeowners insurance policy is up for renewal soon!
@@ -17,12 +17,12 @@
         We’re excited to help you purchase your perfect policy! We found several of the best insurance options for your home:
       </p>
       <h2 class="txt-h1">
-        {{ site.data.customer.address }}
+        {{ site.data.contact.address }}
       </h2>
       <h2 class="txt-h1">
-        {{ site.data.customer.city }}, {{ site.data.customer.state }} {{ site.data.customer.zip }}
+        {{ site.data.contact.city }}, {{ site.data.contact.state }} {{ site.data.contact.zip }}
       </h2>
     </td>
   </tr>
 </table>
-<!-- // logo-header -->
+<!-- // intro -->

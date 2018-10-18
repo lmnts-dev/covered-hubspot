@@ -4,6 +4,7 @@ $clr-gunmetal: #385259;
 $clr-white: #ffffff;
 $clr-black: #000000;
 $clr-snow: #f4f4f4;
+$clr-med-gray: #D0D0D0;
 
 body {
   background-color: $clr-snow;
@@ -20,23 +21,44 @@ a {
   }
 }
 
-// overrides
+// bg
 
 .bg-green {
-  background-color: #5ec1a4;
+  background-color: $clr-green;
 }
 .bg-blue {
-  background-color: #4bc5ed;
+  background-color: $clr-blue;
 }
 .bg-gunmetal {
-  background-color: #637479;
+  background-color: $clr-gunmetal;
 }
 .bg-white {
-  background-color: #ffffff;
+  background-color: $clr-white;
 }
 .bg-black {
-  background-color: #000000;
+  background-color: $clr-black;
 }
 .bg-snow {
-  background-color: #f4f4f4;
+  background-color: $clr-snow;
+}
+
+// txt
+
+.txt-clr-green {
+  color: $clr-green;
+}
+.txt-clr-blue {
+  color: $clr-blue;
+}
+.txt-clr-gunmetal {
+  color: $clr-gunmetal;
+}
+.txt-clr-white {
+  color: $clr-white;
+}
+.txt-clr-black {
+  color: $clr-black;
+}
+.txt-clr-snow {
+  color: $clr-snow;
 }

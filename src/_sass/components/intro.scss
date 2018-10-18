@@ -2,4 +2,8 @@
   background-color: $clr-snow;
   margin: $base 0;
   width: 100%;
+  .content {
+    padding-bottom: $base;
+    border-bottom: 1px solid $clr-med-gray;
+  }
 }
