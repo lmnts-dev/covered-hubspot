@@ -2,8 +2,9 @@
 Made in Jekyll
 
 # To Start
-`bundle install`
-`npm install`
+- `bundle install`
+- `npm install`
+- Make sure you `npm install` your `gulp` dependencies as well.
 
 ## To Run
 Simply run `gulp` from the root directory.
