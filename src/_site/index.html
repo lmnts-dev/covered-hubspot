@@ -1,61 +1,25 @@
-<!doctype html>
-<html>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if IE 9 ]><html class="ie9 no-js"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!-->
+<html class="no-js">
+<!--<![endif]-->
+<html xmlns="http://www.w3.org/1999/xhtml">
 
 <head>
-    <title>{% if content.html_title and content.html_title != '' %}{{ content.html_title }}{% else %}{{
-        content.body.subject }}{% endif %}</title>
-    {% if content.meta_description %}
-    <meta name="description" content="{{ content.meta_description }}" />{% endif %}
-
-    <style type="text/css" id="hs-inline-css">
-        /*<![CDATA[*/
-        /* everything in this style tag will be inlined onto matching elements */
-        .sample-rule {}
-
-        /*]]>*/
-    </style>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="noindex">
+    <meta name="googlebot" content="noindex">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <title>Coffeebar | Email Template Directory</title>
+    <!-- hi -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.shopify.com/s/files/1/2511/4254/files/theme.css?10721481710602223576">
 </head>
 
-{% if butts != '' %}
-hi
-{% endif %}
+<body leftmargin="0" marginwidth="0" topmargin="0" marginheight="0" offset="0" style="background-color:#DF6B1F;">
 
-<body>
-    <!-- Preview text (text which appears right after subject in certain email clients) -->
-    <div id="preview_text" style="display:none!important">{% text "preview_text" label="Preview Text <span class=help-text>This
-            will be used as the preview text that displays in some email clients</span>", value="", no_wrapper=True %}</div>
-
-    <!-- View as webpage link -->
-    {% if content.create_page %}
-    <div>
-        Not rendering correctly? View this email as a web page <a class="hubspot-mergetag" data-viewaswebpage="true"
-            href="{{ view_as_page_url }}">here</a>.
-    </div>
-    {% endif %}
-
-
-    <!-- Insert body here -->
-
-
-    <!-- Office location information and unsubscribe links -->
-    <p id="footer">
-        {{ site_settings.company_name }}
-        {{ site_settings.company_street_address_1 }}
-        {{ site_settings.company_street_address_2 }}
-        {{ site_settings.company_city }}
-        {{ site_settings.company_state }}
-        {{ site_settings.company_zip }}
-        {{ site_settings.company_country }}
-        <br />
-        You received this email because you are subscribed to {{ subscription_name }} from {{
-        site_settings.company_name }}.
-        <br />
-        Update your <a class="hubspot-mergetag" data-unsubscribe="true" href="{{ unsubscribe_link }}">email preferences</a>
-        to choose the types of emails you receive.
-        <br />
-        <a class="hubspot-mergetag" data-unsubscribe="true" href="{{ unsubscribe_link_all }}">Unsubscribe from all
-            future emails</a>
-    </p>
 </body>
-
 </html>
