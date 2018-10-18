@@ -201,6 +201,12 @@ p {
 .txt-lg-p {
   font-size: 16px; }
 
+.txt-med-p {
+  font-size: 14px; }
+
+.txt-sm-p {
+  font-size: 12px; }
+
 .lmnt-col {
   max-width: 100%;
   width: 100%; }
@@ -253,3 +259,6 @@ p {
     border-radius: 5px; }
   .quote-card .card-inner {
     padding: 20px; }
+
+.signature {
+  border-top: 1px solid #006382; }
