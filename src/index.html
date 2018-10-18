@@ -29,6 +29,28 @@ layout: default
         {% include section.end %}
     {% include row.end %}
 
+        {% include row.start class="bg-green" %}
+            {% include section.start id="footer" %}
+                {% include white-headline.section
+                    headline-1="❤️ We’re here to help save you time and money."
+                %}
+                
+                {% include p.section
+                    content="We represent the top national and regional insurance carriers so we can give you the best options. Our fantastic
+                    licensed insurance agents have been hard at work fighting to get you the best value. Covered is an independent
+                    insurance agency and our customers always come first! We understand that finding the right insurance policy can be a
+                    pain, which is why we’ve done the heavy lifting for you."
+                    class="txt-clr-white"
+                %}
+                {% include row.start class="bg-green" %}
+                    {% include section.start id="signatureSection" %}
+                        {% include signature.section %}
+                    {% include section.end %}
+                {% include row.end %}
+
+            {% include section.end %}
+        {% include row.end %}
+
 
 {% include email.end %}
 
