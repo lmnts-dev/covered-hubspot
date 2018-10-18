@@ -22,7 +22,9 @@ gulp.task("jekyll", function() {
   return gulp
     .src("")
     .pipe(run(shellCommand))
-    .pipe(notify({ message: "👁 uninlined server running at localhost:4000" }));
+    .pipe(notify({
+        message: "👁 uninlined server running from /src/ at localhost:4000"
+      }));
 });
 
 // use default task to launch simpleHTTP
@@ -32,8 +34,11 @@ gulp.task("serve", function() {
   return gulp
     .src("")
     .pipe(run(shellCommand))
+    .pipe(notify({ message: "🐬 l&m jekyll email builder v1.0" }))
     .pipe(notify({ message: "👉 all systems are go" }))
-    .pipe(notify({ message: "✅ inlined server running from /build/ at localhost:8080" }));
+    .pipe(notify({
+        message: "✅ inlined server running from /build/ at localhost:8080"
+      }));
 });
 
 // run all of the above
