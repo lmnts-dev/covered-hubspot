@@ -141,6 +141,49 @@ body {
   font-family: "Helvetica", "Roboto", -apple-system, BlinkMacSystemFont, Roboto, Helvetica, Arial, sans-serif;
   font-size: 16px; }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.txt-h1,
+.txt-h2,
+.txt-h3,
+.txt-h4,
+.txt-h5,
+.txt-h6 {
+  margin: 0;
+  padding: 0;
+  line-height: 1.2; }
+
+h1,
+.txt-h1 {
+  font-weight: bold;
+  color: #385259;
+  font-size: 31px; }
+
+h2,
+.txt-h2 {
+  font-weight: bold;
+  color: #385259;
+  font-size: 25px; }
+
+h3,
+.txt-h3 {
+  font-weight: bold;
+  color: #385259;
+  font-size: 20px; }
+
+p {
+  font-weight: light;
+  color: #385259;
+  margin-bottom: 20px;
+  font-size: 14px; }
+
+.txt-lg-p {
+  font-size: 16px; }
+
 .lmnt-col {
   max-width: 100%;
   width: 100%; }
@@ -172,3 +215,8 @@ body {
   text-align: center; }
   .logo-header .lmnt-col-50 {
     text-align: center; }
+
+.intro {
+  background-color: #f4f4f4;
+  margin: 40px 0;
+  width: 100%; }
