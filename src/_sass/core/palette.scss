@@ -1,29 +1,42 @@
-$clr-green: #5EC1A4;
-$clr-blue: #4BC5ED;
-$clr-gunmetal: #637479;
+$clr-green: #5ec1a4;
+$clr-blue: #14c3fc;
+$clr-gunmetal: #385259;
 $clr-white: #ffffff;
 $clr-black: #000000;
-$clr-snow: #F4F4F4;
+$clr-snow: #f4f4f4;
 
 body {
-    background-color: $clr-snow;
+  background-color: $clr-snow;
+  color: $clr-gunmetal;
 }
 
+a {
+  color: $clr-blue;
+  &:active,
+  &:hover,
+  &:visited,
+  &:focus {
+    color: $clr-blue;
+  }
+}
+
+// overrides
+
 .bg-green {
-    background-color: #5EC1A4;
+  background-color: #5ec1a4;
 }
 .bg-blue {
-    background-color: #4BC5ED;
+  background-color: #4bc5ed;
 }
 .bg-gunmetal {
-    background-color: #637479;
+  background-color: #637479;
 }
 .bg-white {
-    background-color: #ffffff;
+  background-color: #ffffff;
 }
 .bg-black {
-    background-color: #000000;
+  background-color: #000000;
 }
 .bg-snow {
-    background-color: #F4F4F4;
+  background-color: #f4f4f4;
 }
