@@ -111,6 +111,7 @@ table {
   border-collapse: collapse; }
 
 body {
+<<<<<<< HEAD
   padding-bottom: 80px; }
 
 .border-spacing-top {
@@ -120,6 +121,8 @@ body {
   margin-bottom: 20px; }
 
 body {
+=======
+>>>>>>> 633457befd1b3c559c474d9b8519b9228647b055
   background-color: #f4f4f4;
   color: #385259; }
 
@@ -160,6 +163,9 @@ a {
 
 .txt-clr-gunmetal {
   color: #385259; }
+
+.txt-clr-gunmetal-l50 {
+  color: #8daeb7; }
 
 .txt-clr-white {
   color: #ffffff; }
@@ -213,6 +219,7 @@ p {
 .txt-lg-p {
   font-size: 16px; }
 
+<<<<<<< HEAD
 .txt-med-p {
   font-size: 14px; }
 
@@ -226,6 +233,10 @@ p {
   letter-spacing: .5px;
   font-size: 12px;
   margin-bottom: 40px; }
+=======
+.txt-sm-p {
+  font-size: 10px; }
+>>>>>>> 633457befd1b3c559c474d9b8519b9228647b055
 
 .lmnt-col {
   max-width: 100%;
