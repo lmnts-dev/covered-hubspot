@@ -109,3 +109,7 @@ img {
 table {
   /* Null tables spaces */
   border-collapse: collapse; }
+
+body {
+  font-family: "Helvetica", "Roboto", -apple-system, BlinkMacSystemFont, Roboto, Helvetica, Arial, sans-serif;
+  font-size: 16px; }
