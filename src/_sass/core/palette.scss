@@ -59,6 +59,9 @@ a {
 .txt-clr-gunmetal {
   color: $clr-gunmetal;
 }
+.txt-clr-gunmetal-l50 {
+  color: lighten($clr-gunmetal, 35%);
+}
 .txt-clr-white {
   color: $clr-white;
 }

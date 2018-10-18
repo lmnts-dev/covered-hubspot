@@ -6,4 +6,14 @@
     {% include quote.card width="30" %}
   </tr>
 </table>
+
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+  <tr>
+    <td class="disclaimer">
+      <span class="txt-sm-p txt-clr-gunmetal-l50">
+        This is a summary of coverages only and may not include all coverages provided. Different limits and optional coveragess are available. *Annual Premium reflects paid in full discount. Multiple installment plans available; installment fee applies. **The Covered Index Score is a proprietary rating that Covered gives its carrier partners based on consumer ratings, financial stability, and claims support. Don’t worry, Covered only works with the best carriers so even if a score seems low it’s still above average.
+      </span>
+    </td>
+  </tr>
+</table>
 <!-- // quotes wrapper -->

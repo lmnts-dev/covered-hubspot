@@ -111,9 +111,6 @@ table {
   border-collapse: collapse; }
 
 body {
-  padding-bottom: 80px; }
-
-body {
   background-color: #f4f4f4;
   color: #385259; }
 
@@ -151,6 +148,9 @@ a {
 
 .txt-clr-gunmetal {
   color: #385259; }
+
+.txt-clr-gunmetal-l50 {
+  color: #8daeb7; }
 
 .txt-clr-white {
   color: #ffffff; }
@@ -203,6 +203,9 @@ p {
 
 .txt-lg-p {
   font-size: 16px; }
+
+.txt-sm-p {
+  font-size: 10px; }
 
 .lmnt-col {
   max-width: 100%;
