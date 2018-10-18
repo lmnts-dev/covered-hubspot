@@ -4,3 +4,11 @@ $base-max-width: 450px;
 body {
     padding-bottom: $base*2;
 }
+
+.border-spacing-top {
+    margin-top: $base;
+}
+
+.border-spacing-bottom {
+    margin-bottom: $base / 2;
+}

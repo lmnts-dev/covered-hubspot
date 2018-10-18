@@ -2,7 +2,7 @@
 <table border="0" cellpadding="0" cellspacing="0" class="signature" width="100%">
   <tr>
     <td class="lmnt-col content" width="100%" class="bg-green">
-      <p class="txt-lg-p txt-clr-white">
+      <p class="txt-lg-p txt-clr-white border-spacing-top">
         <b>If you’d like to talk to one of Covered’s licensed insurance advisors about your quote options, call 1-800-123-4567.</b>
       </p>
       <h2 class="txt-h1 txt-clr-med-green">
@@ -11,26 +11,26 @@
     </td>
   </tr>
   <tr class="signature-image">
-    <td class="card-inner">
+    <td>
         <img src="/assets/covered-signature.png">
     </td>
   </tr>
   <tr>
     <td>
-      <p class="txt-med-p txt-clr-white">
+      <p class="txt-med-p txt-clr-white" style="margin-bottom: 0;">
         <b>Ross Diedrich - CEO, Covered</b>
       </p>
-      <p class="txt-med-p txt-clr-white">
+      <p class="txt-med-p txt-clr-white" style="margin-top: 0;">
         <b>& Your Dedicated Covered Insurance Advisors</b>
       </p>
-      <p class="txt-sm-p txt-clr-white">
+      <p class="txt-sm-p txt-clr-white small-print">
         Maintaining homeowners insurance is your responsibility. You are required to have a policy in force at all times. However, you are free to choose the insurance provider of your choice. These quotes have been presented solely for your convenience. You are not required to purchase insurance from Covered.
       </p>
       <p class="txt-sm-p txt-clr-white">
         To opt-out of receiving messages from Covered Insurance please send a message to insurance@itscovered.com with subject “Opt Out”. Thank you.
       </p>
-      <p class="txt-clr-white">
-        © 2018   •   www.itscovered.com   •   Made with ❤︎ in Colorado, USA
+      <p class="txt-clr-white txt-footer">
+        © 2018 &nbsp; &nbsp; • &nbsp; &nbsp; www.itscovered.com &nbsp; &nbsp; • &nbsp; &nbsp; Made with <span class="txt-clr-red">❤︎</span> in Colorado, USA
       </p>
     </td>
   </tr>

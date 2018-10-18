@@ -1,3 +1,20 @@
-.signature {
-   border-top: 1px solid $clr-med-blue;
+#footer {
+
+    .signature {
+        border-top: 1px solid $clr-med-blue;
+    }
+    .small-print {
+        margin-top: $base;
+    }
+    .signature-image {
+        img {
+            width: 215px;
+            height: 52px;
+        }
+    }
+
+}
+
+.footer-image {
+    width: 100vw !important;
 }
