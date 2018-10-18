@@ -1,0 +1,320 @@
+/* Normalize.css */
+/* Contents of this file must be inlined to your newsletter in production */
+h1 a,
+h2 a,
+h3 a,
+h4 a,
+h5 a,
+h6 a,
+li a,
+p a {
+  /* Set sexy underline styling for links except images */
+  text-decoration: none;
+  color: #2837b8 !important;
+  border-bottom: #d3d6f0 1px solid; }
+
+h1 {
+  /* Mail.ru <h1> styling fix */
+  font-size: 2em;
+  line-height: initial;
+  margin: 0.67em 0;
+  padding: 0; }
+
+table {
+  /* Null tables spaces */
+  border-spacing: 0;
+  border-collapse: collapse; }
+
+table td {
+  padding: 0; }
+
+table th {
+  padding: 0;
+  font-weight: normal; }
+
+img {
+  /* Flexible images fix + prevent any borders for images */
+  max-width: 100%;
+  border: 0;
+  outline: 0;
+  /* Set image's ALT text styling */
+  color: #2837b8;
+  font-size: 14px; }
+
+ol,
+ul {
+  /* We don't touch horizontal margins to prevent hiding bullets in Oultook */
+  margin-top: 1em;
+  margin-bottom: 2em; }
+
+ol li,
+ul li {
+  line-height: 1.6em;
+  margin: 0.5em 0; }
+
+p {
+  line-height: 1.6em;
+  margin: 1em 0; }
+
+span.code {
+  /* Monospace emphasis for code examples */
+  font-family: consolas, courier, monospace;
+  color: grey; }
+
+/* Extra.css */
+/* Contents of this file must be placed between <style> tags in <head> of your newsletter in production */
+@media screen and (max-width: 600px) {
+  u + .body {
+    /* iOS Gmail viewport fix */
+    /* Make sure that your body element has .body class */
+    width: 100vw !important; } }
+a[x-apple-data-detectors=true] {
+  /* Set default text color inheritance for auto-detected iOS links like date, time, address, etc */
+  color: inherit !important;
+  text-decoration: inherit !important;
+  border-bottom: none !important; }
+
+body {
+  /* Set native platform font styling */
+  font-family: -apple-system, BlinkMacSystemFont, Roboto, Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  color: black; }
+
+.webkit {
+  /* Webkit and Microsoft font-size fix */
+  width: 100%;
+  table-layout: fixed;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%; }
+
+/* Outlook.css */
+/* Contents of this file must be placed between <style> tags with conditional comment in <head> of your newsletter in production */
+body {
+  /* Reset font styling. Useful when we links custom fonts to our newsletter */
+  font-family: Helvetica, Arial, sans-serif; }
+
+a {
+  /* Reset default links styling */
+  color: #2837b8;
+  text-decoration: underline; }
+
+h1, h2, h3, h4, h5, h6 {
+  /* Reset default headings margin */
+  margin: .5em 0; }
+
+img {
+  /* Scaled images fix */
+  -ms-interpolation-mode: bicubic; }
+
+table {
+  /* Null tables spaces */
+  border-collapse: collapse; }
+
+body {
+  padding-bottom: 80px; }
+
+.border-spacing-top {
+  margin-top: 40px; }
+
+.border-spacing-bottom {
+  margin-bottom: 20px; }
+
+body {
+  background-color: #f4f4f4;
+  color: #385259; }
+
+a {
+  color: #14c3fc; }
+  a:active, a:hover, a:visited, a:focus {
+    color: #14c3fc; }
+
+.bg-green {
+  background-color: #5ec1a4; }
+
+.bg-blue {
+  background-color: #14c3fc; }
+
+.bg-gunmetal {
+  background-color: #385259; }
+
+.bg-white {
+  background-color: #ffffff; }
+
+.bg-black {
+  background-color: #000000; }
+
+.bg-snow {
+  background-color: #f4f4f4; }
+
+.txt-clr-red {
+  color: #FF0000; }
+
+.txt-clr-med-green {
+  color: #3FC8A5; }
+
+.txt-clr-green {
+  color: #5ec1a4; }
+
+.txt-clr-blue {
+  color: #14c3fc; }
+
+.txt-clr-gunmetal {
+  color: #385259; }
+
+.txt-clr-gunmetal-l50 {
+  color: #8daeb7; }
+
+.txt-clr-white {
+  color: #ffffff; }
+
+.txt-clr-black {
+  color: #000000; }
+
+.txt-clr-snow {
+  color: #f4f4f4; }
+
+body {
+  font-family: "Helvetica", "Roboto", -apple-system, BlinkMacSystemFont, Roboto, Helvetica, Arial, sans-serif;
+  font-size: 16px; }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.txt-h1,
+.txt-h2,
+.txt-h3,
+.txt-h4,
+.txt-h5,
+.txt-h6 {
+  margin: 0;
+  padding: 0;
+  line-height: 1.2; }
+
+h1,
+.txt-h1 {
+  font-weight: bold;
+  font-size: 31px; }
+
+h2,
+.txt-h2 {
+  font-weight: bold;
+  font-size: 25px; }
+
+h3,
+.txt-h3 {
+  font-weight: bold;
+  font-size: 20px; }
+
+p {
+  font-weight: light;
+  margin-bottom: 20px;
+  font-size: 14px; }
+
+.txt-lg-p {
+  font-size: 16px; }
+
+.txt-med-p {
+  font-size: 14px; }
+
+.txt-sm-p {
+  font-size: 10px;
+  font-weight: 300; }
+
+.txt-footer {
+  margin-top: 80px;
+  font-weight: 300;
+  letter-spacing: .5px;
+  font-size: 12px;
+  margin-bottom: 40px; }
+
+.txt-sm-p {
+  font-size: 10px; }
+
+.lmnt-col {
+  max-width: 100%;
+  width: 100%; }
+
+.lmnt-col-50 {
+  max-width: 50%;
+  width: 50%; }
+
+.lmnt-col-30 {
+  max-width: 30%;
+  width: 30%; }
+
+.row {
+  max-width: 100%;
+  width: 100%;
+  margin: 0 auto; }
+  .row .inner {
+    padding: 0 20px; }
+
+.section {
+  max-width: 450px;
+  width: 100%;
+  margin: 0 auto; }
+
+.logo-header {
+  background-color: #ffffff;
+  margin: 40px 0;
+  width: 100%;
+  text-align: center; }
+  .logo-header .lmnt-col-50 {
+    text-align: center; }
+
+.intro {
+  background-color: #f4f4f4;
+  margin: 40px 0;
+  width: 100%; }
+  .intro .content {
+    padding-bottom: 40px;
+    border-bottom: 1px solid #D0D0D0; }
+
+.quotes-wrapper {
+  background-color: #f4f4f4; }
+
+.quote-card {
+  background-color: #f4f4f4;
+  padding: 5px; }
+  .quote-card .card-row {
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 5px; }
+    .quote-card .card-row .card-inner {
+      border-bottom: 1px solid #eaeaea; }
+    .quote-card .card-row.card-row-top .card-inner {
+      border-radius: 5px 5px 0px 0px; }
+    .quote-card .card-row.card-row-bottom .card-inner {
+      border-radius: 0px 0px 5px 5px;
+      border-bottom: none !important; }
+  .quote-card .card-inner {
+    padding: 20px;
+    text-align: center; }
+    .quote-card .card-inner .card-logo {
+      margin-bottom: 20px; }
+  .quote-card .line-title {
+    color: #385259;
+    text-align: center;
+    font-size: 12px; }
+  .quote-card .line-number {
+    color: #385259;
+    text-align: center;
+    font-size: 14px;
+    font-weight: bold; }
+  .quote-card .featured-number {
+    font-weight: bold;
+    font-size: 26px; }
+
+#footer .signature {
+  border-top: 1px solid #006382; }
+#footer .small-print {
+  margin-top: 40px; }
+#footer .signature-image img {
+  width: 215px;
+  height: 52px; }
+
+.footer-image {
+  width: 100vw !important; }

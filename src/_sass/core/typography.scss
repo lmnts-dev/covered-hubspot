@@ -63,4 +63,16 @@ p {
 
 .txt-sm-p {
   font-size: 10px;
+  font-weight: 300;
+}
+
+.txt-footer {
+  margin-top: $base * 2;
+  font-weight: 300;
+  letter-spacing: .5px;
+  font-size: 12px;
+  margin-bottom: $base;
+}
+.txt-sm-p {
+  font-size: 10px;
 }

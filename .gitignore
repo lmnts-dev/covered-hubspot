@@ -1,5 +1,7 @@
 *.xml
 */.sass-cache
 */.sass-cache/*
-/src/_site
-/src/_site/*.*
+./src/.sass-cache/*
+./src/_site/*.*
+./src/_site/*.*
+./build/*
