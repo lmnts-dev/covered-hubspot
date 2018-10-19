@@ -36,4 +36,14 @@
   "quote_3_savings_pct": "65%",
   "quote_3_score": "4.2",
 
+    "company_name": "Covered",
+    "company_street_address_1": "123 Fake Address Way",
+    "company_street_address_2": "#2",
+    "company_city": "Denver",
+    "company_state": "Colorado",
+    "company_zip": "000000",
+    "company_country": "United States",
+    "subscription_name": "General Subscription",
+    "unsubscribe_link": "mailto:nsurance@itscovered.com",
+    "unsubscribe_link_all": "mailto:nsurance@itscovered.com"
 }
