@@ -12,4 +12,13 @@
         }
     }
 
+    #required-footer-tags {
+        margin-top: $base * 2;
+        text-align: center;
+        a {
+            color: $clr-gunmetal !important;
+            border-bottom: $clr-gunmetal 1px solid !important;
+        }
+    }
+
 }

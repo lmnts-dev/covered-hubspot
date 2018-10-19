@@ -245,7 +245,7 @@ p {
   font-weight: 300; }
 
 .txt-footer {
-  margin-top: 80px;
+  margin-top: 40px;
   font-weight: 300;
   letter-spacing: .5px;
   font-size: 12px;
@@ -353,6 +353,12 @@ p {
 #footer .signature-image img {
   width: 215px;
   height: 52px; }
+#footer #required-footer-tags {
+  margin-top: 80px;
+  text-align: center; }
+  #footer #required-footer-tags a {
+    color: #385259 !important;
+    border-bottom: #385259 1px solid !important; }
 
 .carriers img {
   margin: 20px 0; }
