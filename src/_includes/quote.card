@@ -3,6 +3,7 @@
   {% assign premium = site.data.contact.quote_1_premium %}
   {% assign dwelling = site.data.contact.quote_1_dwelling %}
   {% assign deductible = site.data.contact.quote_1_deductible %}
+  {% assign savings = site.data.contact.quote_1_savings %}
 {% endif %}
 
 {% if include.quote == "2" %}
@@ -10,6 +11,7 @@
   {% assign premium = site.data.contact.quote_2_premium %}
   {% assign dwelling = site.data.contact.quote_2_dwelling %}
   {% assign deductible = site.data.contact.quote_2_deductible %}
+  {% assign savings = site.data.contact.quote_2_savings %}
 {% endif %}
 
 {% if include.quote == "3" %}
@@ -17,15 +19,27 @@
   {% assign premium = site.data.contact.quote_3_premium %}
   {% assign dwelling = site.data.contact.quote_3_dwelling %}
   {% assign deductible = site.data.contact.quote_3_deductible %}
+  {% assign savings = site.data.contact.quote_3_savings %}
 {% endif %}
 
 {% assign website = site.data.contact.website %}
 
 <!-- quote card // -->
-<td class="lmnt-col-{{ include.width }} quote-card" width="{{ include.width }}%">
+<td class="lmnt-col-{{ include.width }} quote-card" width="{{ include.width }}%" valign="top">
   <table border="0" cellpadding="0" cellspacing="0" width="100%">
 
-    <tr class="card-row card-row-top">
+    <tr class="card-row card-row-green card-row-top">
+      <td class="card-inner">
+        <div class="txt-med-p txt-clr-white">
+        Save
+        </div>
+        <div class="featured-savings txt-clr-white">
+          {{ savings }}
+        </div>
+      </td>
+    </tr>
+
+    <tr class="card-row">
       <td class="card-inner">
         <img src="/assets/carrier-{{ logo | downcase }}-logo.png" class="card-logo">
         <div class="line-title">

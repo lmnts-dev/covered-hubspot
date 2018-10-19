@@ -1,6 +1,17 @@
 /* Normalize.css */
 /* Contents of this file must be inlined to your newsletter in production */
 
+html {
+  -ms-text-size-adjust: 100%; /* 2 */
+  -webkit-text-size-adjust: 100%; /* 2 */
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+	font-smoothing: antialiased;
+	text-rendering: optimizeLegibility;
+}
+
 h1 a,
 h2 a,
 h3 a,

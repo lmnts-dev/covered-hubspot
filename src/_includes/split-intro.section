@@ -1,0 +1,46 @@
+<!-- split-intro // -->
+<table border="0" cellpadding="0" cellspacing="0" class="intro split-intro" width="100%">
+  <tr>
+    <td class="lmnt-col-50 content" width="50%">
+      <h1>
+        Hi {{ site.data.contact.firstname }},
+      </h1>
+      <p class="txt-md-p">
+        As a valued <b class="txt-clr-blue">{{ site.data.contact.current_carrier }}</b> customer, we wanted to remind you that your homeowners insurance policy is up for renewal at your property located at:
+      </p>
+      <div class="txt-lg-p">
+        <strong>
+          {{ site.data.contact.property_address }}
+        </strong>
+      </div>
+      <div class="txt-lg-p">
+        <strong>
+          {{ site.data.contact.property_city }}, {{ site.data.contact.property_state }} {{ site.data.contact.property_zipcode }}
+        </strong>
+      </div>
+      <span class="txt-sm-p txt-clr-gunmetal-l50">
+        Please note that the home insurance premiums shown below do not reflect a bundle discount.
+      </span>
+    </td>
+
+    <td class="lmnt-col-50 content txt-center price-col" width="50%" valign="top">
+      <h1>
+        Save up to
+      </h1>
+      <div class="txt-lg-light txt-clr-blue">
+        {{ site.data.contact.quote_1_savings }}
+      </div>
+      <div class="txt-med-p">
+        On your Annual Premium
+      </div>
+      {% include button
+          txt="Find out how"
+          bg="#14c3fc"
+          txt-clr="#ffffff"
+          url=website
+          width="150px"
+      %}
+    </td>
+  </tr>
+</table>
+<!-- // split-intro -->

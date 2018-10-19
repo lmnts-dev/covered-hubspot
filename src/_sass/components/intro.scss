@@ -6,4 +6,11 @@
     padding-bottom: $base;
     border-bottom: 1px solid $clr-med-gray;
   }
+  &.split-intro {
+    .price-col {
+      .txt-med-p {
+        margin-bottom: 10px;
+      }
+    }
+  }
 }

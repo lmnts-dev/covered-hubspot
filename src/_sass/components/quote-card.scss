@@ -8,6 +8,13 @@
     .card-inner {
         border-bottom: 1px solid lighten($clr-med-gray, 10%);
     }
+    &.card-row-green {
+      padding: $base/4;
+      background-color: $clr-green;
+      .card-inner {
+        padding: $base/4;
+      }
+    }
     &.card-row-top {
       .card-inner {
         border-radius: 5px 5px 0px 0px;
@@ -41,5 +48,9 @@
   .featured-number {
     font-weight: bold;
     font-size: 26px;
+  }
+  .featured-savings {
+    font-weight: 100;
+    font-size: 22px;
   }
 }

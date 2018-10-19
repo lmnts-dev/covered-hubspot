@@ -3,6 +3,10 @@
   margin: $base 0;
   width: 100%;
   text-align: center;
+  &.logo-header-centered {
+    background-color: $clr-snow;
+    margin: $base 0 0 0;
+  }
   .lmnt-col-50 {
     text-align: center;
   }
