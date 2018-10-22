@@ -1,11 +1,12 @@
 .logo-header {
-  background-color: $clr-white;
   margin: $base 0;
   width: 100%;
-  text-align: center;
+  text-align: left;
   &.logo-header-centered {
-    background-color: $clr-snow;
-    margin: $base 0 0 0;
+    margin: $base 0 $base/2 0;
+  }
+  &.logo-covered-centered {
+    margin: 0 0 $base/2 0;
   }
   .lmnt-col-50 {
     text-align: center;

@@ -4,7 +4,7 @@
     <td class="lmnt-col-30" width="30%">
       <img src="/assets/carrier-{{ site.data.contact.current_carrier | downcase }}-logo.png">
     </td>
-    <td class="lmnt-col-30" width="30%">
+    <td class="lmnt-col-30 txt-center" width="30%">
       +
     </td>
     <td class="lmnt-col-30" width="30%">

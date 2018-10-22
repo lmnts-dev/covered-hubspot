@@ -1,5 +1,5 @@
 {
-  "firstname": "Ross",
+  "firstname": "Peter",
   "lastname": "Laxalt",
   "property_address": "2946 S Bannock Street",
   "property_city": "Brooklyn",
@@ -9,8 +9,8 @@
   "current_premium": "$1,500",
   "website": "#",
 
-  "quote_1_carrier": "Travelers",
-  "quote_1_logo": "Travelers",
+  "quote_1_carrier": "Dairyland",
+  "quote_1_logo": "Dairyland",
   "quote_1_deductible": "$1,322",
   "quote_1_premium": "$1,000",
   "quote_1_dwelling": "$209,800",

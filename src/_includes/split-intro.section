@@ -18,9 +18,6 @@
           {{ site.data.contact.property_city }}, {{ site.data.contact.property_state }} {{ site.data.contact.property_zipcode }}
         </strong>
       </div>
-      <span class="txt-sm-p txt-clr-gunmetal-l50">
-        Please note that the home insurance premiums shown below do not reflect a bundle discount.
-      </span>
     </td>
 
     <td class="lmnt-col-50 content txt-center price-col" width="50%" valign="top">

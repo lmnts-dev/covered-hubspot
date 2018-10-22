@@ -12,3 +12,7 @@ $base-max-width: 450px;
 .bump-bottom-base {
     padding-bottom: $base*2;
 }
+
+.bump-bottom-base-sm {
+    padding-bottom: $base/2;
+}

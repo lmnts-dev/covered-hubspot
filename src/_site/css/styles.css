@@ -130,6 +130,9 @@ table {
 .bump-bottom-base {
   padding-bottom: 80px; }
 
+.bump-bottom-base-sm {
+  padding-bottom: 20px; }
+
 body {
   background-color: #f4f4f4;
   color: #385259; }
@@ -162,6 +165,9 @@ a {
 
 .txt-clr-red {
   color: #FF0000; }
+
+.txt-clr-orange {
+  color: #F36E4F; }
 
 .txt-clr-med-green {
   color: #3FC8A5; }
@@ -251,8 +257,17 @@ p {
   font-size: 12px;
   margin-bottom: 40px; }
 
+.txt-strong {
+  font-weight: bold; }
+
 .txt-center {
-  text-align: center; }
+  text-align: center !important; }
+
+.txt-left {
+  text-align: left !important; }
+
+.txt-right {
+  text-align: right !important; }
 
 .lmnt-col {
   max-width: 100%;
@@ -279,13 +294,13 @@ p {
   margin: 0 auto; }
 
 .logo-header {
-  background-color: #ffffff;
   margin: 40px 0;
   width: 100%;
-  text-align: center; }
+  text-align: left; }
   .logo-header.logo-header-centered {
-    background-color: #f4f4f4;
-    margin: 40px 0 0 0; }
+    margin: 40px 0 20px 0; }
+  .logo-header.logo-covered-centered {
+    margin: 0 0 20px 0; }
   .logo-header .lmnt-col-50 {
     text-align: center; }
 
@@ -344,7 +359,7 @@ p {
     font-size: 26px; }
   .quote-card .featured-savings {
     font-weight: 100;
-    font-size: 22px; }
+    font-size: 18px; }
 
 #footer .signature {
   border-top: 1px solid #178968; }
