@@ -1,0 +1,15 @@
+{
+  "standard_header_includes": "{{ standard_header_includes }}",
+  "standard_footer_includes": "{{ standard_footer_includes }}",
+  "html_title": "{{ content.html_title }}",
+  "meta_description": "{{ content.meta_description }}",
+
+  "company_street_address_1": "{{ site_settings.company_street_address_1 }}",
+  "company_city": "{{ site_settings.company_city }}",
+  "company_state": "{{ site_settings.company_state }}",
+  "company_zip": "{{ site_settings.company_zip }}",
+  "company_name": "{{ site_settings.company_name }}",
+
+  "unsubscribe_link": "{{ unsubscribe_link }}",
+  "unsubscribe_anchor": "{{ unsubscribe_anchor }}"
+}

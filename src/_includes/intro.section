@@ -3,13 +3,13 @@
   <tr>
     <td class="lmnt-col content" width="100%">
       <h1>
-        Hello {{ site.data.contact.firstname }},
+        Hello {{ site.data.contact_hs.firstname }},
       </h1>
       <p class="txt-lg-p">
         Your homeowners insurance policy is up for renewal soon!
       </p>
       <p class="txt-lg-p">
-        At <b class="txt-clr-blue">{{ site.data.contact.current_carrier }}</b>, we strive to provide an amazing experience for our clients, which is why we’ve partnered with Covered
+        At <b class="txt-clr-blue">{{ site.data.contact_hs.current_carrier }}</b>, we strive to provide an amazing experience for our clients, which is why we’ve partnered with Covered
         Insurance. Covered is an award winning independent insurance agency dedicated to helping our clients find the best
         insurance policy at the best price.
       </p>
@@ -17,10 +17,10 @@
         We’re excited to help you purchase your perfect policy! We found several of the best insurance options for your home:
       </p>
       <h2 class="txt-h1">
-        {{ site.data.contact.property_address }}
+        {{ site.data.contact_hs.property_address }}
       </h2>
       <h2 class="txt-h1">
-        {{ site.data.contact.property_city }}, {{ site.data.contact.property_state }} {{ site.data.contact.property_zipcode }}
+        {{ site.data.contact_hs.property_city }}, {{ site.data.contact_hs.property_state }} {{ site.data.contact_hs.property_zipcode }}
       </h2>
       <span class="txt-sm-p txt-clr-gunmetal-l50">
         Please note that the home insurance premiums shown below do not reflect a bundle discount.

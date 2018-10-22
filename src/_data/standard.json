@@ -1,0 +1,14 @@
+{
+  "standard_header_includes": "<!-- standard_header_includes -->",
+  "standard_footer_includes": "<!-- standard_footer_includes -->",
+  "html_title": "Quote Display Template",
+  "meta_description": "Quote Display Description",
+
+  "company_street_address_1": "123 Covered Ave.",
+  "company_city": "Denver",
+  "company_state": "Colorado",
+  "company_zip": "12345",
+  "company_name": "Covered Insurance Inc.",
+  "unsubscribe_link": "Unsubscribe?",
+  "unsubscribe_anchor": "#"
+}

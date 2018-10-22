@@ -3,7 +3,7 @@
   <tr>
     <td class="lmnt-col content" width="100%">
       <div class="txt-strong txt-lg-p">
-        You're currently paying: <b class="txt-clr-orange">{{ site.data.contact.current_premium }}</b> to <b class="txt-clr-blue">{{ site.data.contact.current_carrier }}</b>.
+        You're currently paying: <b class="txt-clr-orange">{{ site.data.contact_hs.current_premium }}</b> to <b class="txt-clr-blue">{{ site.data.contact_hs.current_carrier }}</b>.
       </div>
       <div class="txt-sm-p txt-clr-gunmetal-l50 bump-bottom-base-sm">
         Please note that the home insurance premiums shown below do not reflect a bundle discount.
