@@ -1,9 +1,30 @@
+{% assign export = false %}
+
 <!-- quotes wrapper // -->
 <table border="0" cellpadding="0" cellspacing="0" class="quotes-wrapper" width="100%">
   <tr>
-    {% include small-quote.card width="30" quote="1" %}
-    {% include small-quote.card width="30" quote="2" %}
-    {% include small-quote.card width="30" quote="3" %}
+
+  {% if export == true %}
+
+    {% comment %} HUBL equivalent {% endcomment %}
+    {% raw %}
+      {% if contact.quote_1_premium is defined %}
+    {% endraw %}
+
+      {% include small-quote.card width="33" quote="1" %}
+
+    {% raw %}
+      {% endif %}
+    {% endraw %}
+
+  {% else %}
+
+    {% if site.data.contact.quote_1_premium != '' %}
+      {% include small-quote.card width="100" quote="1" %}
+    {% endif %}
+
+  {% endif %}
+
   </tr>
 </table>
 

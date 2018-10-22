@@ -19,7 +19,7 @@ Simply run `gulp` from the root directory.
 2. `sudo kill -9 PID` where `PID` is the `PID` of said server.
 
 ## Using Dummy Data
-- We have 4 `_data_` files: `contact_hs.json`, `contact.json`, `standard_hs.json`, and `standard.json`. Each is used for either dummy data, or replacing your dummy data with actual Hubspot properties. If you want to code with dummy data, use the `{{ site.data.data_source.data_property }}` syntax. For export, use the `{{ site.data.data_source_hs.data_property }}` syntax. The `_hs` is key, and I usually do a quick find + replace to change to that. We can change this to an overall settings file for a `export: true` field down the road.
+- We have 4 `_data_` files: `contact.json`, `contact.json`, `standard_hs.json`, and `standard.json`. Each is used for either dummy data, or replacing your dummy data with actual Hubspot properties. If you want to code with dummy data, use the `{{ site.data.data_source.data_property }}` syntax. For export, use the `{{ site.data.data_source_hs.data_property }}` syntax. The `_hs` is key, and I usually do a quick find + replace to change to that. We can change this to an overall settings file for a `export: true` field down the road.
 
 ## Fire up an .ngrok server to test on your devices
   - You can access your ```localhost``` from any device because ```.ngrok``` is amazing.

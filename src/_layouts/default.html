@@ -14,24 +14,38 @@
     <meta name="googlebot" content="noindex">
     <meta name="mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="description" content="{{ site.data.standard_hs.meta_description }}">
-    <title>{{ site.data.standard_hs.html_title }}</title>
+    <meta name="description" content="{{ site.data.standard.meta_description }}">
+    <title>{{ site.data.standard.html_title }}</title>
     <link rel="stylesheet" type="text/css" href="/css/styles.css">
-    {{ site.data.standard_hs.standard_header_includes }}
+    {{ site.data.standard.standard_header_includes }}
+
 </head>
 
 <body leftmargin="0" marginwidth="0" topmargin="0" marginheight="0" offset="0">
 
     {{ content }}
 
-    {{ site.data.standard_hs.standard_footer_includes }}
+    {{ site.data.standard.standard_footer_includes }}
 
-    <div style="text-align:center; width: 100%; padding: 50px 0px;">
-        {{ site.data.standard_hs.company_name }} <br />
-        {{ site.data.standard_hs.company_street_address_1 }} <br />
-        {{ site.data.standard_hs.company_city }}, {{ site.data.standard_hs.company_state }}, {{ site.data.standard_hs.company_zip }}<br />
-        <a href="{{ site.data.standard_hs.unsubscribe_anchor }}">{{ site.data.standard_hs.unsubscribe_link }}</a>
-    </div>
+    <p id="footer" style="text-align:center; width: 100%; padding: 50px 0px;">
+        {{ site.data.standard.company_name }}&nbsp;
+        {{ site.data.standard.company_street_address_1 }}&nbsp;
+        {{ site.data.standard.company_street_address_2 }}&nbsp;
+        {{ site.data.standard.company_city }}&nbsp;
+        {{ site.data.standard.company_state }}&nbsp;
+        {{ site.data.standard.company_zip }}&nbsp;
+        {{ site.data.standard.company_country }}&nbsp;
+        <br />
+        You received this email because you are subscribed to {{ site.data.standard.subscription_name }} from {{ site.data.standard.company_name
+        }}.
+        <br />
+        Update your <a class="hubspot-mergetag" data-unsubscribe="true" href="{{ site.data.standard.unsubscribe_link }}">email preferences</a>
+        to choose the types of emails you receive.
+        <br />
+        <a class="hubspot-mergetag" data-unsubscribe="true" href="{{ site.data.standard.unsubscribe_link_all }}">Unsubscribe from all future
+            emails</a>
+    </p>
+    
 </body>
 
 </html>

@@ -14,10 +14,11 @@
     <meta name="googlebot" content="noindex">
     <meta name="mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="description" content="{{ content.meta_description }}">
-    <title>{{ content.html_title }}</title>
+    <meta name="description" content="Quote Display Description">
+    <title>Quote Display Template</title>
     
-    {{ standard_header_includes }}
+    <!-- standard_header_includes -->
+
 </head>
 
 <body leftmargin="0" marginwidth="0" topmargin="0" marginheight="0" offset="0" style="-webkit-font-smoothing: antialiased; background-color: #f4f4f4; color: #385259; font-family: 'Helvetica', 'Roboto', -apple-system, BlinkMacSystemFont, Roboto, Helvetica, Arial, sans-serif; font-size: 16px; font-smoothing: antialiased; text-rendering: optimizeLegibility;">
@@ -42,7 +43,9 @@
 <table border="0" cellpadding="0" cellspacing="0" class="logo-header logo-header-centered" width="100%" style="border-collapse: collapse; border-spacing: 0; margin: 40px 0 20px 0; text-align: left; width: 100%;">
   <tr>
     <td class="lmnt-col-50 txt-left" width="50%" style="max-width: 50%; padding: 0; text-align: left !important; width: 50%;">
-      <img src="/assets/ins-{{ contact.current_carrier }}.png" height="20px" style="-ms-interpolation-mode: bicubic; border: 0; color: #2837b8; font-size: 14px; max-width: 100%; outline: 0;">
+      <strong> 
+        Chase
+      </strong>
     </td>
     <td class="lmnt-col-50 txt-right txt-clr-gunmetal-l50 txt-strong" width="50%" style="color: #8daeb7; font-weight: bold; max-width: 50%; padding: 0; text-align: right !important; width: 50%;">
       Thu, Oct 17th, 2018
@@ -71,15 +74,17 @@
   <table class="section" id="introSection" border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse; border-spacing: 0; margin: 0 auto; max-width: 450px; width: 100%;">
     <tr>
       <td style="padding: 0;">
-            <!-- split-intro // -->
+            
+
+<!-- split-intro // -->
 <table border="0" cellpadding="0" cellspacing="0" class="intro split-intro" width="100%" style="background-color: #f4f4f4; border-collapse: collapse; border-spacing: 0; margin: 40px 0; width: 100%;">
   <tr>
     <td class="lmnt-col-50 content" width="50%" style="border-bottom: 1px solid #D0D0D0; max-width: 50%; padding: 0; padding-bottom: 40px; width: 50%;">
       <h1 style="font-size: 31px; font-weight: bold; line-height: 1.2; margin: 0; padding: 0;">
-        Hi {{ contact.firstname }},
+        Hi Matt,
       </h1>
       <p class="txt-md-p" style="font-size: 14px; font-weight: light; line-height: 1.6em; margin: 1em 0; margin-bottom: 20px;">
-        As a valued <b class="txt-clr-blue" style="color: #14c3fc;">{{ contact.current_carrier }}</b> customer, we wanted to remind you that your homeowners insurance policy is up for renewal at your property located at:
+        As a valued <b class="txt-clr-blue" style="color: #14c3fc;">Chase</b> customer, we wanted to remind you that your homeowners insurance policy is up for renewal at your property located at:
       </p>
       <div class="txt-lg-p" style="font-size: 16px;">
         <strong>
@@ -88,7 +93,7 @@
       </div>
       <div class="txt-lg-p" style="font-size: 16px;">
         <strong>
-          {{ contact.property_city }}, {{ contact.property_state }} {{ contact.property_zipcode }}
+          Brooklyn, NYC 80110
         </strong>
       </div>
     </td>
@@ -98,7 +103,7 @@
         Save up to
       </h1>
       <div class="txt-lg-light txt-clr-blue" style="color: #14c3fc; font-size: 54px; font-weight: 100;">
-        {{ contact.quote_1_savings }}
+        $239
       </div>
       <div class="txt-med-p" style="font-size: 14px; margin-bottom: 10px;">
         On your Annual Premium
@@ -106,11 +111,11 @@
       <!-- button // -->
 <div>
   <!--[if mso]>
-  <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="" style="height:40px;v-text-anchor:middle;width:150px;" arcsize="15%" stroke="f" fillcolor="#14c3fc">
+  <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href=" https://quotes.itscovered.com/ " style="height:40px;v-text-anchor:middle;width:150px;" arcsize="15%" stroke="f" fillcolor="#14c3fc">
     <w:anchorlock/>
     <center>
   <![endif]-->
-  <a href="" style="-webkit-text-size-adjust: none; background-color: #14c3fc; border-radius: 6px; color: #ffffff; display: inline-block; font-family: 'Helvetica',sans-serif; font-size: 13px; font-weight: bold; line-height: 40px; text-align: center; text-decoration: none; width: 150px;" target="_blank">Find out how</a>
+  <a href=" https://quotes.itscovered.com/ " style="-webkit-text-size-adjust: none; background-color: #14c3fc; border-radius: 6px; color: #ffffff; display: inline-block; font-family: 'Helvetica',sans-serif; font-size: 13px; font-weight: bold; line-height: 40px; text-align: center; text-decoration: none; width: 150px;" target="_blank">Find out how</a>
   <!--[if mso]>
     </center>
   </v:roundrect>
@@ -194,7 +199,7 @@
   <tr>
     <td class="lmnt-col content" width="100%" style="max-width: 100%; padding: 0; width: 100%;">
       <div class="txt-strong txt-lg-p" style="font-size: 16px; font-weight: bold;">
-        You're currently paying: <b class="txt-clr-orange" style="color: #F36E4F;">{{ contact.current_premium }}</b> to <b class="txt-clr-blue" style="color: #14c3fc;">{{ contact.current_carrier }}</b>.
+        You're currently paying: <b class="txt-clr-orange" style="color: #F36E4F;">$1,500</b> to <b class="txt-clr-blue" style="color: #14c3fc;">Chase</b>.
       </div>
       <div class="txt-sm-p txt-clr-gunmetal-l50 bump-bottom-base-sm" style="color: #8daeb7; font-size: 10px; font-weight: 300; padding-bottom: 20px;">
         Please note that the home insurance premiums shown below do not reflect a bundle discount.
@@ -203,10 +208,16 @@
   </tr>
 </table>
 <!-- // p -->
-            <!-- quotes wrapper // -->
+            
+
+<!-- quotes wrapper // -->
 <table border="0" cellpadding="0" cellspacing="0" class="quotes-wrapper" width="100%" style="border-collapse: collapse; border-spacing: 0;">
   <tr>
+
+  
+
     
+      
 
 
 
@@ -215,25 +226,25 @@
 
 
 <!-- quote card // -->
-<td class="lmnt-col-30 quote-card small-quote-card" width="30%" valign="top" style="background-color: #f4f4f4; max-width: 30%; padding: 5px; width: 30%;">
+<td class="lmnt-col-100 quote-card small-quote-card" width="100%" valign="top" style="background-color: #f4f4f4; padding: 5px;">
   <table border="0" cellpadding="0" cellspacing="0" width="100%" style="border-collapse: collapse; border-spacing: 0;">
 
     <tr class="card-row card-row-green card-row-top" style="background-color: #3FC8A5; border-radius: 5px; padding: 10px;">
       <td class="card-inner" style="border-bottom: 1px solid #eaeaea; border-radius: 5px 5px 0px 0px; padding: 10px; text-align: center;">
         <div class="featured-savings txt-clr-white" style="color: #ffffff; font-size: 18px; font-weight: 100;">
-          Save {{ contact.quote_1_savings_pct }}
+          Save 65%
         </div>
       </td>
     </tr>
 
     <tr class="card-row" style="background-color: #ffffff; border-radius: 5px; padding: 20px;">
       <td class="card-inner" style="border-bottom: 1px solid #eaeaea; padding: 20px; text-align: center;">
-        <img src="https://www.itscovered.com/assets/ins-logos/ins-{{ contact.quote_1_logo }}.png" class="card-logo" style="-ms-interpolation-mode: bicubic; border: 0; color: #2837b8; font-size: 14px; margin-bottom: 20px; max-width: 100%; outline: 0;">
+        <img src="Dairyland" class="card-logo" style="-ms-interpolation-mode: bicubic; border: 0; color: #2837b8; font-size: 14px; margin-bottom: 20px; max-width: 100%; outline: 0;">
         <div class="line-title" style="color: #385259; font-size: 12px; text-align: center;">
           Annual Premium
         </div>
         <div class="featured-number" style="font-size: 26px; font-weight: bold;">
-          {{ contact.quote_1_premium }}
+          $1,000
         </div>
       </td>
     </tr>
@@ -244,7 +255,7 @@
           Annual Savings
         </div>
         <div class="featured-number" style="font-size: 26px; font-weight: bold;">
-          {{ contact.quote_1_savings }}
+          $239
         </div>
       </td>
     </tr>
@@ -255,11 +266,11 @@
         <!-- button // -->
 <div>
   <!--[if mso]>
-  <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="{{ contact.website }}" style="height:40px;v-text-anchor:middle;width:100px;" arcsize="15%" stroke="f" fillcolor="#14c3fc">
+  <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href=" https://quotes.itscovered.com/ " style="height:40px;v-text-anchor:middle;width:100px;" arcsize="15%" stroke="f" fillcolor="#14c3fc">
     <w:anchorlock/>
     <center>
   <![endif]-->
-  <a href="{{ contact.website }}" style="-webkit-text-size-adjust: none; background-color: #14c3fc; border-radius: 6px; color: #ffffff; display: inline-block; font-family: 'Helvetica',sans-serif; font-size: 13px; font-weight: bold; line-height: 40px; text-align: center; text-decoration: none; width: 100px;" target="_blank">More details</a>
+  <a href=" https://quotes.itscovered.com/ " style="-webkit-text-size-adjust: none; background-color: #14c3fc; border-radius: 6px; color: #ffffff; display: inline-block; font-family: 'Helvetica',sans-serif; font-size: 13px; font-weight: bold; line-height: 40px; text-align: center; text-decoration: none; width: 100px;" target="_blank">More details</a>
   <!--[if mso]>
     </center>
   </v:roundrect>
@@ -277,141 +288,7 @@
 
     
 
-
-
-
-
-
-
-<!-- quote card // -->
-<td class="lmnt-col-30 quote-card small-quote-card" width="30%" valign="top" style="background-color: #f4f4f4; max-width: 30%; padding: 5px; width: 30%;">
-  <table border="0" cellpadding="0" cellspacing="0" width="100%" style="border-collapse: collapse; border-spacing: 0;">
-
-    <tr class="card-row card-row-green card-row-top" style="background-color: #3FC8A5; border-radius: 5px; padding: 10px;">
-      <td class="card-inner" style="border-bottom: 1px solid #eaeaea; border-radius: 5px 5px 0px 0px; padding: 10px; text-align: center;">
-        <div class="featured-savings txt-clr-white" style="color: #ffffff; font-size: 18px; font-weight: 100;">
-          Save {{ contact.quote_2_savings_pct }}
-        </div>
-      </td>
-    </tr>
-
-    <tr class="card-row" style="background-color: #ffffff; border-radius: 5px; padding: 20px;">
-      <td class="card-inner" style="border-bottom: 1px solid #eaeaea; padding: 20px; text-align: center;">
-        <img src="https://www.itscovered.com/assets/ins-logos/ins-{{ contact.quote_2_logo }}.png" class="card-logo" style="-ms-interpolation-mode: bicubic; border: 0; color: #2837b8; font-size: 14px; margin-bottom: 20px; max-width: 100%; outline: 0;">
-        <div class="line-title" style="color: #385259; font-size: 12px; text-align: center;">
-          Annual Premium
-        </div>
-        <div class="featured-number" style="font-size: 26px; font-weight: bold;">
-          {{ contact.quote_2_premium }}
-        </div>
-      </td>
-    </tr>
-
-  <tr class="card-row" style="background-color: #ffffff; border-radius: 5px; padding: 20px;">
-      <td class="card-inner" style="border-bottom: 1px solid #eaeaea; padding: 20px; text-align: center;">
-        <div class="line-title" style="color: #385259; font-size: 12px; text-align: center;">
-          Annual Savings
-        </div>
-        <div class="featured-number" style="font-size: 26px; font-weight: bold;">
-          {{ contact.quote_2_savings }}
-        </div>
-      </td>
-    </tr>
-
-
-    <tr class="card-row card-row-bottom" style="background-color: #ffffff; border-radius: 5px; padding: 20px;">
-      <td class="card-inner" style="border-bottom: none !important; border-radius: 0px 0px 5px 5px; padding: 20px; text-align: center;">
-        <!-- button // -->
-<div>
-  <!--[if mso]>
-  <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="{{ contact.website }}" style="height:40px;v-text-anchor:middle;width:100px;" arcsize="15%" stroke="f" fillcolor="#14c3fc">
-    <w:anchorlock/>
-    <center>
-  <![endif]-->
-  <a href="{{ contact.website }}" style="-webkit-text-size-adjust: none; background-color: #14c3fc; border-radius: 6px; color: #ffffff; display: inline-block; font-family: 'Helvetica',sans-serif; font-size: 13px; font-weight: bold; line-height: 40px; text-align: center; text-decoration: none; width: 100px;" target="_blank">More details</a>
-  <!--[if mso]>
-    </center>
-  </v:roundrect>
-<![endif]-->
-</div>
-<!-- // button -->
-      </td>
-    </tr>
-
-  </table>
-</td>
-<!-- // quote card -->
-
-
-
-    
-
-
-
-
-
-
-
-<!-- quote card // -->
-<td class="lmnt-col-30 quote-card small-quote-card" width="30%" valign="top" style="background-color: #f4f4f4; max-width: 30%; padding: 5px; width: 30%;">
-  <table border="0" cellpadding="0" cellspacing="0" width="100%" style="border-collapse: collapse; border-spacing: 0;">
-
-    <tr class="card-row card-row-green card-row-top" style="background-color: #3FC8A5; border-radius: 5px; padding: 10px;">
-      <td class="card-inner" style="border-bottom: 1px solid #eaeaea; border-radius: 5px 5px 0px 0px; padding: 10px; text-align: center;">
-        <div class="featured-savings txt-clr-white" style="color: #ffffff; font-size: 18px; font-weight: 100;">
-          Save {{ contact.quote_3_savings_pct }}
-        </div>
-      </td>
-    </tr>
-
-    <tr class="card-row" style="background-color: #ffffff; border-radius: 5px; padding: 20px;">
-      <td class="card-inner" style="border-bottom: 1px solid #eaeaea; padding: 20px; text-align: center;">
-        <img src="https://www.itscovered.com/assets/ins-logos/ins-{{ contact.quote_3_logo }}.png" class="card-logo" style="-ms-interpolation-mode: bicubic; border: 0; color: #2837b8; font-size: 14px; margin-bottom: 20px; max-width: 100%; outline: 0;">
-        <div class="line-title" style="color: #385259; font-size: 12px; text-align: center;">
-          Annual Premium
-        </div>
-        <div class="featured-number" style="font-size: 26px; font-weight: bold;">
-          {{ contact.quote_3_premium }}
-        </div>
-      </td>
-    </tr>
-
-  <tr class="card-row" style="background-color: #ffffff; border-radius: 5px; padding: 20px;">
-      <td class="card-inner" style="border-bottom: 1px solid #eaeaea; padding: 20px; text-align: center;">
-        <div class="line-title" style="color: #385259; font-size: 12px; text-align: center;">
-          Annual Savings
-        </div>
-        <div class="featured-number" style="font-size: 26px; font-weight: bold;">
-          {{ contact.quote_3_savings }}
-        </div>
-      </td>
-    </tr>
-
-
-    <tr class="card-row card-row-bottom" style="background-color: #ffffff; border-radius: 5px; padding: 20px;">
-      <td class="card-inner" style="border-bottom: none !important; border-radius: 0px 0px 5px 5px; padding: 20px; text-align: center;">
-        <!-- button // -->
-<div>
-  <!--[if mso]>
-  <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="{{ contact.website }}" style="height:40px;v-text-anchor:middle;width:100px;" arcsize="15%" stroke="f" fillcolor="#14c3fc">
-    <w:anchorlock/>
-    <center>
-  <![endif]-->
-  <a href="{{ contact.website }}" style="-webkit-text-size-adjust: none; background-color: #14c3fc; border-radius: 6px; color: #ffffff; display: inline-block; font-family: 'Helvetica',sans-serif; font-size: 13px; font-weight: bold; line-height: 40px; text-align: center; text-decoration: none; width: 100px;" target="_blank">More details</a>
-  <!--[if mso]>
-    </center>
-  </v:roundrect>
-<![endif]-->
-</div>
-<!-- // button -->
-      </td>
-    </tr>
-
-  </table>
-</td>
-<!-- // quote card -->
-
-
+  
 
   </tr>
 </table>
@@ -487,11 +364,11 @@
 <!-- button // -->
 <div>
   <!--[if mso]>
-  <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="{{ contact.website }}" style="height:40px;v-text-anchor:middle;width:100%;" arcsize="15%" stroke="f" fillcolor="#14c3fc">
+  <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href=" https://quotes.itscovered.com/ " style="height:40px;v-text-anchor:middle;width:100%;" arcsize="15%" stroke="f" fillcolor="#14c3fc">
     <w:anchorlock/>
     <center>
   <![endif]-->
-  <a href="{{ contact.website }}" style="-webkit-text-size-adjust: none; background-color: #14c3fc; border-radius: 6px; color: #ffffff; display: inline-block; font-family: 'Helvetica',sans-serif; font-size: 13px; font-weight: bold; line-height: 40px; text-align: center; text-decoration: none; width: 100%;" target="_blank">More details</a>
+  <a href=" https://quotes.itscovered.com/ " style="-webkit-text-size-adjust: none; background-color: #14c3fc; border-radius: 6px; color: #ffffff; display: inline-block; font-family: 'Helvetica',sans-serif; font-size: 13px; font-weight: bold; line-height: 40px; text-align: center; text-decoration: none; width: 100%;" target="_blank">More details</a>
   <!--[if mso]>
     </center>
   </v:roundrect>
@@ -690,14 +567,26 @@
 
 
 
-    {{ standard_footer_includes }}
+    <!-- standard_footer_includes -->
 
-    <div style="text-align:center; width: 100%; padding: 50px 0px;">
-        {{ site_settings.company_name }} <br>
-        {{ site_settings.company_street_address_1 }} <br>
-        {{ site_settings.company_city }}, {{ site_settings.company_state }}, {{ site_settings.company_zip }}<br>
-        <a href="{{ unsubscribe_anchor }}" style="color: #14c3fc; text-decoration: underline;">{{ unsubscribe_link }}</a>
-    </div>
+    <p id="footer" style="font-size: 14px; font-weight: light; line-height: 1.6em; margin: 1em 0; margin-bottom: 20px; padding: 50px 0px; text-align: center; width: 100%;">
+        Covered Insurance Inc.&nbsp;
+        123 Covered Ave.&nbsp;
+        &nbsp;
+        Denver&nbsp;
+        Colorado&nbsp;
+        12345&nbsp;
+        &nbsp;
+        <br>
+        You received this email because you are subscribed to Covered Insurance from Covered Insurance Inc..
+        <br>
+        Update your <a class="hubspot-mergetag" data-unsubscribe="true" href="#unsubscribe" style="border-bottom: #d3d6f0 1px solid; color: #2837b8 !important; text-decoration: none;">email preferences</a>
+        to choose the types of emails you receive.
+        <br>
+        <a class="hubspot-mergetag" data-unsubscribe="true" href="#unsubscribe_all" style="border-bottom: #d3d6f0 1px solid; color: #2837b8 !important; text-decoration: none;">Unsubscribe from all future
+            emails</a>
+    </p>
+    
 </body>
 
 </html></html>
