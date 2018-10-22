@@ -19,7 +19,14 @@
 
   {% else %}
 
-    {% if site.data.contact.quote_1_premium != '' %}
+    {% if site.data.contact.quote_1_premium != '' and site.data.contact.quote_2_premium != '' and site.data.contact.quote_3_premium != ''  %}
+      {% include small-quote.card width="33" quote="1" %}
+      {% include small-quote.card width="33" quote="2" %}
+      {% include small-quote.card width="33" quote="3" %}
+    {% elsif site.data.contact.quote_2_premium != '' and site.data.contact.quote_3_premium == '' %}
+      {% include small-quote.card width="50" quote="1" %}
+      {% include small-quote.card width="50" quote="2" %}
+    {% else %}
       {% include small-quote.card width="100" quote="1" %}
     {% endif %}
 
