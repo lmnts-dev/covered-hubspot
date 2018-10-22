@@ -9,6 +9,9 @@
   "company_state": "Colorado",
   "company_zip": "12345",
   "company_name": "Covered Insurance Inc.",
-  "unsubscribe_link": "Unsubscribe?",
-  "unsubscribe_anchor": "#"
+
+  "unsubscribe_link": "#unsubscribe",
+  "unsubscribe_link_all": "#unsubscribe_all",
+  "unsubscribe_anchor": "#",
+  "subscription_name": "Covered Insurance"
 }

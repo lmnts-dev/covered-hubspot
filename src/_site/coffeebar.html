@@ -14,10 +14,11 @@
     <meta name="googlebot" content="noindex">
     <meta name="mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="description" content="{{ content.meta_description }}">
-    <title>{{ content.html_title }}</title>
+    <meta name="description" content="Quote Display Description">
+    <title>Quote Display Template</title>
     <link rel="stylesheet" type="text/css" href="/css/styles.css">
-    {{ standard_header_includes }}
+    <!-- standard_header_includes -->
+
 </head>
 
 <body leftmargin="0" marginwidth="0" topmargin="0" marginheight="0" offset="0">
@@ -343,14 +344,26 @@
                 </center>
                 <!-- // END FOOTER -->
 
-    {{ standard_footer_includes }}
+    <!-- standard_footer_includes -->
 
-    <div style="text-align:center; width: 100%; padding: 50px 0px;">
-        {{ site_settings.company_name }} <br />
-        {{ site_settings.company_street_address_1 }} <br />
-        {{ site_settings.company_city }}, {{ site_settings.company_state }}, {{ site_settings.company_zip }}<br />
-        <a href="{{ unsubscribe_anchor }}">{{ unsubscribe_link }}</a>
-    </div>
+    <p id="footer" style="text-align:center; width: 100%; padding: 50px 0px;">
+        Covered Insurance Inc.&nbsp;
+        123 Covered Ave.&nbsp;
+        &nbsp;
+        Denver&nbsp;
+        Colorado&nbsp;
+        12345&nbsp;
+        &nbsp;
+        <br />
+        You received this email because you are subscribed to Covered Insurance from Covered Insurance Inc..
+        <br />
+        Update your <a class="hubspot-mergetag" data-unsubscribe="true" href="#unsubscribe">email preferences</a>
+        to choose the types of emails you receive.
+        <br />
+        <a class="hubspot-mergetag" data-unsubscribe="true" href="#unsubscribe_all">Unsubscribe from all future
+            emails</a>
+    </p>
+    
 </body>
 
 </html>

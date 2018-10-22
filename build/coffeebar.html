@@ -14,10 +14,11 @@
     <meta name="googlebot" content="noindex">
     <meta name="mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="description" content="{{ content.meta_description }}">
-    <title>{{ content.html_title }}</title>
+    <meta name="description" content="Quote Display Description">
+    <title>Quote Display Template</title>
     
-    {{ standard_header_includes }}
+    <!-- standard_header_includes -->
+
 </head>
 
 <body leftmargin="0" marginwidth="0" topmargin="0" marginheight="0" offset="0" style="-webkit-font-smoothing: antialiased; background-color: #f4f4f4; color: #385259; font-family: 'Helvetica', 'Roboto', -apple-system, BlinkMacSystemFont, Roboto, Helvetica, Arial, sans-serif; font-size: 16px; font-smoothing: antialiased; text-rendering: optimizeLegibility;">
@@ -322,14 +323,26 @@
                 </center>
                 <!-- // END FOOTER -->
 
-    {{ standard_footer_includes }}
+    <!-- standard_footer_includes -->
 
-    <div style="text-align:center; width: 100%; padding: 50px 0px;">
-        {{ site_settings.company_name }} <br>
-        {{ site_settings.company_street_address_1 }} <br>
-        {{ site_settings.company_city }}, {{ site_settings.company_state }}, {{ site_settings.company_zip }}<br>
-        <a href="{{ unsubscribe_anchor }}" style="color: #14c3fc; text-decoration: underline;">{{ unsubscribe_link }}</a>
-    </div>
+    <p id="footer" style="font-size: 14px; font-weight: light; line-height: 1.6em; margin: 1em 0; margin-bottom: 20px; padding: 50px 0px; text-align: center; width: 100%;">
+        Covered Insurance Inc.&nbsp;
+        123 Covered Ave.&nbsp;
+        &nbsp;
+        Denver&nbsp;
+        Colorado&nbsp;
+        12345&nbsp;
+        &nbsp;
+        <br>
+        You received this email because you are subscribed to Covered Insurance from Covered Insurance Inc..
+        <br>
+        Update your <a class="hubspot-mergetag" data-unsubscribe="true" href="#unsubscribe" style="border-bottom: #d3d6f0 1px solid; color: #2837b8 !important; text-decoration: none;">email preferences</a>
+        to choose the types of emails you receive.
+        <br>
+        <a class="hubspot-mergetag" data-unsubscribe="true" href="#unsubscribe_all" style="border-bottom: #d3d6f0 1px solid; color: #2837b8 !important; text-decoration: none;">Unsubscribe from all future
+            emails</a>
+    </p>
+    
 </td></tr></table></center></body>
 
 </html></html>
