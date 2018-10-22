@@ -14,9 +14,10 @@
     <meta name="googlebot" content="noindex">
     <meta name="mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-capable" content="yes">
-    <title>Covered | Email Template</title>
-    <!-- hi -->
+    <meta name="description" content="{{ content.meta_description }}">
+    <title>{{ content.html_title }}</title>
     <link rel="stylesheet" type="text/css" href="/css/styles.css">
+    {{ standard_header_includes }}
 </head>
 
 <body leftmargin="0" marginwidth="0" topmargin="0" marginheight="0" offset="0">
@@ -342,5 +343,14 @@
                 </center>
                 <!-- // END FOOTER -->
 
+    {{ standard_footer_includes }}
+
+    <div style="text-align:center; width: 100%; padding: 50px 0px;">
+        {{ site_settings.company_name }} <br />
+        {{ site_settings.company_street_address_1 }} <br />
+        {{ site_settings.company_city }}, {{ site_settings.company_state }}, {{ site_settings.company_zip }}<br />
+        <a href="{{ unsubscribe_anchor }}">{{ unsubscribe_link }}</a>
+    </div>
 </body>
+
 </html>

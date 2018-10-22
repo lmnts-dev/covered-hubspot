@@ -14,14 +14,24 @@
     <meta name="googlebot" content="noindex">
     <meta name="mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-capable" content="yes">
-    <title>Covered | Email Template</title>
-    <!-- hi -->
+    <meta name="description" content="{{ site.data.standard_hs.meta_description }}">
+    <title>{{ site.data.standard_hs.html_title }}</title>
     <link rel="stylesheet" type="text/css" href="/css/styles.css">
+    {{ site.data.standard_hs.standard_header_includes }}
 </head>
 
 <body leftmargin="0" marginwidth="0" topmargin="0" marginheight="0" offset="0">
 
     {{ content }}
 
+    {{ site.data.standard_hs.standard_footer_includes }}
+
+    <div style="text-align:center; width: 100%; padding: 50px 0px;">
+        {{ site.data.standard_hs.company_name }} <br />
+        {{ site.data.standard_hs.company_street_address_1 }} <br />
+        {{ site.data.standard_hs.company_city }}, {{ site.data.standard_hs.company_state }}, {{ site.data.standard_hs.company_zip }}<br />
+        <a href="{{ site.data.standard_hs.unsubscribe_anchor }}">{{ site.data.standard_hs.unsubscribe_link }}</a>
+    </div>
 </body>
+
 </html>

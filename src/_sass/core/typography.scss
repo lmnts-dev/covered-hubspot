@@ -79,6 +79,20 @@ p {
   margin-bottom: $base;
 }
 
+.txt-strong {
+  font-weight:bold;
+}
+
+// alignment 
+
 .txt-center {
-  text-align:center;
+  text-align:center !important;
+}
+
+.txt-left {
+  text-align:left !important;
+}
+
+.txt-right {
+  text-align:right !important;
 }
