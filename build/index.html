@@ -14,10 +14,10 @@
     <meta name="googlebot" content="noindex">
     <meta name="mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="description" content="Quote Display Description">
-    <title>Quote Display Template</title>
+    <meta name="description" content="{{ content.meta_description }}">
+    <title>{{ content.html_title }}</title>
     
-    <!-- standard_header_includes -->
+    {{ standard_header_includes }}
 
 </head>
 
@@ -380,9 +380,13 @@
     <tr class="card-row card-row-green card-row-top" style="background-color: #3FC8A5; border-radius: 5px; padding: 10px;">
       <td class="card-inner" style="border-bottom: 1px solid #eaeaea; border-radius: 5px 5px 0px 0px; padding: 10px; text-align: center;">
         <div class="featured-savings txt-clr-white" style="color: #ffffff; font-size: 18px; font-weight: 100;">
+<<<<<<< HEAD
           
             Great Value
           
+=======
+          Save -20%
+>>>>>>> 6a65accf1492dd0e3362d8d09c058f905e5213ff
         </div>
       </td>
     </tr>
@@ -404,7 +408,11 @@
         <div class="line-title" style="color: #385259; font-size: 12px; text-align: center;">
           Annual Savings
         </div>
+<<<<<<< HEAD
         <div class="featured-number  txt-clr-orange " style="color: #F36E4F; font-size: 26px; font-weight: bold;">
+=======
+        <div class="featured-number" style="font-size: 26px; font-weight: bold;">
+>>>>>>> 6a65accf1492dd0e3362d8d09c058f905e5213ff
           -$500
         </div>
       </td>
@@ -717,23 +725,23 @@
 
 
 
-    <!-- standard_footer_includes -->
+    {{ standard_footer_includes }}
 
     <p id="footer" style="font-size: 14px; font-weight: light; line-height: 1.6em; margin: 1em 0; margin-bottom: 20px; padding: 50px 0px; text-align: center; width: 100%;">
-        Covered Insurance Inc.&nbsp;
-        123 Covered Ave.&nbsp;
+        {{ site_settings.company_name }}&nbsp;
+        {{ site_settings.company_street_address_1 }}&nbsp;
         &nbsp;
-        Denver&nbsp;
-        Colorado&nbsp;
-        12345&nbsp;
+        {{ site_settings.company_city }}&nbsp;
+        {{ site_settings.company_state }}&nbsp;
+        {{ site_settings.company_zip }}&nbsp;
         &nbsp;
         <br>
-        You received this email because you are subscribed to Covered Insurance from Covered Insurance Inc..
+        You received this email because you are subscribed to  {{ subscription_name }} from {{ site_settings.company_name }}.
         <br>
-        Update your <a class="hubspot-mergetag" data-unsubscribe="true" href="#unsubscribe" style="border-bottom: #d3d6f0 1px solid; color: #2837b8 !important; text-decoration: none;">email preferences</a>
+        Update your <a class="hubspot-mergetag" data-unsubscribe="true" href="{{ unsubscribe_link }}" style="border-bottom: #d3d6f0 1px solid; color: #2837b8 !important; text-decoration: none;">email preferences</a>
         to choose the types of emails you receive.
         <br>
-        <a class="hubspot-mergetag" data-unsubscribe="true" href="#unsubscribe_all" style="border-bottom: #d3d6f0 1px solid; color: #2837b8 !important; text-decoration: none;">Unsubscribe from all future
+        <a class="hubspot-mergetag" data-unsubscribe="true" href="{{ unsubscribe_all }}" style="border-bottom: #d3d6f0 1px solid; color: #2837b8 !important; text-decoration: none;">Unsubscribe from all future
             emails</a>
     </p>
     
