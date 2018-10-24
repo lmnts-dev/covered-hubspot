@@ -8,11 +8,20 @@
 
     {% comment %} HUBL equivalent {% endcomment %}
     {% raw %}
-      {% if contact.quote_1_premium is defined %}
+      {% if contact.quote_1_premium != '' and contact.quote_2_premium != '' and contact.quote_3_premium != ''  %}
     {% endraw %}
-
       {% include small-quote.card width="33" quote="1" %}
-
+      {% include small-quote.card width="33" quote="2" %}
+      {% include small-quote.card width="33" quote="3" %}
+    {% raw %}
+      {% elif contact.quote_2_premium != '' and contact.quote_3_premium == '' %}
+    {% endraw %}
+      {% include small-quote.card width="50" quote="1" %}
+      {% include small-quote.card width="50" quote="2" %}
+    {% raw %}
+      {% else %}
+    {% endraw %}
+      {% include small-quote.card width="100" quote="1" %}
     {% raw %}
       {% endif %}
     {% endraw %}
