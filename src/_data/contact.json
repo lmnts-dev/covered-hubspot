@@ -62,11 +62,7 @@
   "quote_3_premium": "$2,000",
   "quote_3_savings": "-$500",
   "quote_3_savings_pct": "-20%",
-<<<<<<< HEAD
-  "quote_3_score": "-4.2",
-=======
   "quote_3_score": "-2.2",
->>>>>>> 6a65accf1492dd0e3362d8d09c058f905e5213ff
 
   "quote_status": "",
   "quote_uuid": "",

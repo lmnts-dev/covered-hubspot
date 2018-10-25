@@ -1,0 +1,16 @@
+<!-- // headline // -->
+<table border="0" cellpadding="0" cellspacing="0" class="double-headline" width="100%">
+  <tr>
+    <td class="lmnt-col content" width="100%">
+      <h1 class="txt-h1-large txt-clr-gunmetal">
+        {{ include.headline }}
+      </h1>
+    </td>
+  </tr>
+  <tr>
+    <td class="lmnt-col content" width="100%">
+      <div class="headline-border"></div>
+    </td>
+  </tr>
+</table>
+<!-- // headline -->

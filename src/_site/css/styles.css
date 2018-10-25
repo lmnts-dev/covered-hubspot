@@ -121,18 +121,6 @@ table {
   /* Null tables spaces */
   border-collapse: collapse; }
 
-.border-spacing-top {
-  margin-top: 40px; }
-
-.border-spacing-bottom {
-  margin-bottom: 20px; }
-
-.bump-bottom-base {
-  padding-bottom: 80px; }
-
-.bump-bottom-base-sm {
-  padding-bottom: 20px; }
-
 body {
   background-color: #f4f4f4;
   color: #385259; }
@@ -196,6 +184,22 @@ a {
 .txt-clr-snow {
   color: #f4f4f4; }
 
+.border-spacing-top {
+  margin-top: 40px; }
+
+.border-spacing-bottom {
+  margin-bottom: 20px; }
+
+.bump-bottom-base {
+  padding-bottom: 80px; }
+
+.bump-bottom-base-sm {
+  padding-bottom: 20px; }
+
+.border-bottom {
+  padding-bottom: 40px;
+  border-bottom: 1px solid #D0D0D0; }
+
 body {
   font-family: "Helvetica", "Roboto", -apple-system, BlinkMacSystemFont, Roboto, Helvetica, Arial, sans-serif;
   font-size: 16px; }
@@ -235,6 +239,11 @@ p {
   font-weight: light;
   margin-bottom: 20px;
   font-size: 14px; }
+
+.txt-h1-large {
+  margin-top: 120px;
+  font-size: 64px;
+  font-weight: bold; }
 
 .txt-lg-p {
   font-size: 16px; }
@@ -313,6 +322,12 @@ p {
     border-bottom: 1px solid #D0D0D0; }
   .intro.split-intro .price-col .txt-med-p {
     margin-bottom: 10px; }
+
+.headline-border {
+  height: 6px;
+  width: 80px;
+  background-color: #14c3fc;
+  margin-top: 20px; }
 
 #quotesDisplay {
   background-color: #f4f4f4;
