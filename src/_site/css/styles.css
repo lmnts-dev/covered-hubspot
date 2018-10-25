@@ -200,6 +200,10 @@ a {
   padding-bottom: 40px;
   border-bottom: 1px solid #D0D0D0; }
 
+.border-right {
+  padding-right: 30px;
+  border-right: 1px solid #D0D0D0; }
+
 body {
   font-family: "Helvetica", "Roboto", -apple-system, BlinkMacSystemFont, Roboto, Helvetica, Arial, sans-serif;
   font-size: 16px; }

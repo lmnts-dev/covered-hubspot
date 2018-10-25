@@ -21,3 +21,8 @@ $base-max-width: 450px;
     padding-bottom: $base;
     border-bottom: 1px solid $clr-med-gray;
 }
+
+.border-right {
+    padding-right: $base * .75;
+    border-right: 1px solid $clr-med-gray;
+}

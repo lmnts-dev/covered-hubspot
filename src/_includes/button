@@ -1,5 +1,5 @@
 <!-- button // -->
-<div>
+<div class="{{include.class}}">
   <!--[if mso]>
   <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="{{ include.url }}" style="height:40px;v-text-anchor:middle;width:{{ include.width }};" arcsize="15%" stroke="f" fillcolor="{{ include.bg }}">
     <w:anchorlock/>

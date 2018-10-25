@@ -10,59 +10,30 @@ layout: default
         {% include section.end %}
     {% include row.end %}
 
-    {% include row.start class="bg-snow quotes-display" %}
-
-        {% include section.start id="quotesDisplay" %}
-            {% include headline.section
-              headline="Header Text"
-            %}
-            {% include double-headline.section
-              headline-2="Your homeowners insurance policy is up for renewal soon!"
-              class="border-spacing-top border-spacing-bottom"
-            %}
-            {% include button
-                txt="More details"
-                bg="#14c3fc"
-                txt-clr="#ffffff"
-                url=uuid
-                width="100%"
-                class="border-bottom"
-            %}
-            {% include double-headline.section
-              headline-2="Customized quotes for you"
-              class="border-spacing-top"
-            %}
-            {% include p.section
-                content="We’ve selected these quotes just for you, based on the most comprehensive coverage for your needs at the most
-                competitive rates."
-            %}
-            {% include p.section
-                content="We’ve selected these quotes just for you, based on the most comprehensive coverage for your needs at the most
-                competitive rates."
-            %}
-            {% include small-quotes.section %}
-        {% include section.end %}
-    {% include row.end %}
-
-    {% include row.start class="bg-snow quotes-display" %}
-        {% include section.start id="quotesDisplay" %}
-            {% include double-headline.section
-              headline-1="Lorem Ipsum"
-              headline-2="Lorem"
-            %}
-            {% include p.section
-                content="We’ve selected these quotes just for you, based on the most comprehensive coverage for your needs at the most
-                competitive rates."
-                border="yes"
-            %}
-        {% include section.end %}
-    {% include row.end %}
-
-    {% include row.start %}
+    {% include row.start class="bg-snow" %}
         {% include section.start %}
-            {% include icon-row.section %}
+            {% include p.section
+                content="Hey there,"
+                class="border-spacing-top"
+            %}
+            {% include p.section
+                content="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. "
+            %}
+            {% include p.section
+                content="Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+            %}
+            {% include p.section
+                content="Sincerely,"
+            %}
         {% include section.end %}
     {% include row.end %}
+
+    {% include row.start class="bg-snow" %}
+        {% include section.start %}
+            {% include photo-signature.section %}
+        {% include section.end %}
+    {% include row.end %}
+
 
     {% include row.start class="bg-snow" %}
       {% include section.start id="footImageTop" %}
