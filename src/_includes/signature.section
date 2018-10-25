@@ -29,24 +29,6 @@
       <p class="txt-sm-p txt-clr-white">
         To opt-out of receiving messages from Covered Insurance please send a message to insurance@itscovered.com with subject “Opt Out”. Thank you.
       </p>
-      <p id="required-footer-tags" class="txt-clr-white txt-footer">
-        {{ site_settings.company_name }}
-        {{ site_settings.company_street_address_1 }}
-        {{ site_settings.company_street_address_2 }}
-        {{ site_settings.company_city }}
-        {{ site_settings.company_state }}
-        {{ site_settings.company_zip }}
-        {{ site_settings.company_country }}
-        <br />
-        You received this email because you are subscribed to {{ subscription_name }} from {{
-        site_settings.company_name }}.
-        <br />
-        Update your <a class="hubspot-mergetag" data-unsubscribe="true" href="{{ unsubscribe_link }}">email preferences</a>
-        to choose the types of emails you receive.
-        <br />
-        <a class="hubspot-mergetag" data-unsubscribe="true" href="{{ unsubscribe_link_all }}">Unsubscribe from all
-            future emails</a>
-      </p>
       <p class="txt-clr-white txt-footer bump-bottom-base">
         © 2018 &nbsp; &nbsp; • &nbsp; &nbsp; www.itscovered.com &nbsp; &nbsp; • &nbsp; &nbsp; Made with <span class="txt-clr-red">❤︎</span> in Colorado, USA
       </p>
