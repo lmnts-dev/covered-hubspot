@@ -14,31 +14,26 @@ layout: default
 
         {% include section.start id="quotesDisplay" %}
             {% include headline.section
-              headline="Header Text"
+              headline= site.data.contact_hs.e4-header-text
             %}
             {% include double-headline.section
-              headline-2="Your homeowners insurance policy is up for renewal soon!"
+              headline-2= site.data.contact_hs.e4-p-1
               class="border-spacing-top border-spacing-bottom"
             %}
             {% include button
-                txt="More details"
+                txt= site.data.contact_hs.e4-button-text
                 bg="#14c3fc"
                 txt-clr="#ffffff"
-                url=uuid
+                url= site.data.contact_hs.e4-header-text
                 width="100%"
                 class="border-bottom"
             %}
             {% include double-headline.section
-              headline-2="Customized quotes for you"
+              headline-2= site.data.contact_hs.e4-header-2
               class="border-spacing-top"
             %}
             {% include p.section
-                content="We’ve selected these quotes just for you, based on the most comprehensive coverage for your needs at the most
-                competitive rates."
-            %}
-            {% include p.section
-                content="We’ve selected these quotes just for you, based on the most comprehensive coverage for your needs at the most
-                competitive rates."
+                content= site.data.contact_hs.e4-p-2
             %}
             {% include small-quotes.section %}
         {% include section.end %}
@@ -47,12 +42,11 @@ layout: default
     {% include row.start class="bg-snow quotes-display" %}
         {% include section.start id="quotesDisplay" %}
             {% include double-headline.section
-              headline-1="Lorem Ipsum"
-              headline-2="Lorem"
+              headline-1= site.data.contact_hs.e4-header-3-1
+              headline-2= site.data.contact_hs.e4-header-3-2
             %}
             {% include p.section
-                content="We’ve selected these quotes just for you, based on the most comprehensive coverage for your needs at the most
-                competitive rates."
+                content= site.data.contact_hs.e4-p-3
                 border="yes"
             %}
         {% include section.end %}

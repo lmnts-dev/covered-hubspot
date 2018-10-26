@@ -3,7 +3,7 @@
   <tr>
     <td class="lmnt-col-50 txt-left" width="50%">
       <strong> 
-        {{ site.data.contact.current_carrier }}
+        {{ site.data.contact_hs.current_carrier }}
       </strong>
     </td>
     <td class="lmnt-col-50 txt-right txt-clr-gunmetal-l50 txt-strong" width="50%">

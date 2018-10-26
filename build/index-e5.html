@@ -67,13 +67,12 @@
 
     <!-- row // -->
 <center>
-  <table class="row bg-snow quotes-display" border="0" cellpadding="0" cellspacing="0" style="background-color: #f4f4f4; border-collapse: collapse; border-spacing: 0; margin: 0 auto; max-width: 100%; width: 100%;">
+  <table class="row bg-snow" border="0" cellpadding="0" cellspacing="0" style="background-color: #f4f4f4; border-collapse: collapse; border-spacing: 0; margin: 0 auto; max-width: 100%; width: 100%;">
     <tr>
       <td class="inner" style="padding: 0 20px;">
-
         <!-- section // -->
 <center>
-  <table class="section" id="quotesDisplay" border="0" cellpadding="0" cellspacing="0" style="background-color: #f4f4f4; border-collapse: collapse; border-spacing: 0; margin: 0 0 40px 0; max-width: 450px; width: 100%;">
+  <table class="section" id="" border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse; border-spacing: 0; margin: 0 auto; max-width: 450px; width: 100%;">
     <tr>
       <td style="padding: 0;">
             <!-- // headline // -->
@@ -106,20 +105,105 @@
   </tr>
 </table>
 <!-- // double-headline -->
-            <!-- button // -->
-<div class="border-bottom" style="border-bottom: 1px solid #D0D0D0; padding-bottom: 40px;">
-  <!--[if mso]>
-  <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="{{ module.text_field }}" style="height:40px;v-text-anchor:middle;width:100%;" arcsize="15%" stroke="f" fillcolor="#14c3fc">
-    <w:anchorlock/>
-    <center>
-  <![endif]-->
-  <a href="{{ module.text_field }}" style="-webkit-text-size-adjust: none; background-color: #14c3fc; border-radius: 6px; color: #ffffff; display: inline-block; font-family: 'Helvetica',sans-serif; font-size: 13px; font-weight: bold; line-height: 40px; text-align: center; text-decoration: none; width: 100%;" target="_blank">{{ module.text_field }}</a>
-  <!--[if mso]>
-    </center>
-  </v:roundrect>
-<![endif]-->
-</div>
-<!-- // button -->
+        </td>
+</tr>
+</table>
+</center>
+<!-- // section -->
+    </td>
+</tr>
+</table>
+</center>
+<!-- // row -->
+
+    <!-- row // -->
+<center>
+  <table class="row bg-snow" border="0" cellpadding="0" cellspacing="0" style="background-color: #f4f4f4; border-collapse: collapse; border-spacing: 0; margin: 0 auto; max-width: 100%; width: 100%;">
+    <tr>
+      <td class="inner" style="padding: 0 20px;">
+        <!-- section // -->
+<center>
+  <table class="section" id="" border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse; border-spacing: 0; margin: 0 auto; max-width: 450px; width: 100%;">
+    <tr>
+      <td style="padding: 0;">
+            <!-- policy review // -->
+<table border="0" cellpadding="0" cellspacing="0" class="logo-header bg-white" width="100%" style="background-color: #ffffff; border-collapse: collapse; border-spacing: 0; margin: 40px 0; text-align: left; width: 100%;">
+  <tr>
+    <td class="lmnt-col txt-center" width="100%" style="max-width: 100%; padding: 0; text-align: center !important; width: 100%;">
+      <p class="txt-clr-blue no-margin-bottom" style="color: #14c3fc; font-size: 14px; font-weight: light; line-height: 1.6em; margin: 1em 0; margin-bottom: 0;">
+        <b>Your policy</b>
+      </p>
+      <div class="txt-h2" style="font-size: 25px; font-weight: bold; line-height: 1.2; margin: 0; padding: 0;">
+        
+      </div>
+      <p class="no-margin-top" style="font-size: 14px; font-weight: light; line-height: 1.6em; margin: 1em 0; margin-bottom: 20px; margin-top: 0;">
+        <b>{{ contact.property_city }}, {{ contact.property_state }} {{ contact.property_zipcode }}</b>
+      </p>
+      <div class="border margin-left-sm margin-right-sm" style="border: 1px solid #D0D0D0; margin-left: 20px; margin-right: 20px;">
+        <p class="txt-clr-blue" style="color: #14c3fc; font-size: 14px; font-weight: light; line-height: 1.6em; margin: 1em 0; margin-bottom: 20px;">
+          <b>You're Currently Paying</b>
+        </p>
+        <div class="txt-h2" style="font-size: 25px; font-weight: bold; line-height: 1.2; margin: 0; padding: 0;">
+          {{ contact.current_premium }} <span>/yr</span>
+        </div>
+        <p class="no-margin-top" style="font-size: 14px; font-weight: light; line-height: 1.6em; margin: 1em 0; margin-bottom: 20px; margin-top: 0;">
+          <b>with {{ contact.current_carrier }}</b>
+        </p>
+      </div>
+    </td>
+  </tr>
+  <tr>
+    <td style="padding: 0;">
+      <table border="0" cellpadding="0" cellspacing="0" class="border-spacing-bottom border-spacing-top" width="100%" style="border-collapse: collapse; border-spacing: 0; margin-bottom: 20px; margin-top: 40px;">
+        <tr>
+          <td class="lmnt-col-50 txt-center" width="50%" style="max-width: 50%; padding: 0; text-align: center !important; width: 50%;">
+            <p class="txt-clr-blue" style="color: #14c3fc; font-size: 14px; font-weight: light; line-height: 1.6em; margin: 1em 0; margin-bottom: 20px;">
+              <b>You could be paying</b>
+            </p>
+            <div class="txt-h2" style="font-size: 25px; font-weight: bold; line-height: 1.2; margin: 0; padding: 0;">
+              {{ contact.quote_1_premium }} <span>/yr</span>
+            </div>
+            <p class="no-margin-top" style="font-size: 14px; font-weight: light; line-height: 1.6em; margin: 1em 0; margin-bottom: 20px; margin-top: 0;">
+              <b>with {{ contact.quote_1_carrier }}</b>
+            </p>
+          </td>
+          <td class="lmnt-col-50 txt-center border-left" width="50%" style="border-left: 1px solid #D0D0D0; max-width: 50%; padding: 0; text-align: center !important; width: 50%;">
+            <p class="txt-clr-blue" style="color: #14c3fc; font-size: 14px; font-weight: light; line-height: 1.6em; margin: 1em 0; margin-bottom: 20px;">
+              <b>You could be saving</b>
+            </p>
+            <div class="txt-h2 txt-clr-green" style="color: #3FC8A5; font-size: 25px; font-weight: bold; line-height: 1.2; margin: 0; padding: 0;">
+              {{ contact.quote_1_savings }}
+            </div>
+            <p class="no-margin-top txt-clr-green " style="color: #3FC8A5; font-size: 14px; font-weight: light; line-height: 1.6em; margin: 1em 0; margin-bottom: 20px; margin-top: 0;">
+              <b>Annually</b>
+            </p>
+          </td>
+        </tr>
+      </table></td>
+    </tr></table>
+</td></tr></table>
+<!-- // policy review -->
+        </center></td>
+</tr>
+</table>
+</center>
+<!-- // section -->
+    </td>
+</tr>
+</table>
+</center>
+<!-- // row -->
+
+    <!-- row // -->
+<center>
+  <table class="row bg-snow" border="0" cellpadding="0" cellspacing="0" style="background-color: #f4f4f4; border-collapse: collapse; border-spacing: 0; margin: 0 auto; max-width: 100%; width: 100%;">
+    <tr>
+      <td class="inner" style="padding: 0 20px;">
+        <!-- section // -->
+<center>
+  <table class="section" id="quotesDisplay" border="0" cellpadding="0" cellspacing="0" style="background-color: #f4f4f4; border-collapse: collapse; border-spacing: 0; margin: 0 0 40px 0; max-width: 450px; width: 100%;">
+    <tr>
+      <td style="padding: 0;">
             <!-- double-headline // -->
 <table border="0" cellpadding="0" cellspacing="0" class="double-headline border-spacing-top" width="100%" style="border-collapse: collapse; border-spacing: 0; margin-top: 40px;">
   <tr>
@@ -631,6 +715,7 @@
 </center>
 <!-- // row -->
 
+
     <!-- row // -->
 <center>
   <table class="row bg-snow quotes-display" border="0" cellpadding="0" cellspacing="0" style="background-color: #f4f4f4; border-collapse: collapse; border-spacing: 0; margin: 0 auto; max-width: 100%; width: 100%;">
@@ -871,10 +956,10 @@
 <!-- // row -->
 
 
-</td>
-</tr>
-</table>
-</center>
+
+
+
+
 <!-- // email -->
 
 

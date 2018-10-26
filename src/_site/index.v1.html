@@ -43,7 +43,7 @@
 <table border="0" cellpadding="0" cellspacing="0" class="logo-header" width="100%">
   <tr>
     <td class="lmnt-col-30" width="30%">
-      <img src="/assets/ins-chase.png">
+      <img src="/assets/ins-{{ contact.current_carrier }}.png">
     </td>
     <td class="lmnt-col-30 txt-center" width="30%">
       +
@@ -80,13 +80,13 @@
   <tr>
     <td class="lmnt-col content" width="100%">
       <h1>
-        Hello Matt,
+        Hello {{ contact.firstname }},
       </h1>
       <p class="txt-lg-p">
         Your homeowners insurance policy is up for renewal soon!
       </p>
       <p class="txt-lg-p">
-        At <b class="txt-clr-blue">Chase</b>, we strive to provide an amazing experience for our clients, which is why we’ve partnered with Covered
+        At <b class="txt-clr-blue">{{ contact.current_carrier }}</b>, we strive to provide an amazing experience for our clients, which is why we’ve partnered with Covered
         Insurance. Covered is an award winning independent insurance agency dedicated to helping our clients find the best
         insurance policy at the best price.
       </p>
@@ -97,7 +97,7 @@
         
       </h2>
       <h2 class="txt-h1">
-        Brooklyn, NYC 80110
+        {{ contact.property_city }}, {{ contact.property_state }} {{ contact.property_zipcode }}
       </h2>
       <span class="txt-sm-p txt-clr-gunmetal-l50">
         Please note that the home insurance premiums shown below do not reflect a bundle discount.
@@ -173,19 +173,19 @@
         Save
         </div>
         <div class="featured-savings txt-clr-white">
-          $239
+          {{ contact.quote_1_savings }}
         </div>
       </td>
     </tr>
 
     <tr class="card-row">
       <td class="card-inner">
-        <img src="Dairyland" class="card-logo">
+        <img src="{{ contact.quote_1_logo }}" class="card-logo">
         <div class="line-title">
           Annual Premium
         </div>
         <div class="featured-number">
-          $1,000
+          {{ contact.quote_1_premium }}
         </div>
       </td>
     </tr>
@@ -196,7 +196,7 @@
           Dwelling
         </div>
         <div class="line-number">
-          $209,800
+          {{ contact.quote_1_dwelling }}
         </div>
       </td>
     </tr>
@@ -207,7 +207,7 @@
           Deductible
         </div>
         <div class="line-number">
-          $1,322
+          {{ contact.quote_1_deductible }}
         </div>
       </td>
     </tr>
@@ -217,11 +217,11 @@
         <!-- button // -->
 <div class="">
   <!--[if mso]>
-  <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="#" style="height:40px;v-text-anchor:middle;width:100px;" arcsize="15%" stroke="f" fillcolor="#14c3fc">
+  <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="{{ contact.website }}" style="height:40px;v-text-anchor:middle;width:100px;" arcsize="15%" stroke="f" fillcolor="#14c3fc">
     <w:anchorlock/>
     <center>
   <![endif]-->
-  <a href="#" style="background-color:#14c3fc;border-radius:6px;color:#ffffff;display:inline-block;font-family:'Helvetica',sans-serif;font-size:13px;font-weight:bold;line-height:40px;text-align:center;text-decoration:none;width:100px;-webkit-text-size-adjust:none;" target="_blank">More details</a>
+  <a href="{{ contact.website }}" style="background-color:#14c3fc;border-radius:6px;color:#ffffff;display:inline-block;font-family:'Helvetica',sans-serif;font-size:13px;font-weight:bold;line-height:40px;text-align:center;text-decoration:none;width:100px;-webkit-text-size-adjust:none;" target="_blank">More details</a>
   <!--[if mso]>
     </center>
   </v:roundrect>
@@ -255,19 +255,19 @@
         Save
         </div>
         <div class="featured-savings txt-clr-white">
-          $239
+          {{ contact.quote_2_savings }}
         </div>
       </td>
     </tr>
 
     <tr class="card-row">
       <td class="card-inner">
-        <img src="Nationwide" class="card-logo">
+        <img src="{{ contact.quote_2_logo }}" class="card-logo">
         <div class="line-title">
           Annual Premium
         </div>
         <div class="featured-number">
-          $1,000
+          {{ contact.quote_2_premium }}
         </div>
       </td>
     </tr>
@@ -278,7 +278,7 @@
           Dwelling
         </div>
         <div class="line-number">
-          $209,800
+          {{ contact.quote_2_dwelling }}
         </div>
       </td>
     </tr>
@@ -289,7 +289,7 @@
           Deductible
         </div>
         <div class="line-number">
-          $1,322
+          {{ contact.quote_2_deductible }}
         </div>
       </td>
     </tr>
@@ -299,11 +299,11 @@
         <!-- button // -->
 <div class="">
   <!--[if mso]>
-  <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="#" style="height:40px;v-text-anchor:middle;width:100px;" arcsize="15%" stroke="f" fillcolor="#14c3fc">
+  <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="{{ contact.website }}" style="height:40px;v-text-anchor:middle;width:100px;" arcsize="15%" stroke="f" fillcolor="#14c3fc">
     <w:anchorlock/>
     <center>
   <![endif]-->
-  <a href="#" style="background-color:#14c3fc;border-radius:6px;color:#ffffff;display:inline-block;font-family:'Helvetica',sans-serif;font-size:13px;font-weight:bold;line-height:40px;text-align:center;text-decoration:none;width:100px;-webkit-text-size-adjust:none;" target="_blank">More details</a>
+  <a href="{{ contact.website }}" style="background-color:#14c3fc;border-radius:6px;color:#ffffff;display:inline-block;font-family:'Helvetica',sans-serif;font-size:13px;font-weight:bold;line-height:40px;text-align:center;text-decoration:none;width:100px;-webkit-text-size-adjust:none;" target="_blank">More details</a>
   <!--[if mso]>
     </center>
   </v:roundrect>
@@ -337,19 +337,19 @@
         Save
         </div>
         <div class="featured-savings txt-clr-white">
-          -$500
+          {{ contact.quote_3_savings }}
         </div>
       </td>
     </tr>
 
     <tr class="card-row">
       <td class="card-inner">
-        <img src="Progressive" class="card-logo">
+        <img src="{{ contact.quote_3_logo }}" class="card-logo">
         <div class="line-title">
           Annual Premium
         </div>
         <div class="featured-number">
-          $2,000
+          {{ contact.quote_3_premium }}
         </div>
       </td>
     </tr>
@@ -360,7 +360,7 @@
           Dwelling
         </div>
         <div class="line-number">
-          $209,800
+          {{ contact.quote_3_dwelling }}
         </div>
       </td>
     </tr>
@@ -371,7 +371,7 @@
           Deductible
         </div>
         <div class="line-number">
-          $1,322
+          {{ contact.quote_3_deductible }}
         </div>
       </td>
     </tr>
@@ -381,11 +381,11 @@
         <!-- button // -->
 <div class="">
   <!--[if mso]>
-  <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="#" style="height:40px;v-text-anchor:middle;width:100px;" arcsize="15%" stroke="f" fillcolor="#14c3fc">
+  <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="{{ contact.website }}" style="height:40px;v-text-anchor:middle;width:100px;" arcsize="15%" stroke="f" fillcolor="#14c3fc">
     <w:anchorlock/>
     <center>
   <![endif]-->
-  <a href="#" style="background-color:#14c3fc;border-radius:6px;color:#ffffff;display:inline-block;font-family:'Helvetica',sans-serif;font-size:13px;font-weight:bold;line-height:40px;text-align:center;text-decoration:none;width:100px;-webkit-text-size-adjust:none;" target="_blank">More details</a>
+  <a href="{{ contact.website }}" style="background-color:#14c3fc;border-radius:6px;color:#ffffff;display:inline-block;font-family:'Helvetica',sans-serif;font-size:13px;font-weight:bold;line-height:40px;text-align:center;text-decoration:none;width:100px;-webkit-text-size-adjust:none;" target="_blank">More details</a>
   <!--[if mso]>
     </center>
   </v:roundrect>
@@ -475,11 +475,11 @@
 <!-- button // -->
 <div class="">
   <!--[if mso]>
-  <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href=" https://quotes.itscovered.com/ " style="height:40px;v-text-anchor:middle;width:100%;" arcsize="15%" stroke="f" fillcolor="#14c3fc">
+  <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href=" https://quotes.itscovered.com/{{ contact.quote_uuid }} " style="height:40px;v-text-anchor:middle;width:100%;" arcsize="15%" stroke="f" fillcolor="#14c3fc">
     <w:anchorlock/>
     <center>
   <![endif]-->
-  <a href=" https://quotes.itscovered.com/ " style="background-color:#14c3fc;border-radius:6px;color:#ffffff;display:inline-block;font-family:'Helvetica',sans-serif;font-size:13px;font-weight:bold;line-height:40px;text-align:center;text-decoration:none;width:100%;-webkit-text-size-adjust:none;" target="_blank">More details</a>
+  <a href=" https://quotes.itscovered.com/{{ contact.quote_uuid }} " style="background-color:#14c3fc;border-radius:6px;color:#ffffff;display:inline-block;font-family:'Helvetica',sans-serif;font-size:13px;font-weight:bold;line-height:40px;text-align:center;text-decoration:none;width:100%;-webkit-text-size-adjust:none;" target="_blank">More details</a>
   <!--[if mso]>
     </center>
   </v:roundrect>

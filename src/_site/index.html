@@ -44,7 +44,7 @@
   <tr>
     <td class="lmnt-col-50 txt-left" width="50%">
       <strong> 
-        Chase
+        {{ contact.current_carrier }}
       </strong>
     </td>
     <td class="lmnt-col-50 txt-right txt-clr-gunmetal-l50 txt-strong" width="50%">
@@ -81,10 +81,10 @@
   <tr>
     <td class="lmnt-col-50 content" width="50%">
       <h1>
-        Hi Matt,
+        Hi {{ contact.firstname }},
       </h1>
       <p class="txt-md-p">
-        As a valued <b class="txt-clr-blue">Chase</b> customer, we wanted to remind you that your homeowners insurance policy is up for renewal at your property located at:
+        As a valued <b class="txt-clr-blue">{{ contact.current_carrier }}</b> customer, we wanted to remind you that your homeowners insurance policy is up for renewal at your property located at:
       </p>
       <div class="txt-lg-p">
         <strong>
@@ -93,7 +93,7 @@
       </div>
       <div class="txt-lg-p">
         <strong>
-          Brooklyn, NYC 80110
+          {{ contact.property_city }}, {{ contact.property_state }} {{ contact.property_zipcode }}
         </strong>
       </div>
     </td>
@@ -103,7 +103,7 @@
         Save up to
       </h1>
       <div class="txt-lg-light txt-clr-blue">
-        $239
+        {{ contact.quote_1_savings }}
       </div>
       <div class="txt-med-p">
         On your Annual Premium
@@ -111,11 +111,11 @@
       <!-- button // -->
 <div class="">
   <!--[if mso]>
-  <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href=" https://quotes.itscovered.com/ " style="height:40px;v-text-anchor:middle;width:150px;" arcsize="15%" stroke="f" fillcolor="#14c3fc">
+  <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href=" https://quotes.itscovered.com/{{ contact.quote_uuid }} " style="height:40px;v-text-anchor:middle;width:150px;" arcsize="15%" stroke="f" fillcolor="#14c3fc">
     <w:anchorlock/>
     <center>
   <![endif]-->
-  <a href=" https://quotes.itscovered.com/ " style="background-color:#14c3fc;border-radius:6px;color:#ffffff;display:inline-block;font-family:'Helvetica',sans-serif;font-size:13px;font-weight:bold;line-height:40px;text-align:center;text-decoration:none;width:150px;-webkit-text-size-adjust:none;" target="_blank">Find out how</a>
+  <a href=" https://quotes.itscovered.com/{{ contact.quote_uuid }} " style="background-color:#14c3fc;border-radius:6px;color:#ffffff;display:inline-block;font-family:'Helvetica',sans-serif;font-size:13px;font-weight:bold;line-height:40px;text-align:center;text-decoration:none;width:150px;-webkit-text-size-adjust:none;" target="_blank">Find out how</a>
   <!--[if mso]>
     </center>
   </v:roundrect>
@@ -199,7 +199,7 @@
   <tr>
     <td class="lmnt-col content" width="100%">
       <div class="txt-strong txt-lg-p">
-        You're currently paying: <b class="txt-clr-orange">$1,500</b> to <b class="txt-clr-blue">Chase</b>.
+        You're currently paying: <b class="txt-clr-orange">{{ contact.current_premium }}</b> to <b class="txt-clr-blue">{{ contact.current_carrier }}</b>.
       </div>
       <div class="txt-sm-p txt-clr-gunmetal-l50 bump-bottom-base-sm">
         Please note that the home insurance premiums shown below do not reflect a bundle discount.
@@ -217,6 +217,9 @@
   
 
     
+    
+      {% if contact.quote_1_premium != '' and contact.quote_2_premium != '' and contact.quote_3_premium != ''  %}
+    
       
 
 
@@ -235,7 +238,7 @@
       <td class="card-inner">
         <div class="featured-savings txt-clr-white">
           
-            Save 65%
+            Great Value
           
         </div>
       </td>
@@ -243,12 +246,12 @@
 
     <tr class="card-row">
       <td class="card-inner">
-        <img src="Dairyland" class="card-logo">
+        <img src="{{ contact.quote_1_logo }}" class="card-logo">
         <div class="line-title">
           Annual Premium
         </div>
         <div class="featured-number">
-          $1,000
+          {{ contact.quote_1_premium }}
         </div>
       </td>
     </tr>
@@ -258,8 +261,8 @@
         <div class="line-title">
           Annual Savings
         </div>
-        <div class="featured-number ">
-          $239
+        <div class="featured-number  txt-clr-orange ">
+          {{ contact.quote_1_savings }}
         </div>
       </td>
     </tr>
@@ -270,84 +273,11 @@
         <!-- button // -->
 <div class="">
   <!--[if mso]>
-  <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href=" https://quotes.itscovered.com/ " style="height:40px;v-text-anchor:middle;width:100px;" arcsize="15%" stroke="f" fillcolor="#14c3fc">
+  <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href=" https://quotes.itscovered.com/{{ contact.quote_uuid }} " style="height:40px;v-text-anchor:middle;width:100px;" arcsize="15%" stroke="f" fillcolor="#14c3fc">
     <w:anchorlock/>
     <center>
   <![endif]-->
-  <a href=" https://quotes.itscovered.com/ " style="background-color:#14c3fc;border-radius:6px;color:#ffffff;display:inline-block;font-family:'Helvetica',sans-serif;font-size:13px;font-weight:bold;line-height:40px;text-align:center;text-decoration:none;width:100px;-webkit-text-size-adjust:none;" target="_blank">More details</a>
-  <!--[if mso]>
-    </center>
-  </v:roundrect>
-<![endif]-->
-</div>
-<!-- // button -->
-      </td>
-    </tr>
-
-  </table>
-</td>
-<!-- // quote card -->
-
-
-
-      
-
-
-
-
-
-
-
-<!-- quote card // -->
-<td class="lmnt-col-33 quote-card small-quote-card" width="33%" valign="top">
-  <table border="0" cellpadding="0" cellspacing="0" width="100%">
-
-    
-
-    <tr class="card-row card-row-green card-row-top">
-      <td class="card-inner">
-        <div class="featured-savings txt-clr-white">
-          
-            Save 65%
-          
-        </div>
-      </td>
-    </tr>
-
-    <tr class="card-row">
-      <td class="card-inner">
-        <img src="Nationwide" class="card-logo">
-        <div class="line-title">
-          Annual Premium
-        </div>
-        <div class="featured-number">
-          $1,000
-        </div>
-      </td>
-    </tr>
-
-  <tr class="card-row">
-      <td class="card-inner">
-        <div class="line-title">
-          Annual Savings
-        </div>
-        <div class="featured-number ">
-          $239
-        </div>
-      </td>
-    </tr>
-
-
-    <tr class="card-row card-row-bottom">
-      <td class="card-inner">
-        <!-- button // -->
-<div class="">
-  <!--[if mso]>
-  <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href=" https://quotes.itscovered.com/ " style="height:40px;v-text-anchor:middle;width:100px;" arcsize="15%" stroke="f" fillcolor="#14c3fc">
-    <w:anchorlock/>
-    <center>
-  <![endif]-->
-  <a href=" https://quotes.itscovered.com/ " style="background-color:#14c3fc;border-radius:6px;color:#ffffff;display:inline-block;font-family:'Helvetica',sans-serif;font-size:13px;font-weight:bold;line-height:40px;text-align:center;text-decoration:none;width:100px;-webkit-text-size-adjust:none;" target="_blank">More details</a>
+  <a href=" https://quotes.itscovered.com/{{ contact.quote_uuid }} " style="background-color:#14c3fc;border-radius:6px;color:#ffffff;display:inline-block;font-family:'Helvetica',sans-serif;font-size:13px;font-weight:bold;line-height:40px;text-align:center;text-decoration:none;width:100px;-webkit-text-size-adjust:none;" target="_blank">More details</a>
   <!--[if mso]>
     </center>
   </v:roundrect>
@@ -389,12 +319,12 @@
 
     <tr class="card-row">
       <td class="card-inner">
-        <img src="Progressive" class="card-logo">
+        <img src="{{ contact.quote_2_logo }}" class="card-logo">
         <div class="line-title">
           Annual Premium
         </div>
         <div class="featured-number">
-          $2,000
+          {{ contact.quote_2_premium }}
         </div>
       </td>
     </tr>
@@ -405,7 +335,7 @@
           Annual Savings
         </div>
         <div class="featured-number  txt-clr-orange ">
-          -$500
+          {{ contact.quote_2_savings }}
         </div>
       </td>
     </tr>
@@ -416,11 +346,11 @@
         <!-- button // -->
 <div class="">
   <!--[if mso]>
-  <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href=" https://quotes.itscovered.com/ " style="height:40px;v-text-anchor:middle;width:100px;" arcsize="15%" stroke="f" fillcolor="#14c3fc">
+  <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href=" https://quotes.itscovered.com/{{ contact.quote_uuid }} " style="height:40px;v-text-anchor:middle;width:100px;" arcsize="15%" stroke="f" fillcolor="#14c3fc">
     <w:anchorlock/>
     <center>
   <![endif]-->
-  <a href=" https://quotes.itscovered.com/ " style="background-color:#14c3fc;border-radius:6px;color:#ffffff;display:inline-block;font-family:'Helvetica',sans-serif;font-size:13px;font-weight:bold;line-height:40px;text-align:center;text-decoration:none;width:100px;-webkit-text-size-adjust:none;" target="_blank">More details</a>
+  <a href=" https://quotes.itscovered.com/{{ contact.quote_uuid }} " style="background-color:#14c3fc;border-radius:6px;color:#ffffff;display:inline-block;font-family:'Helvetica',sans-serif;font-size:13px;font-weight:bold;line-height:40px;text-align:center;text-decoration:none;width:100px;-webkit-text-size-adjust:none;" target="_blank">More details</a>
   <!--[if mso]>
     </center>
   </v:roundrect>
@@ -436,6 +366,306 @@
 
 
 
+      
+
+
+
+
+
+
+
+<!-- quote card // -->
+<td class="lmnt-col-33 quote-card small-quote-card" width="33%" valign="top">
+  <table border="0" cellpadding="0" cellspacing="0" width="100%">
+
+    
+
+    <tr class="card-row card-row-green card-row-top">
+      <td class="card-inner">
+        <div class="featured-savings txt-clr-white">
+          
+            Great Value
+          
+        </div>
+      </td>
+    </tr>
+
+    <tr class="card-row">
+      <td class="card-inner">
+        <img src="{{ contact.quote_3_logo }}" class="card-logo">
+        <div class="line-title">
+          Annual Premium
+        </div>
+        <div class="featured-number">
+          {{ contact.quote_3_premium }}
+        </div>
+      </td>
+    </tr>
+
+  <tr class="card-row">
+      <td class="card-inner">
+        <div class="line-title">
+          Annual Savings
+        </div>
+        <div class="featured-number  txt-clr-orange ">
+          {{ contact.quote_3_savings }}
+        </div>
+      </td>
+    </tr>
+
+
+    <tr class="card-row card-row-bottom">
+      <td class="card-inner">
+        <!-- button // -->
+<div class="">
+  <!--[if mso]>
+  <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href=" https://quotes.itscovered.com/{{ contact.quote_uuid }} " style="height:40px;v-text-anchor:middle;width:100px;" arcsize="15%" stroke="f" fillcolor="#14c3fc">
+    <w:anchorlock/>
+    <center>
+  <![endif]-->
+  <a href=" https://quotes.itscovered.com/{{ contact.quote_uuid }} " style="background-color:#14c3fc;border-radius:6px;color:#ffffff;display:inline-block;font-family:'Helvetica',sans-serif;font-size:13px;font-weight:bold;line-height:40px;text-align:center;text-decoration:none;width:100px;-webkit-text-size-adjust:none;" target="_blank">More details</a>
+  <!--[if mso]>
+    </center>
+  </v:roundrect>
+<![endif]-->
+</div>
+<!-- // button -->
+      </td>
+    </tr>
+
+  </table>
+</td>
+<!-- // quote card -->
+
+
+
+    
+      {% elif contact.quote_2_premium != '' and contact.quote_3_premium == '' %}
+    
+      
+
+
+
+
+
+
+
+<!-- quote card // -->
+<td class="lmnt-col-50 quote-card small-quote-card" width="50%" valign="top">
+  <table border="0" cellpadding="0" cellspacing="0" width="100%">
+
+    
+
+    <tr class="card-row card-row-green card-row-top">
+      <td class="card-inner">
+        <div class="featured-savings txt-clr-white">
+          
+            Great Value
+          
+        </div>
+      </td>
+    </tr>
+
+    <tr class="card-row">
+      <td class="card-inner">
+        <img src="{{ contact.quote_1_logo }}" class="card-logo">
+        <div class="line-title">
+          Annual Premium
+        </div>
+        <div class="featured-number">
+          {{ contact.quote_1_premium }}
+        </div>
+      </td>
+    </tr>
+
+  <tr class="card-row">
+      <td class="card-inner">
+        <div class="line-title">
+          Annual Savings
+        </div>
+        <div class="featured-number  txt-clr-orange ">
+          {{ contact.quote_1_savings }}
+        </div>
+      </td>
+    </tr>
+
+
+    <tr class="card-row card-row-bottom">
+      <td class="card-inner">
+        <!-- button // -->
+<div class="">
+  <!--[if mso]>
+  <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href=" https://quotes.itscovered.com/{{ contact.quote_uuid }} " style="height:40px;v-text-anchor:middle;width:100px;" arcsize="15%" stroke="f" fillcolor="#14c3fc">
+    <w:anchorlock/>
+    <center>
+  <![endif]-->
+  <a href=" https://quotes.itscovered.com/{{ contact.quote_uuid }} " style="background-color:#14c3fc;border-radius:6px;color:#ffffff;display:inline-block;font-family:'Helvetica',sans-serif;font-size:13px;font-weight:bold;line-height:40px;text-align:center;text-decoration:none;width:100px;-webkit-text-size-adjust:none;" target="_blank">More details</a>
+  <!--[if mso]>
+    </center>
+  </v:roundrect>
+<![endif]-->
+</div>
+<!-- // button -->
+      </td>
+    </tr>
+
+  </table>
+</td>
+<!-- // quote card -->
+
+
+
+      
+
+
+
+
+
+
+
+<!-- quote card // -->
+<td class="lmnt-col-50 quote-card small-quote-card" width="50%" valign="top">
+  <table border="0" cellpadding="0" cellspacing="0" width="100%">
+
+    
+
+    <tr class="card-row card-row-green card-row-top">
+      <td class="card-inner">
+        <div class="featured-savings txt-clr-white">
+          
+            Great Value
+          
+        </div>
+      </td>
+    </tr>
+
+    <tr class="card-row">
+      <td class="card-inner">
+        <img src="{{ contact.quote_2_logo }}" class="card-logo">
+        <div class="line-title">
+          Annual Premium
+        </div>
+        <div class="featured-number">
+          {{ contact.quote_2_premium }}
+        </div>
+      </td>
+    </tr>
+
+  <tr class="card-row">
+      <td class="card-inner">
+        <div class="line-title">
+          Annual Savings
+        </div>
+        <div class="featured-number  txt-clr-orange ">
+          {{ contact.quote_2_savings }}
+        </div>
+      </td>
+    </tr>
+
+
+    <tr class="card-row card-row-bottom">
+      <td class="card-inner">
+        <!-- button // -->
+<div class="">
+  <!--[if mso]>
+  <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href=" https://quotes.itscovered.com/{{ contact.quote_uuid }} " style="height:40px;v-text-anchor:middle;width:100px;" arcsize="15%" stroke="f" fillcolor="#14c3fc">
+    <w:anchorlock/>
+    <center>
+  <![endif]-->
+  <a href=" https://quotes.itscovered.com/{{ contact.quote_uuid }} " style="background-color:#14c3fc;border-radius:6px;color:#ffffff;display:inline-block;font-family:'Helvetica',sans-serif;font-size:13px;font-weight:bold;line-height:40px;text-align:center;text-decoration:none;width:100px;-webkit-text-size-adjust:none;" target="_blank">More details</a>
+  <!--[if mso]>
+    </center>
+  </v:roundrect>
+<![endif]-->
+</div>
+<!-- // button -->
+      </td>
+    </tr>
+
+  </table>
+</td>
+<!-- // quote card -->
+
+
+
+    
+      {% else %}
+    
+      
+
+
+
+
+
+
+
+<!-- quote card // -->
+<td class="lmnt-col-100 quote-card small-quote-card" width="100%" valign="top">
+  <table border="0" cellpadding="0" cellspacing="0" width="100%">
+
+    
+
+    <tr class="card-row card-row-green card-row-top">
+      <td class="card-inner">
+        <div class="featured-savings txt-clr-white">
+          
+            Great Value
+          
+        </div>
+      </td>
+    </tr>
+
+    <tr class="card-row">
+      <td class="card-inner">
+        <img src="{{ contact.quote_1_logo }}" class="card-logo">
+        <div class="line-title">
+          Annual Premium
+        </div>
+        <div class="featured-number">
+          {{ contact.quote_1_premium }}
+        </div>
+      </td>
+    </tr>
+
+  <tr class="card-row">
+      <td class="card-inner">
+        <div class="line-title">
+          Annual Savings
+        </div>
+        <div class="featured-number  txt-clr-orange ">
+          {{ contact.quote_1_savings }}
+        </div>
+      </td>
+    </tr>
+
+
+    <tr class="card-row card-row-bottom">
+      <td class="card-inner">
+        <!-- button // -->
+<div class="">
+  <!--[if mso]>
+  <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href=" https://quotes.itscovered.com/{{ contact.quote_uuid }} " style="height:40px;v-text-anchor:middle;width:100px;" arcsize="15%" stroke="f" fillcolor="#14c3fc">
+    <w:anchorlock/>
+    <center>
+  <![endif]-->
+  <a href=" https://quotes.itscovered.com/{{ contact.quote_uuid }} " style="background-color:#14c3fc;border-radius:6px;color:#ffffff;display:inline-block;font-family:'Helvetica',sans-serif;font-size:13px;font-weight:bold;line-height:40px;text-align:center;text-decoration:none;width:100px;-webkit-text-size-adjust:none;" target="_blank">More details</a>
+  <!--[if mso]>
+    </center>
+  </v:roundrect>
+<![endif]-->
+</div>
+<!-- // button -->
+      </td>
+    </tr>
+
+  </table>
+</td>
+<!-- // quote card -->
+
+
+
+    
+      {% endif %}
     
 
   
@@ -514,11 +744,11 @@
 <!-- button // -->
 <div class="">
   <!--[if mso]>
-  <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href=" https://quotes.itscovered.com/ " style="height:40px;v-text-anchor:middle;width:100%;" arcsize="15%" stroke="f" fillcolor="#14c3fc">
+  <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href=" https://quotes.itscovered.com/{{ contact.quote_uuid }} " style="height:40px;v-text-anchor:middle;width:100%;" arcsize="15%" stroke="f" fillcolor="#14c3fc">
     <w:anchorlock/>
     <center>
   <![endif]-->
-  <a href=" https://quotes.itscovered.com/ " style="background-color:#14c3fc;border-radius:6px;color:#ffffff;display:inline-block;font-family:'Helvetica',sans-serif;font-size:13px;font-weight:bold;line-height:40px;text-align:center;text-decoration:none;width:100%;-webkit-text-size-adjust:none;" target="_blank">More details</a>
+  <a href=" https://quotes.itscovered.com/{{ contact.quote_uuid }} " style="background-color:#14c3fc;border-radius:6px;color:#ffffff;display:inline-block;font-family:'Helvetica',sans-serif;font-size:13px;font-weight:bold;line-height:40px;text-align:center;text-decoration:none;width:100%;-webkit-text-size-adjust:none;" target="_blank">More details</a>
   <!--[if mso]>
     </center>
   </v:roundrect>

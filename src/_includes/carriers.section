@@ -1,4 +1,4 @@
-{% capture uuid %} https://quotes.itscovered.com/{{ site.data.contact.quote_uuid }} {% endcapture %}
+{% capture uuid %} https://quotes.itscovered.com/{{ site.data.contact_hs.quote_uuid }} {% endcapture %}
 
 <!-- carriers // -->
 <table border="0" cellpadding="0" cellspacing="0" width="100%">

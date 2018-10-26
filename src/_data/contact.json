@@ -66,5 +66,35 @@
 
   "quote_status": "",
   "quote_uuid": "",
-  "renewal_date": ""
+  "renewal_date": "",
+
+  "e2-header-text": "Header Textt",
+  "e2-main-paragraph": "We’ve selected these quotes just for you, based on the most comprehensive coverage for your needs at the most competitive rates.",
+  "e2-header-1": "Lorem Ipsum",
+  "e2-header-2": "Lorem",
+  "e2-paragraph": "We’ve selected these quotes just for you, based on the most comprehensive coverage for your needs at the most competitive rates.",
+
+  "e3-introduction": "Hey there,",
+  "e3-p-1": "We’ve selected these quotes just for you, based on the most comprehensive coverage for your needs at the most competitive rates.",
+  "e3-p-2": "We’ve selected these quotes just for you, based on the most comprehensive coverage for your needs at the most competitive rates.",
+  "e3-p-3": "We’ve selected these quotes just for you, based on the most comprehensive coverage for your needs at the most competitive rates.",
+  "e3-p-4": "We’ve selected these quotes just for you, based on the most comprehensive coverage for your needs at the most competitive rates.",
+
+  "e4-header-text": "Header Text",
+  "e4-p-1": "We’ve selected these quotes just for you, based on the most comprehensive coverage for your needs at the most competitive rates.",
+  "e4-button-text": "Learn More",
+  "e4-button-link": "#",
+  "e4-header-2": "Lorem Ipsum",
+  "e4-p-2": "We’ve selected these quotes just for you, based on the most comprehensive coverage for your needs at the most competitive rates.",
+  "e4-header-3-1": "Lorem Ipsum",
+  "e4-header-3-2": "Lorem",
+  "e4-p-3": "We’ve selected these quotes just for you, based on the most comprehensive coverage for your needs at the most competitive rates.",
+
+  "e5-header-text": "Header Text",
+  "e5-p-1": "We’ve selected these quotes just for you, based on the most comprehensive coverage for your needs at the most competitive rates.",
+  "e5-header-2": "Lorem Ipsum",
+  "e5-p-2": "We’ve selected these quotes just for you, based on the most comprehensive coverage for your needs at the most competitive rates.",
+  "e5-header-3-1": "Lorem Ipsum",
+  "e5-header-3-2": "Lorem",
+  "e5-p-3": "We’ve selected these quotes just for you, based on the most comprehensive coverage for your needs at the most competitive rates."
 }

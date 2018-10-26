@@ -26,3 +26,28 @@ $base-max-width: 450px;
     padding-right: $base * .75;
     border-right: 1px solid $clr-med-gray;
 }
+
+.no-margin-bottom {
+    margin-bottom: 0;
+}
+
+.no-margin-top {
+    margin-top: 0;
+}
+
+.margin-left-sm {
+    margin-left: $base / 2;
+}
+
+.margin-right-sm {
+    margin-right: $base / 2;
+}
+
+
+.border-left {
+    border-left: 1px solid $clr-med-gray;
+}
+
+.border {
+    border: 1px solid $clr-med-gray;
+}

@@ -62,5 +62,35 @@
   "quote_3_score": "{{ contact.quote_3_score }}",
   "quote_status": "{{ contact.quote_status }}",
   "quote_uuid": "{{ contact.quote_uuid }}",
-  "renewal_date": "{{ contact.renewal_date }}"
+  "renewal_date": "{{ contact.renewal_date }}",
+
+  "e2-header-text": "{{ module.text_field }}",
+  "e2-main-paragraph": "{{ module.text_field }}",
+  "e2-header-1": "{{ module.text_field }}",
+  "e2-header-2": "{{ module.text_field }}",
+  "e2-paragraph": "{{ module.text_field }}",
+
+  "e3-introduction": "{{ module.text_field }}",
+  "e3-p-1": "{{ module.text_field }}",
+  "e3-p-2": "{{ module.text_field }}",
+  "e3-p-3": "{{ module.text_field }}",
+  "e3-p-4": "{{ module.text_field }}",
+
+  "e4-header-text": "{{ module.text_field }}",
+  "e4-p-1": "{{ module.text_field }}",
+  "e4-button-text": "{{ module.text_field }}",
+  "e4-button-link": "{{ module.text_field }}",
+  "e4-header-2": "{{ module.text_field }}",
+  "e4-p-2": "{{ module.text_field }}",
+  "e4-header-3-1": "{{ module.text_field }}",
+  "e4-header-3-2": "{{ module.text_field }}",
+  "e4-p-3": "{{ module.text_field }}",
+
+  "e5-header-text": "{{ module.text_field }}",
+  "e5-p-1": "{{ module.text_field }}",
+  "e5-header-2": "{{ module.text_field }}",
+  "e5-p-2": "{{ module.text_field }}",
+  "e5-header-3-1": "{{ module.text_field }}",
+  "e5-header-3-2": "{{ module.text_field }}",
+  "e5-p-3": "{{ module.text_field }}"
 }

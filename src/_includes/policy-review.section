@@ -1,0 +1,58 @@
+<!-- policy review // -->
+<table border="0" cellpadding="0" cellspacing="0" class="logo-header bg-white" width="100%">
+  <tr>
+    <td class="lmnt-col txt-center" width="100%">
+      <p class="txt-clr-blue no-margin-bottom">
+        <b>Your policy</b>
+      </p>
+      <div class="txt-h2">
+        {{ site.data.contact_hs.property_address }}
+      </div>
+      <p class="no-margin-top">
+        <b>{{ site.data.contact_hs.property_city }}, {{ site.data.contact_hs.property_state }} {{ site.data.contact_hs.property_zipcode }}</b>
+      </p>
+      <div class="border margin-left-sm margin-right-sm">
+        <p class="txt-clr-blue">
+          <b>You're Currently Paying</b>
+        </p>
+        <div class="txt-h2">
+          {{ site.data.contact_hs.current_premium }} <span>/yr</span>
+        </div>
+        <p class="no-margin-top">
+          <b>with {{ site.data.contact_hs.current_carrier }}</b>
+        </p>
+      </div>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <table border="0" cellpadding="0" cellspacing="0" class="border-spacing-bottom border-spacing-top" width="100%">
+        <tr>
+          <td class="lmnt-col-50 txt-center" width="50%">
+            <p class="txt-clr-blue">
+              <b>You could be paying</b>
+            </p>
+            <div class="txt-h2">
+              {{ site.data.contact_hs.quote_1_premium }} <span>/yr</span>
+            </div>
+            <p class="no-margin-top">
+              <b>with {{ site.data.contact_hs.quote_1_carrier }}</b>
+            </p>
+          </td>
+          <td class="lmnt-col-50 txt-center border-left" width="50%">
+            <p class="txt-clr-blue">
+              <b>You could be saving</b>
+            </p>
+            <div class="txt-h2 txt-clr-green">
+              {{ site.data.contact_hs.quote_1_savings }}
+            </div>
+            <p class="no-margin-top txt-clr-green ">
+              <b>Annually</b>
+            </p>
+          </td>
+        </tr>
+      </td>
+    </table
+  </tr>
+</table>
+<!-- // policy review -->
