@@ -176,7 +176,7 @@ a {
   color: #8daeb7; }
 
 .txt-clr-white {
-  color: #ffffff; }
+  color: #ffffff !important; }
 
 .txt-clr-black {
   color: #000000; }

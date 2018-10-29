@@ -82,7 +82,7 @@ a {
   color: lighten($clr-gunmetal, 35%);
 }
 .txt-clr-white {
-  color: $clr-white;
+  color: $clr-white !important;
 }
 .txt-clr-black {
   color: $clr-black;

@@ -86,11 +86,11 @@
   "e4-header-3-2": "{{ module.text_field }}",
   "e4-p-3": "{{ module.text_field }}",
 
-  "e5-header-text": "{{ module.text_field }}",
-  "e5-p-1": "{{ module.text_field }}",
-  "e5-header-2": "{{ module.text_field }}",
-  "e5-p-2": "{{ module.text_field }}",
-  "e5-header-3-1": "{{ module.text_field }}",
-  "e5-header-3-2": "{{ module.text_field }}",
-  "e5-p-3": "{{ module.text_field }}"
+  "e5-header-text": "{{ module.header_text_field }}",
+  "e5-p-1": "{{ module.paragraph_richtext_field }}",
+  "e5-header-2": "{{ module.header_2_text_field }}",
+  "e5-p-2": "{{ module.paragraph_2_richtext_field }}",
+  "e5-header-3-1": "{{ module.header_3_1_text_field }}",
+  "e5-header-3-2": "{{ module.header_3_2_text_field }}",
+  "e5-p-3": "{{ module.paragraph_3_richtext_field }}"
 }
