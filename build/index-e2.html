@@ -81,7 +81,7 @@
   <tr>
     <td class="lmnt-col content" width="100%" style="max-width: 100%; padding: 0; width: 100%;">
       <h1 class="txt-h1-large txt-clr-gunmetal" style="color: #385259; font-size: 64px; font-weight: bold; line-height: 1.2; margin: 0; margin-top: 120px; padding: 0;">
-        {{ module.text_field }}
+        {{ module.header_text_field }}
       </h1>
     </td>
   </tr>
@@ -97,7 +97,7 @@
   <tr>
     <td class="lmnt-col content" width="100%" style="max-width: 100%; padding: 0; width: 100%;">
       <p style="font-size: 14px; font-weight: light; line-height: 1.6em; margin: 1em 0; margin-bottom: 20px;">
-        {{ module.text_field }}
+        {{ module.paragraph_richtext_field }}
       </p>
     </td>
   </tr>
@@ -128,12 +128,22 @@
   <table border="0" cellpadding="0" cellspacing="0" width="100%" style="border-collapse: collapse; border-spacing: 0;">
 
     
+    {% set savings-number = savings %}
+    
 
     <tr class="card-row card-row-green card-row-top" style="background-color: #3FC8A5; border-radius: 5px; padding: 10px;">
       <td class="card-inner" style="border-bottom: 1px solid #eaeaea; border-radius: 5px 5px 0px 0px; padding: 10px; text-align: center;">
         <div class="featured-savings txt-clr-white" style="color: #ffffff !important; font-size: 18px; font-weight: 100;">
           
+          {% if savings-number < 1 %}
+          
             Great Value
+            
+          {% else %}
+          
+            Save {{ contact.quote_1_savings_pct }}
+              
+          {% endif %}
           
         </div>
       </td>
@@ -156,7 +166,7 @@
         <div class="line-title" style="color: #385259; font-size: 12px; text-align: center;">
           Annual Savings
         </div>
-        <div class="featured-number  txt-clr-orange " style="color: #F36E4F; font-size: 26px; font-weight: bold;">
+        <div class="featured-number {% if savings-number < 1 %} txt-clr-orange {% endif %}" style="color: #F36E4F; font-size: 26px; font-weight: bold;">
           {{ contact.quote_1_savings }}
         </div>
       </td>
@@ -201,12 +211,22 @@
   <table border="0" cellpadding="0" cellspacing="0" width="100%" style="border-collapse: collapse; border-spacing: 0;">
 
     
+    {% set savings-number = savings %}
+    
 
     <tr class="card-row card-row-green card-row-top" style="background-color: #3FC8A5; border-radius: 5px; padding: 10px;">
       <td class="card-inner" style="border-bottom: 1px solid #eaeaea; border-radius: 5px 5px 0px 0px; padding: 10px; text-align: center;">
         <div class="featured-savings txt-clr-white" style="color: #ffffff !important; font-size: 18px; font-weight: 100;">
           
+          {% if savings-number < 1 %}
+          
             Great Value
+            
+          {% else %}
+          
+            Save {{ contact.quote_2_savings_pct }}
+              
+          {% endif %}
           
         </div>
       </td>
@@ -229,7 +249,7 @@
         <div class="line-title" style="color: #385259; font-size: 12px; text-align: center;">
           Annual Savings
         </div>
-        <div class="featured-number  txt-clr-orange " style="color: #F36E4F; font-size: 26px; font-weight: bold;">
+        <div class="featured-number {% if savings-number < 1 %} txt-clr-orange {% endif %}" style="color: #F36E4F; font-size: 26px; font-weight: bold;">
           {{ contact.quote_2_savings }}
         </div>
       </td>
@@ -274,12 +294,22 @@
   <table border="0" cellpadding="0" cellspacing="0" width="100%" style="border-collapse: collapse; border-spacing: 0;">
 
     
+    {% set savings-number = savings %}
+    
 
     <tr class="card-row card-row-green card-row-top" style="background-color: #3FC8A5; border-radius: 5px; padding: 10px;">
       <td class="card-inner" style="border-bottom: 1px solid #eaeaea; border-radius: 5px 5px 0px 0px; padding: 10px; text-align: center;">
         <div class="featured-savings txt-clr-white" style="color: #ffffff !important; font-size: 18px; font-weight: 100;">
           
+          {% if savings-number < 1 %}
+          
             Great Value
+            
+          {% else %}
+          
+            Save {{ contact.quote_3_savings_pct }}
+              
+          {% endif %}
           
         </div>
       </td>
@@ -302,7 +332,7 @@
         <div class="line-title" style="color: #385259; font-size: 12px; text-align: center;">
           Annual Savings
         </div>
-        <div class="featured-number  txt-clr-orange " style="color: #F36E4F; font-size: 26px; font-weight: bold;">
+        <div class="featured-number {% if savings-number < 1 %} txt-clr-orange {% endif %}" style="color: #F36E4F; font-size: 26px; font-weight: bold;">
           {{ contact.quote_3_savings }}
         </div>
       </td>
@@ -350,12 +380,22 @@
   <table border="0" cellpadding="0" cellspacing="0" width="100%" style="border-collapse: collapse; border-spacing: 0;">
 
     
+    {% set savings-number = savings %}
+    
 
     <tr class="card-row card-row-green card-row-top" style="background-color: #3FC8A5; border-radius: 5px; padding: 10px;">
       <td class="card-inner" style="border-bottom: 1px solid #eaeaea; border-radius: 5px 5px 0px 0px; padding: 10px; text-align: center;">
         <div class="featured-savings txt-clr-white" style="color: #ffffff !important; font-size: 18px; font-weight: 100;">
           
+          {% if savings-number < 1 %}
+          
             Great Value
+            
+          {% else %}
+          
+            Save {{ contact.quote_1_savings_pct }}
+              
+          {% endif %}
           
         </div>
       </td>
@@ -378,7 +418,7 @@
         <div class="line-title" style="color: #385259; font-size: 12px; text-align: center;">
           Annual Savings
         </div>
-        <div class="featured-number  txt-clr-orange " style="color: #F36E4F; font-size: 26px; font-weight: bold;">
+        <div class="featured-number {% if savings-number < 1 %} txt-clr-orange {% endif %}" style="color: #F36E4F; font-size: 26px; font-weight: bold;">
           {{ contact.quote_1_savings }}
         </div>
       </td>
@@ -423,12 +463,22 @@
   <table border="0" cellpadding="0" cellspacing="0" width="100%" style="border-collapse: collapse; border-spacing: 0;">
 
     
+    {% set savings-number = savings %}
+    
 
     <tr class="card-row card-row-green card-row-top" style="background-color: #3FC8A5; border-radius: 5px; padding: 10px;">
       <td class="card-inner" style="border-bottom: 1px solid #eaeaea; border-radius: 5px 5px 0px 0px; padding: 10px; text-align: center;">
         <div class="featured-savings txt-clr-white" style="color: #ffffff !important; font-size: 18px; font-weight: 100;">
           
+          {% if savings-number < 1 %}
+          
             Great Value
+            
+          {% else %}
+          
+            Save {{ contact.quote_2_savings_pct }}
+              
+          {% endif %}
           
         </div>
       </td>
@@ -451,7 +501,7 @@
         <div class="line-title" style="color: #385259; font-size: 12px; text-align: center;">
           Annual Savings
         </div>
-        <div class="featured-number  txt-clr-orange " style="color: #F36E4F; font-size: 26px; font-weight: bold;">
+        <div class="featured-number {% if savings-number < 1 %} txt-clr-orange {% endif %}" style="color: #F36E4F; font-size: 26px; font-weight: bold;">
           {{ contact.quote_2_savings }}
         </div>
       </td>
@@ -499,12 +549,22 @@
   <table border="0" cellpadding="0" cellspacing="0" width="100%" style="border-collapse: collapse; border-spacing: 0;">
 
     
+    {% set savings-number = savings %}
+    
 
     <tr class="card-row card-row-green card-row-top" style="background-color: #3FC8A5; border-radius: 5px; padding: 10px;">
       <td class="card-inner" style="border-bottom: 1px solid #eaeaea; border-radius: 5px 5px 0px 0px; padding: 10px; text-align: center;">
         <div class="featured-savings txt-clr-white" style="color: #ffffff !important; font-size: 18px; font-weight: 100;">
           
+          {% if savings-number < 1 %}
+          
             Great Value
+            
+          {% else %}
+          
+            Save {{ contact.quote_1_savings_pct }}
+              
+          {% endif %}
           
         </div>
       </td>
@@ -527,7 +587,7 @@
         <div class="line-title" style="color: #385259; font-size: 12px; text-align: center;">
           Annual Savings
         </div>
-        <div class="featured-number  txt-clr-orange " style="color: #F36E4F; font-size: 26px; font-weight: bold;">
+        <div class="featured-number {% if savings-number < 1 %} txt-clr-orange {% endif %}" style="color: #F36E4F; font-size: 26px; font-weight: bold;">
           {{ contact.quote_1_savings }}
         </div>
       </td>
@@ -604,10 +664,10 @@
   <tr>
     <td class="lmnt-col content" width="100%" style="max-width: 100%; padding: 0; width: 100%;">
       <h2 class="txt-h1 txt-clr-blue" style="color: #14c3fc; font-size: 31px; font-weight: bold; line-height: 1.2; margin: 0; padding: 0;">
-        {{ module.text_field }}
+        {{ module.header_2_1_text_field }}
       </h2>
       <h2 class="txt-h1 txt-clr-gunmetal" style="color: #385259; font-size: 31px; font-weight: bold; line-height: 1.2; margin: 0; padding: 0;">
-        {{ module.text_field }}
+        {{ module.header_2_2_text_field }}
       </h2>
     </td>
   </tr>
@@ -618,7 +678,7 @@
   <tr>
     <td class="lmnt-col content" width="100%" style="max-width: 100%; padding: 0; width: 100%;">
       <p class="border-bottom" style="border-bottom: 1px solid #D0D0D0; font-size: 14px; font-weight: light; line-height: 1.6em; margin: 1em 0; margin-bottom: 20px; padding-bottom: 40px;">
-        {{ module.text_field }}
+        {{ module.paragraph_2_richtext_field }}
       </p>
     </td>
   </tr>
@@ -649,20 +709,21 @@
 <table border="0" cellpadding="0" cellspacing="0" class="logo-header" width="100%" style="border-collapse: collapse; border-spacing: 0; margin: 40px 0; text-align: left; width: 100%;">
   <tr>
     <td class="lmnt-col-30 txt-left" width="33%" style="max-width: 30%; padding: 0; padding-left: 45px; text-align: left !important; width: 30%;">
-      <img src="https://www.itscovered.com/assets/call-icon.png" height="40px" style="-ms-interpolation-mode: bicubic; border: 0; color: #2837b8; font-size: 14px; margin-left: 25px; max-width: 100%; outline: 0;">
+      <img src="https://quotes.itscovered.com/assets/images/call-icon.png" height="40px" style="-ms-interpolation-mode: bicubic; border: 0; color: #2837b8; font-size: 14px; margin-left: 25px; max-width: 100%; outline: 0;">
       <p style="font-size: 14px; font-weight: light; line-height: 1.6em; margin: 1em 0; margin-bottom: 20px;">Give us a call!</p>
     </td>
     <td class="lmnt-col-30 txt-center" width="33%" style="max-width: 30%; padding: 0; text-align: center !important; width: 30%;">
-    <img src="https://www.itscovered.com/assets/chat-icon.png" height="40px" style="-ms-interpolation-mode: bicubic; border: 0; color: #2837b8; font-size: 14px; max-width: 100%; outline: 0;">
+    <img src="https://quotes.itscovered.com/assets/images/chat-icon.png" height="40px" style="-ms-interpolation-mode: bicubic; border: 0; color: #2837b8; font-size: 14px; max-width: 100%; outline: 0;">
       <p style="font-size: 14px; font-weight: light; line-height: 1.6em; margin: 1em 0; margin-bottom: 20px;">Chat with us!</p>
     </td>
     <td class="lmnt-col-30 txt-right" width="33%" style="max-width: 30%; padding: 0; padding-right: 45px; text-align: right !important; width: 30%;">
-      <img src="https://www.itscovered.com/assets/learn-icon.png" height="40px" style="-ms-interpolation-mode: bicubic; border: 0; color: #2837b8; font-size: 14px; margin-right: 18px; max-width: 100%; outline: 0;">
+      <img src="https://quotes.itscovered.com/assets/images/learn-icon.png" height="40px" style="-ms-interpolation-mode: bicubic; border: 0; color: #2837b8; font-size: 14px; margin-right: 18px; max-width: 100%; outline: 0;">
       <p style="font-size: 14px; font-weight: light; line-height: 1.6em; margin: 1em 0; margin-bottom: 20px;">Learn more!</p>
     </td>
   </tr>
 </table>
 <!-- // icon-row -->
+
         </td>
 </tr>
 </table>

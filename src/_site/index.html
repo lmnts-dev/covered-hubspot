@@ -233,12 +233,22 @@
   <table border="0" cellpadding="0" cellspacing="0" width="100%">
 
     
+    {% set savings-number = savings %}
+    
 
     <tr class="card-row card-row-green card-row-top">
       <td class="card-inner">
         <div class="featured-savings txt-clr-white">
           
+          {% if savings-number < 1 %}
+          
             Great Value
+            
+          {% else %}
+          
+            Save {{ contact.quote_1_savings_pct }}
+              
+          {% endif %}
           
         </div>
       </td>
@@ -261,7 +271,7 @@
         <div class="line-title">
           Annual Savings
         </div>
-        <div class="featured-number  txt-clr-orange ">
+        <div class="featured-number {% if savings-number < 1 %} txt-clr-orange {% endif %}">
           {{ contact.quote_1_savings }}
         </div>
       </td>
@@ -306,12 +316,22 @@
   <table border="0" cellpadding="0" cellspacing="0" width="100%">
 
     
+    {% set savings-number = savings %}
+    
 
     <tr class="card-row card-row-green card-row-top">
       <td class="card-inner">
         <div class="featured-savings txt-clr-white">
           
+          {% if savings-number < 1 %}
+          
             Great Value
+            
+          {% else %}
+          
+            Save {{ contact.quote_2_savings_pct }}
+              
+          {% endif %}
           
         </div>
       </td>
@@ -334,7 +354,7 @@
         <div class="line-title">
           Annual Savings
         </div>
-        <div class="featured-number  txt-clr-orange ">
+        <div class="featured-number {% if savings-number < 1 %} txt-clr-orange {% endif %}">
           {{ contact.quote_2_savings }}
         </div>
       </td>
@@ -379,12 +399,22 @@
   <table border="0" cellpadding="0" cellspacing="0" width="100%">
 
     
+    {% set savings-number = savings %}
+    
 
     <tr class="card-row card-row-green card-row-top">
       <td class="card-inner">
         <div class="featured-savings txt-clr-white">
           
+          {% if savings-number < 1 %}
+          
             Great Value
+            
+          {% else %}
+          
+            Save {{ contact.quote_3_savings_pct }}
+              
+          {% endif %}
           
         </div>
       </td>
@@ -407,7 +437,7 @@
         <div class="line-title">
           Annual Savings
         </div>
-        <div class="featured-number  txt-clr-orange ">
+        <div class="featured-number {% if savings-number < 1 %} txt-clr-orange {% endif %}">
           {{ contact.quote_3_savings }}
         </div>
       </td>
@@ -455,12 +485,22 @@
   <table border="0" cellpadding="0" cellspacing="0" width="100%">
 
     
+    {% set savings-number = savings %}
+    
 
     <tr class="card-row card-row-green card-row-top">
       <td class="card-inner">
         <div class="featured-savings txt-clr-white">
           
+          {% if savings-number < 1 %}
+          
             Great Value
+            
+          {% else %}
+          
+            Save {{ contact.quote_1_savings_pct }}
+              
+          {% endif %}
           
         </div>
       </td>
@@ -483,7 +523,7 @@
         <div class="line-title">
           Annual Savings
         </div>
-        <div class="featured-number  txt-clr-orange ">
+        <div class="featured-number {% if savings-number < 1 %} txt-clr-orange {% endif %}">
           {{ contact.quote_1_savings }}
         </div>
       </td>
@@ -528,12 +568,22 @@
   <table border="0" cellpadding="0" cellspacing="0" width="100%">
 
     
+    {% set savings-number = savings %}
+    
 
     <tr class="card-row card-row-green card-row-top">
       <td class="card-inner">
         <div class="featured-savings txt-clr-white">
           
+          {% if savings-number < 1 %}
+          
             Great Value
+            
+          {% else %}
+          
+            Save {{ contact.quote_2_savings_pct }}
+              
+          {% endif %}
           
         </div>
       </td>
@@ -556,7 +606,7 @@
         <div class="line-title">
           Annual Savings
         </div>
-        <div class="featured-number  txt-clr-orange ">
+        <div class="featured-number {% if savings-number < 1 %} txt-clr-orange {% endif %}">
           {{ contact.quote_2_savings }}
         </div>
       </td>
@@ -604,12 +654,22 @@
   <table border="0" cellpadding="0" cellspacing="0" width="100%">
 
     
+    {% set savings-number = savings %}
+    
 
     <tr class="card-row card-row-green card-row-top">
       <td class="card-inner">
         <div class="featured-savings txt-clr-white">
           
+          {% if savings-number < 1 %}
+          
             Great Value
+            
+          {% else %}
+          
+            Save {{ contact.quote_1_savings_pct }}
+              
+          {% endif %}
           
         </div>
       </td>
@@ -632,7 +692,7 @@
         <div class="line-title">
           Annual Savings
         </div>
-        <div class="featured-number  txt-clr-orange ">
+        <div class="featured-number {% if savings-number < 1 %} txt-clr-orange {% endif %}">
           {{ contact.quote_1_savings }}
         </div>
       </td>

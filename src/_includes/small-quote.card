@@ -31,16 +31,24 @@
 <td class="lmnt-col-{{ include.width }} quote-card small-quote-card" width="{{ include.width }}%" valign="top">
   <table border="0" cellpadding="0" cellspacing="0" width="100%">
 
-    {% assign savings-number = savings | remove: '$' | plus: 0 %}
+    {% raw %}
+    {% set savings-number = savings %}
+    {% endraw %}
 
     <tr class="card-row card-row-green card-row-top">
       <td class="card-inner">
         <div class="featured-savings txt-clr-white">
+          {% raw %}
           {% if savings-number < 1 %}
+          {% endraw %}
             Great Value
+          {% raw %}  
           {% else %}
+          {% endraw %}
             Save {{ savings_pct }}
+          {% raw %}    
           {% endif %}
+          {% endraw %}
         </div>
       </td>
     </tr>
@@ -62,7 +70,7 @@
         <div class="line-title">
           Annual Savings
         </div>
-        <div class="featured-number {% if savings-number < 1 %} txt-clr-orange {% endif %}">
+        <div class="featured-number {% raw %}{% if savings-number < 1 %} txt-clr-orange {% endif %}{% endraw %}">
           {{ savings }}
         </div>
       </td>

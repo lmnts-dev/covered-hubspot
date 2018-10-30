@@ -81,7 +81,7 @@
   <tr>
     <td class="lmnt-col content" width="100%">
       <h1 class="txt-h1-large txt-clr-gunmetal">
-        {{ module.text_field }}
+        {{ module.header_text_field }}
       </h1>
     </td>
   </tr>
@@ -97,7 +97,7 @@
   <tr>
     <td class="lmnt-col content" width="100%">
       <p >
-        {{ module.text_field }}
+        {{ module.paragraph_richtext_field }}
       </p>
     </td>
   </tr>
@@ -128,12 +128,22 @@
   <table border="0" cellpadding="0" cellspacing="0" width="100%">
 
     
+    {% set savings-number = savings %}
+    
 
     <tr class="card-row card-row-green card-row-top">
       <td class="card-inner">
         <div class="featured-savings txt-clr-white">
           
+          {% if savings-number < 1 %}
+          
             Great Value
+            
+          {% else %}
+          
+            Save {{ contact.quote_1_savings_pct }}
+              
+          {% endif %}
           
         </div>
       </td>
@@ -156,7 +166,7 @@
         <div class="line-title">
           Annual Savings
         </div>
-        <div class="featured-number  txt-clr-orange ">
+        <div class="featured-number {% if savings-number < 1 %} txt-clr-orange {% endif %}">
           {{ contact.quote_1_savings }}
         </div>
       </td>
@@ -201,12 +211,22 @@
   <table border="0" cellpadding="0" cellspacing="0" width="100%">
 
     
+    {% set savings-number = savings %}
+    
 
     <tr class="card-row card-row-green card-row-top">
       <td class="card-inner">
         <div class="featured-savings txt-clr-white">
           
+          {% if savings-number < 1 %}
+          
             Great Value
+            
+          {% else %}
+          
+            Save {{ contact.quote_2_savings_pct }}
+              
+          {% endif %}
           
         </div>
       </td>
@@ -229,7 +249,7 @@
         <div class="line-title">
           Annual Savings
         </div>
-        <div class="featured-number  txt-clr-orange ">
+        <div class="featured-number {% if savings-number < 1 %} txt-clr-orange {% endif %}">
           {{ contact.quote_2_savings }}
         </div>
       </td>
@@ -274,12 +294,22 @@
   <table border="0" cellpadding="0" cellspacing="0" width="100%">
 
     
+    {% set savings-number = savings %}
+    
 
     <tr class="card-row card-row-green card-row-top">
       <td class="card-inner">
         <div class="featured-savings txt-clr-white">
           
+          {% if savings-number < 1 %}
+          
             Great Value
+            
+          {% else %}
+          
+            Save {{ contact.quote_3_savings_pct }}
+              
+          {% endif %}
           
         </div>
       </td>
@@ -302,7 +332,7 @@
         <div class="line-title">
           Annual Savings
         </div>
-        <div class="featured-number  txt-clr-orange ">
+        <div class="featured-number {% if savings-number < 1 %} txt-clr-orange {% endif %}">
           {{ contact.quote_3_savings }}
         </div>
       </td>
@@ -350,12 +380,22 @@
   <table border="0" cellpadding="0" cellspacing="0" width="100%">
 
     
+    {% set savings-number = savings %}
+    
 
     <tr class="card-row card-row-green card-row-top">
       <td class="card-inner">
         <div class="featured-savings txt-clr-white">
           
+          {% if savings-number < 1 %}
+          
             Great Value
+            
+          {% else %}
+          
+            Save {{ contact.quote_1_savings_pct }}
+              
+          {% endif %}
           
         </div>
       </td>
@@ -378,7 +418,7 @@
         <div class="line-title">
           Annual Savings
         </div>
-        <div class="featured-number  txt-clr-orange ">
+        <div class="featured-number {% if savings-number < 1 %} txt-clr-orange {% endif %}">
           {{ contact.quote_1_savings }}
         </div>
       </td>
@@ -423,12 +463,22 @@
   <table border="0" cellpadding="0" cellspacing="0" width="100%">
 
     
+    {% set savings-number = savings %}
+    
 
     <tr class="card-row card-row-green card-row-top">
       <td class="card-inner">
         <div class="featured-savings txt-clr-white">
           
+          {% if savings-number < 1 %}
+          
             Great Value
+            
+          {% else %}
+          
+            Save {{ contact.quote_2_savings_pct }}
+              
+          {% endif %}
           
         </div>
       </td>
@@ -451,7 +501,7 @@
         <div class="line-title">
           Annual Savings
         </div>
-        <div class="featured-number  txt-clr-orange ">
+        <div class="featured-number {% if savings-number < 1 %} txt-clr-orange {% endif %}">
           {{ contact.quote_2_savings }}
         </div>
       </td>
@@ -499,12 +549,22 @@
   <table border="0" cellpadding="0" cellspacing="0" width="100%">
 
     
+    {% set savings-number = savings %}
+    
 
     <tr class="card-row card-row-green card-row-top">
       <td class="card-inner">
         <div class="featured-savings txt-clr-white">
           
+          {% if savings-number < 1 %}
+          
             Great Value
+            
+          {% else %}
+          
+            Save {{ contact.quote_1_savings_pct }}
+              
+          {% endif %}
           
         </div>
       </td>
@@ -527,7 +587,7 @@
         <div class="line-title">
           Annual Savings
         </div>
-        <div class="featured-number  txt-clr-orange ">
+        <div class="featured-number {% if savings-number < 1 %} txt-clr-orange {% endif %}">
           {{ contact.quote_1_savings }}
         </div>
       </td>
@@ -604,10 +664,10 @@
   <tr>
     <td class="lmnt-col content" width="100%">
       <h2 class="txt-h1 txt-clr-blue">
-        {{ module.text_field }}
+        {{ module.header_2_1_text_field }}
       </h2>
       <h2 class="txt-h1 txt-clr-gunmetal">
-        {{ module.text_field }}
+        {{ module.header_2_2_text_field }}
       </h2>
     </td>
   </tr>
@@ -618,7 +678,7 @@
   <tr>
     <td class="lmnt-col content" width="100%">
       <p  class="border-bottom" >
-        {{ module.text_field }}
+        {{ module.paragraph_2_richtext_field }}
       </p>
     </td>
   </tr>
@@ -649,20 +709,21 @@
 <table border="0" cellpadding="0" cellspacing="0" class="logo-header" width="100%">
   <tr>
     <td class="lmnt-col-30 txt-left" width="33%" style="padding-left: 45px">
-      <img src="https://www.itscovered.com/assets/call-icon.png" height="40px" style="margin-left: 25px">
+      <img src="https://quotes.itscovered.com/assets/images/call-icon.png" height="40px" style="margin-left: 25px">
       <p>Give us a call!</p>
     </td>
     <td class="lmnt-col-30 txt-center" width="33%">
-    <img src="https://www.itscovered.com/assets/chat-icon.png" height="40px">
+    <img src="https://quotes.itscovered.com/assets/images/chat-icon.png" height="40px">
       <p>Chat with us!</p>
     </td>
     <td class="lmnt-col-30 txt-right" width="33%" style="padding-right: 45px">
-      <img src="https://www.itscovered.com/assets/learn-icon.png" height="40px" style="margin-right: 18px">
+      <img src="https://quotes.itscovered.com/assets/images/learn-icon.png" height="40px" style="margin-right: 18px">
       <p>Learn more!</p>
     </td>
   </tr>
 </table>
 <!-- // icon-row -->
+
         </td>
 </tr>
 </table>
