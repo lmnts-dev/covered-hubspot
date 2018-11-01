@@ -1,4 +1,5 @@
 {
+  "date_time": "{{ local_dt |datetimeformat('%B %e, %Y') }}",
   "hs_email_optout": "{{ contact.hs_email_optout }}",
   "annualrevenue": "{{ contact.annualrevenue }}",
   "city": "{{ contact.city }}",
@@ -48,6 +49,8 @@
   "quote_1_css": "{{ contact.quote_1_css }}",
   "quote_1_height": "{{ contact.quote_1_height }}",
   "quote_1_width": "{{ contact.quote_1_width }}",
+  "quote_1_savings_text": "{{ contact.quote_1_savings_text }}",
+  "quote_1_savings_color": "{{ contact.quote_1_savings_color }}",
 
   "quote_2_carrier": "{{ contact.quote_2_carrier }}",
   "quote_2_deductible": "{{ contact.quote_2_deductible }}",
@@ -60,6 +63,8 @@
   "quote_2_css": "{{ contact.quote_2_css }}",
   "quote_2_height": "{{ contact.quote_2_height }}",
   "quote_2_width": "{{ contact.quote_2_width }}",
+  "quote_2_savings_text": "{{ contact.quote_2_savings_text }}",
+  "quote_2_savings_color": "{{ contact.quote_2_savings_color }}",
 
   "quote_3_carrier": "{{ contact.quote_3_carrier }}",
   "quote_3_deductible": "{{ contact.quote_3_deductible }}",
@@ -72,6 +77,8 @@
   "quote_3_css": "{{ contact.quote_3_css }}",
   "quote_3_height": "{{ contact.quote_3_height }}",
   "quote_3_width": "{{ contact.quote_3_width }}",
+  "quote_3_savings_text": "{{ contact.quote_3_savings_text }}",
+  "quote_3_savings_color": "{{ contact.quote_3_savings_color }}",
 
   "quote_status": "{{ contact.quote_status }}",
   "quote_uuid": "{{ contact.quote_uuid }}",

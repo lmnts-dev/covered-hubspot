@@ -1,0 +1,11 @@
+<!-- p // -->
+<table border="0" cellpadding="0" cellspacing="0" class="p {{include.class}}" width="100%">
+  <tr>
+    <td class="lmnt-col content" width="100%">
+      <p>
+        <b class="txt-clr-blue">{{ site.data.contact_hs.current_carrier }}</b> has partnered with Covered to review your existing insurance. Covered is a trusted independent insurance agency that helps homeowners quickly and easily obtain quotes from over a dozen of the top rated carriers in the country. We've analyzed your existing policy, obtained several quotes, and selected these quotes for you based on the most comprehensive coverage for your home at the best price. Searching for savings have never been easier.
+      </p>
+    </td>
+  </tr>
+</table>
+<!-- // p -->

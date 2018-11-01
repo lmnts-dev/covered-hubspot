@@ -1,10 +1,10 @@
-{% capture uuid %} https://quotes.itscovered.com/{{ site.data.contact.quote_uuid }} {% endcapture %}
+{% capture uuid %} https://quotes.itscovered.com/{{ site.data.contact_hs.quote_uuid }} {% endcapture %}
 
 <!-- carriers // -->
 <table border="0" cellpadding="0" cellspacing="0" width="100%">
   <tr class="carriers">
     <td>
-        <img src="/assets/carriers-row.png">
+        <img src="https://www.itscovered.com/assets/images/carriers-row.png">
     </td>
   </tr>
 </table>

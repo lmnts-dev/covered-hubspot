@@ -14,10 +14,10 @@ layout: default
 
         {% include section.start id="quotesDisplay" %}
             {% include headline.section
-              headline= site.data.contact.e2-header-text
+              headline= site.data.contact_hs.e2-header-text
             %}
             {% include p.section
-              content= site.data.contact.e2-main-paragraph
+              content= site.data.contact_hs.e2-main-paragraph
             %}
             {% include small-quotes.section %}
         {% include section.end %}
@@ -26,11 +26,11 @@ layout: default
     {% include row.start class="bg-snow quotes-display" %}
         {% include section.start id="quotesDisplay" %}
             {% include double-headline.section
-              headline-1= site.data.contact.e2-header-1
-              headline-2= site.data.contact.e2-header-2
+              headline-1= site.data.contact_hs.e2-header-1
+              headline-2= site.data.contact_hs.e2-header-2
             %}
             {% include p.section
-                content= site.data.contact.e2-paragraph
+                content= site.data.contact_hs.e2-paragraph
                 border="yes"
             %}
         {% include section.end %}
