@@ -36,6 +36,7 @@
   "property_street": "{{ contact.property_street }}",
   "property_street_2": "{{ contact.property_street_2 }}",
   "property_zipcode": "{{ contact.property_zipcode }}",
+
   "quote_1_carrier": "{{ contact.quote_1_carrier }}",
   "quote_1_deductible": "{{ contact.quote_1_deductible }}",
   "quote_1_dwelling": "{{ contact.quote_1_dwelling }}",
@@ -44,6 +45,10 @@
   "quote_1_savings": "{{ contact.quote_1_savings }}",
   "quote_1_savings_pct": "{{ contact.quote_1_savings_pct }}",
   "quote_1_score": "{{ contact.quote_1_score }}",
+  "quote_1_css": "{{ contact.quote_1_css }}",
+  "quote_1_height": "{{ contact.quote_1_height }}",
+  "quote_1_width": "{{ contact.quote_1_width }}",
+
   "quote_2_carrier": "{{ contact.quote_2_carrier }}",
   "quote_2_deductible": "{{ contact.quote_2_deductible }}",
   "quote_2_dwelling": "{{ contact.quote_2_dwelling }}",
@@ -52,6 +57,10 @@
   "quote_2_savings": "{{ contact.quote_2_savings }}",
   "quote_2_savings_pct": "{{ contact.quote_2_savings_pct }}",
   "quote_2_score": "{{ contact.quote_2_score }}",
+  "quote_2_css": "{{ contact.quote_2_css }}",
+  "quote_2_height": "{{ contact.quote_2_height }}",
+  "quote_2_width": "{{ contact.quote_2_width }}",
+
   "quote_3_carrier": "{{ contact.quote_3_carrier }}",
   "quote_3_deductible": "{{ contact.quote_3_deductible }}",
   "quote_3_dwelling": "{{ contact.quote_3_dwelling }}",
@@ -60,6 +69,10 @@
   "quote_3_savings": "{{ contact.quote_3_savings }}",
   "quote_3_savings_pct": "{{ contact.quote_3_savings_pct }}",
   "quote_3_score": "{{ contact.quote_3_score }}",
+  "quote_3_css": "{{ contact.quote_3_css }}",
+  "quote_3_height": "{{ contact.quote_3_height }}",
+  "quote_3_width": "{{ contact.quote_3_width }}",
+
   "quote_status": "{{ contact.quote_status }}",
   "quote_uuid": "{{ contact.quote_uuid }}",
   "renewal_date": "{{ contact.renewal_date }}",

@@ -367,10 +367,9 @@ p {
     border-radius: 5px; }
     .quote-card .card-row .card-inner {
       border-bottom: 1px solid #eaeaea; }
-    .quote-card .card-row.card-row-green {
-      padding: 10px;
-      background-color: #3FC8A5; }
-      .quote-card .card-row.card-row-green .card-inner {
+    .quote-card .card-row.card-row-savings {
+      padding: 10px; }
+      .quote-card .card-row.card-row-savings .card-inner {
         padding: 10px; }
     .quote-card .card-row.card-row-top .card-inner {
       border-radius: 5px 5px 0px 0px; }

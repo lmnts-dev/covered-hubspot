@@ -1,45 +1,10 @@
-{% assign export = true %}
-
 <!-- quotes wrapper // -->
 <table border="0" cellpadding="0" cellspacing="0" class="quotes-wrapper" width="100%">
   <tr>
 
-  {% if export == true %}
-
-    {% comment %} HUBL equivalent {% endcomment %}
-    {% raw %}
-      {% if contact.quote_1_premium != '' and contact.quote_2_premium != '' and contact.quote_3_premium != ''  %}
-    {% endraw %}
-      {% include small-quote.card width="33" quote="1" %}
-      {% include small-quote.card width="33" quote="2" %}
-      {% include small-quote.card width="33" quote="3" %}
-    {% raw %}
-      {% elif contact.quote_2_premium != '' and contact.quote_3_premium == '' %}
-    {% endraw %}
-      {% include small-quote.card width="50" quote="1" %}
-      {% include small-quote.card width="50" quote="2" %}
-    {% raw %}
-      {% else %}
-    {% endraw %}
-      {% include small-quote.card width="100" quote="1" %}
-    {% raw %}
-      {% endif %}
-    {% endraw %}
-
-  {% else %}
-
-    {% if site.data.contact_hs.quote_1_premium != '' and site.data.contact_hs.quote_2_premium != '' and site.data.contact_hs.quote_3_premium != ''  %}
-      {% include small-quote.card width="33" quote="1" %}
-      {% include small-quote.card width="33" quote="2" %}
-      {% include small-quote.card width="33" quote="3" %}
-    {% elsif site.data.contact_hs.quote_2_premium != '' and site.data.contact_hs.quote_3_premium == '' %}
-      {% include small-quote.card width="50" quote="1" %}
-      {% include small-quote.card width="50" quote="2" %}
-    {% else %}
-      {% include small-quote.card width="100" quote="1" %}
-    {% endif %}
-
-  {% endif %}
+    {% include small-quote.card width="33" quote="1" %}
+    {% include small-quote.card width="33" quote="2" %}
+    {% include small-quote.card width="33" quote="3" %}
 
   </tr>
 </table>
@@ -48,7 +13,11 @@
   <tr>
     <td class="disclaimer">
       <span class="txt-sm-p txt-clr-gunmetal-l50">
-        This is a summary of coverages only and may not include all coverages provided. Different limits and optional coveragess are available. *Annual Premium reflects paid in full discount. Multiple installment plans available; installment fee applies. **The Covered Index Score is a proprietary rating that Covered gives its carrier partners based on consumer ratings, financial stability, and claims support. Don’t worry, Covered only works with the best carriers so even if a score seems low it’s still above average.
+        This is a summary of coverages only and may not include all coverages provided. Different limits and optional
+        coveragess are available. *Annual Premium reflects paid in full discount. Multiple installment plans available;
+        installment fee applies. **The Covered Index Score is a proprietary rating that Covered gives its carrier
+        partners based on consumer ratings, financial stability, and claims support. Don’t worry, Covered only works
+        with the best carriers so even if a score seems low it’s still above average.
       </span>
     </td>
   </tr>
