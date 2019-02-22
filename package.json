@@ -1,0 +1,25 @@
+{
+  "name": "covered-hubspot",
+  "version": "1.0.0",
+  "description": "Static email template builder for Hubspot using Jekyll & Gulp",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lmnts-dev/covered-hubspot.git"
+  },
+  "author": "Peter Laxalt",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lmnts-dev/covered-hubspot/issues"
+  },
+  "homepage": "https://github.com/lmnts-dev/covered-hubspot#readme",
+  "devDependencies": {
+    "gulp": "^4.0.0",
+    "gulp-inline-css": "^3.3.1",
+    "gulp-notify": "^3.2.0",
+    "gulp-run": "^1.7.1"
+  }
+}
