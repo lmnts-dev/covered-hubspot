@@ -1,46 +1,46 @@
 {% if include.quote == "1" %}
-  {% assign logo = site.data.contact_hs.quote_1_logo %}
-  {% assign premium = site.data.contact_hs.quote_1_premium %}
-  {% assign dwelling = site.data.contact_hs.quote_1_dwelling %}
-  {% assign deductible = site.data.contact_hs.quote_1_deductible %}
-  {% assign savings = site.data.contact_hs.quote_1_savings %}
-  {% assign savings_pct = site.data.contact_hs.quote_1_savings_pct %}
-  {% assign css = site.data.contact_hs.quote_1_css %}
-  {% assign height = site.data.contact_hs.quote_1_height %}
-  {% assign width = site.data.contact_hs.quote_1_width %}
-  {% assign savings_text = site.data.contact_hs.quote_1_savings_text %}
-  {% assign savings_color = site.data.contact_hs.quote_1_savings_color %}
+  {% assign logo = site.data.contact.quote_1_logo %}
+  {% assign premium = site.data.contact.quote_1_premium %}
+  {% assign dwelling = site.data.contact.quote_1_dwelling %}
+  {% assign deductible = site.data.contact.quote_1_deductible %}
+  {% assign savings = site.data.contact.quote_1_savings %}
+  {% assign savings_pct = site.data.contact.quote_1_savings_pct %}
+  {% assign css = site.data.contact.quote_1_css %}
+  {% assign height = site.data.contact.quote_1_height %}
+  {% assign width = site.data.contact.quote_1_width %}
+  {% assign savings_text = site.data.contact.quote_1_savings_text %}
+  {% assign savings_color = site.data.contact.quote_1_savings_color %}
 {% endif %}
 
 {% if include.quote == "2" %}
-  {% assign logo = site.data.contact_hs.quote_2_logo %}
-  {% assign premium = site.data.contact_hs.quote_2_premium %}
-  {% assign dwelling = site.data.contact_hs.quote_2_dwelling %}
-  {% assign deductible = site.data.contact_hs.quote_2_deductible %}
-  {% assign savings = site.data.contact_hs.quote_2_savings %}
-  {% assign savings_pct = site.data.contact_hs.quote_2_savings_pct %}
-  {% assign css = site.data.contact_hs.quote_2_css %}
-  {% assign height = site.data.contact_hs.quote_2_height %}
-  {% assign width = site.data.contact_hs.quote_2_width %}
-  {% assign savings_text = site.data.contact_hs.quote_2_savings_text %}
-  {% assign savings_color = site.data.contact_hs.quote_2_savings_color %}
+  {% assign logo = site.data.contact.quote_2_logo %}
+  {% assign premium = site.data.contact.quote_2_premium %}
+  {% assign dwelling = site.data.contact.quote_2_dwelling %}
+  {% assign deductible = site.data.contact.quote_2_deductible %}
+  {% assign savings = site.data.contact.quote_2_savings %}
+  {% assign savings_pct = site.data.contact.quote_2_savings_pct %}
+  {% assign css = site.data.contact.quote_2_css %}
+  {% assign height = site.data.contact.quote_2_height %}
+  {% assign width = site.data.contact.quote_2_width %}
+  {% assign savings_text = site.data.contact.quote_2_savings_text %}
+  {% assign savings_color = site.data.contact.quote_2_savings_color %}
 {% endif %}
 
 {% if include.quote == "3" %}
-  {% assign logo = site.data.contact_hs.quote_3_logo %}
-  {% assign premium = site.data.contact_hs.quote_3_premium %}
-  {% assign dwelling = site.data.contact_hs.quote_3_dwelling %}
-  {% assign deductible = site.data.contact_hs.quote_3_deductible %}
-  {% assign savings = site.data.contact_hs.quote_3_savings %}
-  {% assign savings_pct = site.data.contact_hs.quote_3_savings_pct %}
-  {% assign css = site.data.contact_hs.quote_3_css %}
-  {% assign height = site.data.contact_hs.quote_3_height %}
-  {% assign width = site.data.contact_hs.quote_3_width %}
-  {% assign savings_text = site.data.contact_hs.quote_3_savings_text %}
-  {% assign savings_color = site.data.contact_hs.quote_3_savings_color %}
+  {% assign logo = site.data.contact.quote_3_logo %}
+  {% assign premium = site.data.contact.quote_3_premium %}
+  {% assign dwelling = site.data.contact.quote_3_dwelling %}
+  {% assign deductible = site.data.contact.quote_3_deductible %}
+  {% assign savings = site.data.contact.quote_3_savings %}
+  {% assign savings_pct = site.data.contact.quote_3_savings_pct %}
+  {% assign css = site.data.contact.quote_3_css %}
+  {% assign height = site.data.contact.quote_3_height %}
+  {% assign width = site.data.contact.quote_3_width %}
+  {% assign savings_text = site.data.contact.quote_3_savings_text %}
+  {% assign savings_color = site.data.contact.quote_3_savings_color %}
 {% endif %}
 
-{% capture uuid %} https://quotes.itscovered.com/{{ site.data.contact_hs.quote_uuid }} {% endcapture %}
+{% capture uuid %} https://quotes.itscovered.com/{{ site.data.contact.quote_uuid }} {% endcapture %}
 
 <!-- quote card // -->
 <td class="quote-card small-quote-card" width="{{ width }}" height="{{ height }}" style="{{ css }}" valign="top">

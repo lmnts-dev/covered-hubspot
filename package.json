@@ -17,7 +17,7 @@
   },
   "homepage": "https://github.com/lmnts-dev/covered-hubspot#readme",
   "devDependencies": {
-    "gulp": "^4.0.0",
+    "gulp": "^3.0.0",
     "gulp-inline-css": "^3.3.1",
     "gulp-notify": "^3.2.0",
     "gulp-run": "^1.7.1"

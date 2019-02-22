@@ -14,10 +14,10 @@
     <meta name="googlebot" content="noindex">
     <meta name="mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="description" content="{{ content.meta_description }}">
-    <title>{{ content.html_title }}</title>
+    <meta name="description" content="Quote Display Description">
+    <title>Quote Display Template</title>
     <link rel="stylesheet" type="text/css" href="/css/styles.css">
-    {{ standard_header_includes }}
+    <!-- standard_header_includes -->
 
 </head>
 
@@ -44,11 +44,11 @@
   <tr>
     <td class="lmnt-col-50 txt-left" width="50%">
       <strong>
-        {{ contact.current_carrier }}
+        Chase
       </strong>
     </td>
     <td class="lmnt-col-50 txt-right txt-clr-gunmetal-l50 txt-strong" width="50%">
-      {{ local_dt |datetimeformat('%B %e, %Y') }}
+      November 1st, 2018
     </td>
   </tr>
 </table>
@@ -81,19 +81,19 @@
   <tr>
     <td class="lmnt-col-50 content" width="50%">
       <h1>
-        Hi {{ contact.firstname }},
+        Hi Matt,
       </h1>
       <p class="txt-md-p">
-        As a valued <b class="txt-clr-blue">{{ contact.current_carrier }}</b> customer, we wanted to remind you that your homeowners insurance policy is up for renewal at your property located at:
+        As a valued <b class="txt-clr-blue">Chase</b> customer, we wanted to remind you that your homeowners insurance policy is up for renewal at your property located at:
       </p>
       <div class="txt-lg-p">
         <strong>
-          {{ contact.property_street }}
+          2946 S Bannock Street
         </strong>
       </div>
       <div class="txt-lg-p">
         <strong>
-          {{ contact.property_city }}, {{ contact.property_state }} {{ contact.property_zipcode }}
+          Brooklyn, NYC 80110
         </strong>
       </div>
     </td>
@@ -103,7 +103,7 @@
         Save up to
       </h1>
       <div class="txt-lg-light txt-clr-blue">
-        ${{ contact.quote_1_savings }}
+        $239
       </div>
       <div class="txt-med-p">
         On your Annual Premium
@@ -111,11 +111,11 @@
       <!-- button // -->
 <div class="">
   <!--[if mso]>
-  <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href=" https://quotes.itscovered.com/{{ contact.quote_uuid }} " style="height:40px;v-text-anchor:middle;width:150px;" arcsize="15%" stroke="f" fillcolor="#14c3fc">
+  <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href=" https://quotes.itscovered.com/ " style="height:40px;v-text-anchor:middle;width:150px;" arcsize="15%" stroke="f" fillcolor="#14c3fc">
     <w:anchorlock/>
     <center>
   <![endif]-->
-  <a href=" https://quotes.itscovered.com/{{ contact.quote_uuid }} " style="background-color:#14c3fc;border-radius:6px;color:#ffffff;display:inline-block;font-family:'Helvetica',sans-serif;font-size:13px;font-weight:bold;line-height:40px;text-align:center;text-decoration:none;width:150px;-webkit-text-size-adjust:none;" target="_blank">Find out how</a>
+  <a href=" https://quotes.itscovered.com/ " style="background-color:#14c3fc;border-radius:6px;color:#ffffff;display:inline-block;font-family:'Helvetica',sans-serif;font-size:13px;font-weight:bold;line-height:40px;text-align:center;text-decoration:none;width:150px;-webkit-text-size-adjust:none;" target="_blank">Find out how</a>
   <!--[if mso]>
     </center>
   </v:roundrect>
@@ -188,7 +188,7 @@
   <tr>
     <td class="lmnt-col content" width="100%">
       <p>
-        <b class="txt-clr-blue">{{ contact.current_carrier }}</b> has partnered with Covered to review your existing insurance. Covered is a trusted independent insurance agency that helps homeowners quickly and easily obtain quotes from over a dozen of the top rated carriers in the country. We've analyzed your existing policy, obtained several quotes, and selected these quotes for you based on the most comprehensive coverage for your home at the best price. Searching for savings have never been easier.
+        <b class="txt-clr-blue">Chase</b> has partnered with Covered to review your existing insurance. Covered is a trusted independent insurance agency that helps homeowners quickly and easily obtain quotes from over a dozen of the top rated carriers in the country. We've analyzed your existing policy, obtained several quotes, and selected these quotes for you based on the most comprehensive coverage for your home at the best price. Searching for savings have never been easier.
       </p>
     </td>
   </tr>
@@ -199,7 +199,7 @@
   <tr>
     <td class="lmnt-col content" width="100%">
       <div class="txt-strong txt-lg-p">
-        You're currently paying: <b class="txt-clr-orange">{{ contact.current_premium }}</b> to <b class="txt-clr-blue">{{ contact.current_carrier }}</b>.
+        You're currently paying: <b class="txt-clr-orange">$1,500</b> to <b class="txt-clr-blue">Chase</b>.
       </div>
       <div class="txt-sm-p txt-clr-gunmetal-l50 bump-bottom-base-sm">
         Please note that the home insurance premiums shown below do not reflect a bundle discount.
@@ -221,25 +221,25 @@
 
 
 <!-- quote card // -->
-<td class="quote-card small-quote-card" width="{{ contact.quote_1_width }}" height="{{ contact.quote_1_height }}" style="{{ contact.quote_1_css }}" valign="top">
+<td class="quote-card small-quote-card" width="50%" height="422px" style="height:422px;width:50%;" valign="top">
   <table border="0" cellpadding="0" cellspacing="0" width="100%">
 
-    <tr class="card-row card-row-savings card-row-top" style="background-color:{{ contact.quote_1_savings_color }}">
+    <tr class="card-row card-row-savings card-row-top" style="background-color:#3FC8A5">
       <td class="card-inner">
         <div class="featured-savings txt-clr-white">
-            {{ contact.quote_1_savings_text }}
+            Save 50%
         </div>
       </td>
     </tr>
 
     <tr class="card-row">
       <td class="card-inner">
-        <img src="{{ contact.quote_1_logo }}" class="card-logo">
+        <img src="Dairyland" class="card-logo">
         <div class="line-title">
           Annual Premium
         </div>
         <div class="featured-number">
-          {{ contact.quote_1_premium }}
+          $1,000
         </div>
       </td>
     </tr>
@@ -250,7 +250,7 @@
           Annual Savings
         </div>
         <div class="featured-number">
-          ${{ contact.quote_1_savings }}
+          $239
         </div>
       </td>
     </tr>
@@ -261,11 +261,11 @@
         <!-- button // -->
 <div class="">
   <!--[if mso]>
-  <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href=" https://quotes.itscovered.com/{{ contact.quote_uuid }} " style="height:40px;v-text-anchor:middle;width:100px;" arcsize="15%" stroke="f" fillcolor="#14c3fc">
+  <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href=" https://quotes.itscovered.com/ " style="height:40px;v-text-anchor:middle;width:100px;" arcsize="15%" stroke="f" fillcolor="#14c3fc">
     <w:anchorlock/>
     <center>
   <![endif]-->
-  <a href=" https://quotes.itscovered.com/{{ contact.quote_uuid }} " style="background-color:#14c3fc;border-radius:6px;color:#ffffff;display:inline-block;font-family:'Helvetica',sans-serif;font-size:13px;font-weight:bold;line-height:40px;text-align:center;text-decoration:none;width:100px;-webkit-text-size-adjust:none;" target="_blank">More details</a>
+  <a href=" https://quotes.itscovered.com/ " style="background-color:#14c3fc;border-radius:6px;color:#ffffff;display:inline-block;font-family:'Helvetica',sans-serif;font-size:13px;font-weight:bold;line-height:40px;text-align:center;text-decoration:none;width:100px;-webkit-text-size-adjust:none;" target="_blank">More details</a>
   <!--[if mso]>
     </center>
   </v:roundrect>
@@ -290,25 +290,25 @@
 
 
 <!-- quote card // -->
-<td class="quote-card small-quote-card" width="{{ contact.quote_2_width }}" height="{{ contact.quote_2_height }}" style="{{ contact.quote_2_css }}" valign="top">
+<td class="quote-card small-quote-card" width="50%" height="422px" style="height:422px;width:50%;" valign="top">
   <table border="0" cellpadding="0" cellspacing="0" width="100%">
 
-    <tr class="card-row card-row-savings card-row-top" style="background-color:{{ contact.quote_2_savings_color }}">
+    <tr class="card-row card-row-savings card-row-top" style="background-color:#14c3fc">
       <td class="card-inner">
         <div class="featured-savings txt-clr-white">
-            {{ contact.quote_2_savings_text }}
+            Great Deal
         </div>
       </td>
     </tr>
 
     <tr class="card-row">
       <td class="card-inner">
-        <img src="{{ contact.quote_2_logo }}" class="card-logo">
+        <img src="Nationwide" class="card-logo">
         <div class="line-title">
           Annual Premium
         </div>
         <div class="featured-number">
-          {{ contact.quote_2_premium }}
+          $1,000
         </div>
       </td>
     </tr>
@@ -319,7 +319,7 @@
           Annual Savings
         </div>
         <div class="featured-number">
-          ${{ contact.quote_2_savings }}
+          $-25
         </div>
       </td>
     </tr>
@@ -330,11 +330,11 @@
         <!-- button // -->
 <div class="">
   <!--[if mso]>
-  <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href=" https://quotes.itscovered.com/{{ contact.quote_uuid }} " style="height:40px;v-text-anchor:middle;width:100px;" arcsize="15%" stroke="f" fillcolor="#14c3fc">
+  <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href=" https://quotes.itscovered.com/ " style="height:40px;v-text-anchor:middle;width:100px;" arcsize="15%" stroke="f" fillcolor="#14c3fc">
     <w:anchorlock/>
     <center>
   <![endif]-->
-  <a href=" https://quotes.itscovered.com/{{ contact.quote_uuid }} " style="background-color:#14c3fc;border-radius:6px;color:#ffffff;display:inline-block;font-family:'Helvetica',sans-serif;font-size:13px;font-weight:bold;line-height:40px;text-align:center;text-decoration:none;width:100px;-webkit-text-size-adjust:none;" target="_blank">More details</a>
+  <a href=" https://quotes.itscovered.com/ " style="background-color:#14c3fc;border-radius:6px;color:#ffffff;display:inline-block;font-family:'Helvetica',sans-serif;font-size:13px;font-weight:bold;line-height:40px;text-align:center;text-decoration:none;width:100px;-webkit-text-size-adjust:none;" target="_blank">More details</a>
   <!--[if mso]>
     </center>
   </v:roundrect>
@@ -359,25 +359,25 @@
 
 
 <!-- quote card // -->
-<td class="quote-card small-quote-card" width="{{ contact.quote_3_width }}" height="{{ contact.quote_3_height }}" style="{{ contact.quote_3_css }}" valign="top">
+<td class="quote-card small-quote-card" width="0%" height="0" style="mso-hide: all !important; overflow: hidden !important; max-height: 0 !important; width: 0 !important; display: none !important; line-height: 0 !important; visibility: hidden !important" valign="top">
   <table border="0" cellpadding="0" cellspacing="0" width="100%">
 
-    <tr class="card-row card-row-savings card-row-top" style="background-color:{{ contact.quote_3_savings_color }}">
+    <tr class="card-row card-row-savings card-row-top" style="background-color:#3FC8A5">
       <td class="card-inner">
         <div class="featured-savings txt-clr-white">
-            {{ contact.quote_3_savings_text }}
+            Save 50%
         </div>
       </td>
     </tr>
 
     <tr class="card-row">
       <td class="card-inner">
-        <img src="{{ contact.quote_3_logo }}" class="card-logo">
+        <img src="" class="card-logo">
         <div class="line-title">
           Annual Premium
         </div>
         <div class="featured-number">
-          {{ contact.quote_3_premium }}
+          
         </div>
       </td>
     </tr>
@@ -388,7 +388,7 @@
           Annual Savings
         </div>
         <div class="featured-number">
-          ${{ contact.quote_3_savings }}
+          $
         </div>
       </td>
     </tr>
@@ -399,11 +399,11 @@
         <!-- button // -->
 <div class="">
   <!--[if mso]>
-  <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href=" https://quotes.itscovered.com/{{ contact.quote_uuid }} " style="height:40px;v-text-anchor:middle;width:100px;" arcsize="15%" stroke="f" fillcolor="#14c3fc">
+  <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href=" https://quotes.itscovered.com/ " style="height:40px;v-text-anchor:middle;width:100px;" arcsize="15%" stroke="f" fillcolor="#14c3fc">
     <w:anchorlock/>
     <center>
   <![endif]-->
-  <a href=" https://quotes.itscovered.com/{{ contact.quote_uuid }} " style="background-color:#14c3fc;border-radius:6px;color:#ffffff;display:inline-block;font-family:'Helvetica',sans-serif;font-size:13px;font-weight:bold;line-height:40px;text-align:center;text-decoration:none;width:100px;-webkit-text-size-adjust:none;" target="_blank">More details</a>
+  <a href=" https://quotes.itscovered.com/ " style="background-color:#14c3fc;border-radius:6px;color:#ffffff;display:inline-block;font-family:'Helvetica',sans-serif;font-size:13px;font-weight:bold;line-height:40px;text-align:center;text-decoration:none;width:100px;-webkit-text-size-adjust:none;" target="_blank">More details</a>
   <!--[if mso]>
     </center>
   </v:roundrect>
@@ -498,11 +498,11 @@
 <!-- button // -->
 <div class="">
   <!--[if mso]>
-  <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href=" https://quotes.itscovered.com/{{ contact.quote_uuid }} " style="height:40px;v-text-anchor:middle;width:100%;" arcsize="15%" stroke="f" fillcolor="#14c3fc">
+  <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href=" https://quotes.itscovered.com/ " style="height:40px;v-text-anchor:middle;width:100%;" arcsize="15%" stroke="f" fillcolor="#14c3fc">
     <w:anchorlock/>
     <center>
   <![endif]-->
-  <a href=" https://quotes.itscovered.com/{{ contact.quote_uuid }} " style="background-color:#14c3fc;border-radius:6px;color:#ffffff;display:inline-block;font-family:'Helvetica',sans-serif;font-size:13px;font-weight:bold;line-height:40px;text-align:center;text-decoration:none;width:100%;-webkit-text-size-adjust:none;" target="_blank">More details</a>
+  <a href=" https://quotes.itscovered.com/ " style="background-color:#14c3fc;border-radius:6px;color:#ffffff;display:inline-block;font-family:'Helvetica',sans-serif;font-size:13px;font-weight:bold;line-height:40px;text-align:center;text-decoration:none;width:100%;-webkit-text-size-adjust:none;" target="_blank">More details</a>
   <!--[if mso]>
     </center>
   </v:roundrect>
@@ -684,23 +684,23 @@
 
 
 
-    {{ standard_footer_includes }}
+    <!-- standard_footer_includes -->
 
     <p id="footer" style="text-align:center; width: 100%; padding: 50px 0px;">
-        {{ site_settings.company_name }}&nbsp;
-        {{ site_settings.company_street_address_1 }}&nbsp;
+        Covered Insurance Inc.&nbsp;
+        123 Covered Ave.&nbsp;
         &nbsp;
-        {{ site_settings.company_city }}&nbsp;
-        {{ site_settings.company_state }}&nbsp;
-        {{ site_settings.company_zip }}&nbsp;
+        Denver&nbsp;
+        Colorado&nbsp;
+        12345&nbsp;
         &nbsp;
         <br />
-        You received this email because you are subscribed to  {{ subscription_name }} from {{ site_settings.company_name }}.
+        You received this email because you are subscribed to Covered Insurance from Covered Insurance Inc..
         <br />
-        Update your <a class="hubspot-mergetag" data-unsubscribe="true" href="{{ unsubscribe_link }}">email preferences</a>
+        Update your <a class="hubspot-mergetag" data-unsubscribe="true" href="#unsubscribe">email preferences</a>
         to choose the types of emails you receive.
         <br />
-        <a class="hubspot-mergetag" data-unsubscribe="true" href="{{ unsubscribe_all }}">Unsubscribe from all future
+        <a class="hubspot-mergetag" data-unsubscribe="true" href="#unsubscribe_all">Unsubscribe from all future
             emails</a>
     </p>
     

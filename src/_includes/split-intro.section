@@ -1,23 +1,23 @@
-{% capture uuid %} https://quotes.itscovered.com/{{ site.data.contact_hs.quote_uuid }} {% endcapture %}
+{% capture uuid %} https://quotes.itscovered.com/{{ site.data.contact.quote_uuid }} {% endcapture %}
 
 <!-- split-intro // -->
 <table border="0" cellpadding="0" cellspacing="0" class="intro split-intro" width="100%">
   <tr>
     <td class="lmnt-col-50 content" width="50%">
       <h1>
-        Hi {{ site.data.contact_hs.firstname }},
+        Hi {{ site.data.contact.firstname }},
       </h1>
       <p class="txt-md-p">
-        As a valued <b class="txt-clr-blue">{{ site.data.contact_hs.current_carrier }}</b> customer, we wanted to remind you that your homeowners insurance policy is up for renewal at your property located at:
+        As a valued <b class="txt-clr-blue">{{ site.data.contact.current_carrier }}</b> customer, we wanted to remind you that your homeowners insurance policy is up for renewal at your property located at:
       </p>
       <div class="txt-lg-p">
         <strong>
-          {{ site.data.contact_hs.property_street }}
+          {{ site.data.contact.property_street }}
         </strong>
       </div>
       <div class="txt-lg-p">
         <strong>
-          {{ site.data.contact_hs.property_city }}, {{ site.data.contact_hs.property_state }} {{ site.data.contact_hs.property_zipcode }}
+          {{ site.data.contact.property_city }}, {{ site.data.contact.property_state }} {{ site.data.contact.property_zipcode }}
         </strong>
       </div>
     </td>
@@ -27,7 +27,7 @@
         Save up to
       </h1>
       <div class="txt-lg-light txt-clr-blue">
-        ${{ site.data.contact_hs.quote_1_savings }}
+        ${{ site.data.contact.quote_1_savings }}
       </div>
       <div class="txt-med-p">
         On your Annual Premium

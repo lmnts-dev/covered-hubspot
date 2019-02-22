@@ -28,7 +28,7 @@
   "approved": "{{ contact.approved }}",
   "brand_name": "{{ contact.brand_name }}",
   "channel": "{{ contact.channel }}",
-  "contact_status": "{{ contact.contact_status }}",
+  "contact_status": "{{ contact.contact._status }}",
   "current_carrier": "{{ contact.current_carrier }}",
   "current_premium": "{{ contact.current_premium }}",
   "number_quotes": "{{ contact.number_quotes }}",
